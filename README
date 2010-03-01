@@ -1,0 +1,9 @@
+Suprmrkt Project (1/5/10)
+-------------------
+
+Build Requirements
+-------------------
+.NET Framework 3.5
+Visual Studio 2008/2010 or MonoDevelop 3.5 (Untested)
+
+There are two solution files for the project, depending on what version of Visual Studio you're using. If you're using MonoDevelop, then build with the VS2008 solution file (Suprmrkt.sln).
