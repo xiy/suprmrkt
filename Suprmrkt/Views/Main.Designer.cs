@@ -29,75 +29,60 @@
 		private void InitializeComponent()
 		{
 			this.garnetTabStrip1 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStrip();
-			this.commandLink1 = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.commandLink2 = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.commandLink4 = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.tlpCommandLinkPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.commandLink3 = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.garnetTabStripItem2 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.garnetTabStripItem3 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.garnetTabStripItem4 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.garnetTabStripItem5 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.garnetTabStripItem6 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.garnetTabStripItem7 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.garnetTabStripItem8 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.label1 = new System.Windows.Forms.Label();
-			this.txtSimTitle = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.dtpSimDate = new System.Windows.Forms.DateTimePicker();
-			this.label3 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.label4 = new System.Windows.Forms.Label();
-			this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-			this.label5 = new System.Windows.Forms.Label();
 			this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
-			this.button3 = new System.Windows.Forms.Button();
-			this.label10 = new System.Windows.Forms.Label();
-			this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-			this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-			this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
 			this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
-			this.label15 = new System.Windows.Forms.Label();
-			this.label16 = new System.Windows.Forms.Label();
-			this.label17 = new System.Windows.Forms.Label();
+			this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+			this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+			this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+			this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+			this.button2 = new System.Windows.Forms.Button();
+			this.button3 = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
+			this.label9 = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.garnetTabStripItem3 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.button4 = new System.Windows.Forms.Button();
+			this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
 			this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
 			this.label18 = new System.Windows.Forms.Label();
-			this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-			this.button4 = new System.Windows.Forms.Button();
-			this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
-			this.maskedTextBox11 = new System.Windows.Forms.MaskedTextBox();
-			this.button5 = new System.Windows.Forms.Button();
-			this.button6 = new System.Windows.Forms.Button();
-			this.button7 = new System.Windows.Forms.Button();
-			this.label19 = new System.Windows.Forms.Label();
-			this.label20 = new System.Windows.Forms.Label();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
+			this.label17 = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
+			this.garnetTabStripItem4 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.button8 = new System.Windows.Forms.Button();
 			this.button9 = new System.Windows.Forms.Button();
 			this.comboBox3 = new System.Windows.Forms.ComboBox();
 			this.label21 = new System.Windows.Forms.Label();
-			this.label22 = new System.Windows.Forms.Label();
-			this.label23 = new System.Windows.Forms.Label();
-			this.comboBox5 = new System.Windows.Forms.ComboBox();
-			this.label24 = new System.Windows.Forms.Label();
-			this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
-			this.button10 = new System.Windows.Forms.Button();
+			this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
+			this.label12 = new System.Windows.Forms.Label();
+			this.maskedTextBox11 = new System.Windows.Forms.MaskedTextBox();
+			this.label20 = new System.Windows.Forms.Label();
+			this.button6 = new System.Windows.Forms.Button();
+			this.label19 = new System.Windows.Forms.Label();
+			this.garnetTabStripItem5 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-			this.comboBox4 = new System.Windows.Forms.ComboBox();
-			this.label25 = new System.Windows.Forms.Label();
-			this.label26 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.button10 = new System.Windows.Forms.Button();
+			this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
+			this.comboBox5 = new System.Windows.Forms.ComboBox();
+			this.label13 = new System.Windows.Forms.Label();
+			this.label23 = new System.Windows.Forms.Label();
+			this.label24 = new System.Windows.Forms.Label();
+			this.label22 = new System.Windows.Forms.Label();
+			this.garnetTabStripItem6 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.button11 = new System.Windows.Forms.Button();
+			this.comboBox4 = new System.Windows.Forms.ComboBox();
+			this.label26 = new System.Windows.Forms.Label();
+			this.label25 = new System.Windows.Forms.Label();
+			this.label14 = new System.Windows.Forms.Label();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.garnetTabStripItem7 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.button12 = new System.Windows.Forms.Button();
 			this.button13 = new System.Windows.Forms.Button();
 			this.comboBox6 = new System.Windows.Forms.ComboBox();
@@ -105,10 +90,24 @@
 			this.maskedTextBox13 = new System.Windows.Forms.MaskedTextBox();
 			this.label28 = new System.Windows.Forms.Label();
 			this.button14 = new System.Windows.Forms.Button();
+			this.label15 = new System.Windows.Forms.Label();
+			this.garnetTabStripItem8 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.commandLink5 = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.label16 = new System.Windows.Forms.Label();
+			this.commandLink1 = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.commandLink2 = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.commandLink4 = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.tlpCommandLinkPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.commandLink3 = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.label1 = new System.Windows.Forms.Label();
+			this.txtSimTitle = new System.Windows.Forms.TextBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.dtpSimDate = new System.Windows.Forms.DateTimePicker();
+			this.button5 = new System.Windows.Forms.Button();
+			this.button7 = new System.Windows.Forms.Button();
+			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			((System.ComponentModel.ISupportInitialize)(this.garnetTabStrip1)).BeginInit();
 			this.garnetTabStrip1.SuspendLayout();
-			this.tlpCommandLinkPanel.SuspendLayout();
 			this.garnetTabStripItem2.SuspendLayout();
 			this.garnetTabStripItem3.SuspendLayout();
 			this.garnetTabStripItem4.SuspendLayout();
@@ -116,6 +115,7 @@
 			this.garnetTabStripItem6.SuspendLayout();
 			this.garnetTabStripItem7.SuspendLayout();
 			this.garnetTabStripItem8.SuspendLayout();
+			this.tlpCommandLinkPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// garnetTabStrip1
@@ -139,72 +139,6 @@
 			this.garnetTabStrip1.TabActiveUnderlineColor = System.Drawing.Color.Empty;
 			this.garnetTabStrip1.TabIndex = 1;
 			this.garnetTabStrip1.Text = "garnetTabStrip1";
-			// 
-			// commandLink1
-			// 
-			this.commandLink1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink1.Location = new System.Drawing.Point(3, 3);
-			this.commandLink1.Name = "commandLink1";
-			this.commandLink1.Note = "Create a new simulation";
-			this.commandLink1.Size = new System.Drawing.Size(193, 62);
-			this.commandLink1.TabIndex = 5;
-			this.commandLink1.Text = "New Simulation";
-			this.commandLink1.UseVisualStyleBackColor = true;
-			// 
-			// commandLink2
-			// 
-			this.commandLink2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink2.Location = new System.Drawing.Point(202, 3);
-			this.commandLink2.Name = "commandLink2";
-			this.commandLink2.Note = "Load parameters from a previous simulation";
-			this.commandLink2.Size = new System.Drawing.Size(289, 62);
-			this.commandLink2.TabIndex = 6;
-			this.commandLink2.Text = "Load Parameters";
-			this.commandLink2.UseVisualStyleBackColor = true;
-			// 
-			// commandLink4
-			// 
-			this.commandLink4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink4.Location = new System.Drawing.Point(710, 3);
-			this.commandLink4.Name = "commandLink4";
-			this.commandLink4.Note = "Export the simulation results";
-			this.commandLink4.Size = new System.Drawing.Size(228, 62);
-			this.commandLink4.TabIndex = 4;
-			this.commandLink4.Text = "Export";
-			this.commandLink4.UseVisualStyleBackColor = true;
-			// 
-			// tlpCommandLinkPanel
-			// 
-			this.tlpCommandLinkPanel.AutoSize = true;
-			this.tlpCommandLinkPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-			this.tlpCommandLinkPanel.ColumnCount = 4;
-			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.2834F));
-			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.7166F));
-			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
-			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
-			this.tlpCommandLinkPanel.Controls.Add(this.commandLink4, 3, 0);
-			this.tlpCommandLinkPanel.Controls.Add(this.commandLink1, 0, 0);
-			this.tlpCommandLinkPanel.Controls.Add(this.commandLink3, 2, 0);
-			this.tlpCommandLinkPanel.Controls.Add(this.commandLink2, 1, 0);
-			this.tlpCommandLinkPanel.Dock = System.Windows.Forms.DockStyle.Top;
-			this.tlpCommandLinkPanel.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
-			this.tlpCommandLinkPanel.Location = new System.Drawing.Point(0, 0);
-			this.tlpCommandLinkPanel.Name = "tlpCommandLinkPanel";
-			this.tlpCommandLinkPanel.RowCount = 1;
-			this.tlpCommandLinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tlpCommandLinkPanel.Size = new System.Drawing.Size(941, 68);
-			this.tlpCommandLinkPanel.TabIndex = 2;
-			// 
-			// commandLink3
-			// 
-			this.commandLink3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink3.Location = new System.Drawing.Point(497, 3);
-			this.commandLink3.Name = "commandLink3";
-			this.commandLink3.Note = "View previous simulations";
-			this.commandLink3.Size = new System.Drawing.Size(207, 62);
-			this.commandLink3.TabIndex = 3;
-			this.commandLink3.Text = "View Results";
-			this.commandLink3.UseVisualStyleBackColor = true;
 			// 
 			// garnetTabStripItem2
 			// 
@@ -233,6 +167,195 @@
 			this.garnetTabStripItem2.TabIndex = 1;
 			this.garnetTabStripItem2.Title = "Customers";
 			// 
+			// maskedTextBox2
+			// 
+			this.maskedTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maskedTextBox2.Location = new System.Drawing.Point(308, 111);
+			this.maskedTextBox2.Mask = "00000";
+			this.maskedTextBox2.Name = "maskedTextBox2";
+			this.maskedTextBox2.PromptChar = '-';
+			this.maskedTextBox2.Size = new System.Drawing.Size(39, 25);
+			this.maskedTextBox2.TabIndex = 3;
+			this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.maskedTextBox2.ValidatingType = typeof(int);
+			// 
+			// maskedTextBox6
+			// 
+			this.maskedTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maskedTextBox6.Location = new System.Drawing.Point(234, 241);
+			this.maskedTextBox6.Mask = "000";
+			this.maskedTextBox6.Name = "maskedTextBox6";
+			this.maskedTextBox6.PromptChar = '-';
+			this.maskedTextBox6.Size = new System.Drawing.Size(113, 25);
+			this.maskedTextBox6.TabIndex = 3;
+			this.maskedTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.maskedTextBox6.ValidatingType = typeof(int);
+			// 
+			// maskedTextBox5
+			// 
+			this.maskedTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maskedTextBox5.Location = new System.Drawing.Point(234, 210);
+			this.maskedTextBox5.Mask = "000";
+			this.maskedTextBox5.Name = "maskedTextBox5";
+			this.maskedTextBox5.PromptChar = '-';
+			this.maskedTextBox5.Size = new System.Drawing.Size(113, 25);
+			this.maskedTextBox5.TabIndex = 3;
+			this.maskedTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.maskedTextBox5.ValidatingType = typeof(int);
+			// 
+			// maskedTextBox4
+			// 
+			this.maskedTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maskedTextBox4.Location = new System.Drawing.Point(234, 179);
+			this.maskedTextBox4.Mask = "000";
+			this.maskedTextBox4.Name = "maskedTextBox4";
+			this.maskedTextBox4.PromptChar = '-';
+			this.maskedTextBox4.Size = new System.Drawing.Size(113, 25);
+			this.maskedTextBox4.TabIndex = 3;
+			this.maskedTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.maskedTextBox4.ValidatingType = typeof(int);
+			// 
+			// maskedTextBox3
+			// 
+			this.maskedTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maskedTextBox3.Location = new System.Drawing.Point(234, 148);
+			this.maskedTextBox3.Mask = "000";
+			this.maskedTextBox3.Name = "maskedTextBox3";
+			this.maskedTextBox3.PromptChar = '-';
+			this.maskedTextBox3.Size = new System.Drawing.Size(113, 25);
+			this.maskedTextBox3.TabIndex = 3;
+			this.maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.maskedTextBox3.ValidatingType = typeof(int);
+			// 
+			// maskedTextBox1
+			// 
+			this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maskedTextBox1.Location = new System.Drawing.Point(234, 111);
+			this.maskedTextBox1.Mask = "00000";
+			this.maskedTextBox1.Name = "maskedTextBox1";
+			this.maskedTextBox1.PromptChar = '-';
+			this.maskedTextBox1.Size = new System.Drawing.Size(39, 25);
+			this.maskedTextBox1.TabIndex = 3;
+			this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.maskedTextBox1.ValidatingType = typeof(int);
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(531, 72);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(75, 23);
+			this.button2.TabIndex = 2;
+			this.button2.Text = "Delete";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
+			// button3
+			// 
+			this.button3.Location = new System.Drawing.Point(234, 288);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(75, 23);
+			this.button3.TabIndex = 2;
+			this.button3.Text = "Save";
+			this.button3.UseVisualStyleBackColor = true;
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(450, 72);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.TabIndex = 2;
+			this.button1.Text = "New";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label9.Location = new System.Drawing.Point(55, 244);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(173, 17);
+			this.label9.TabIndex = 0;
+			this.label9.Text = "Promotion Response Factor:";
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.Location = new System.Drawing.Point(169, 213);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(59, 17);
+			this.label8.TabIndex = 0;
+			this.label8.Text = "Patience:";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Location = new System.Drawing.Point(234, 70);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(200, 25);
+			this.comboBox1.TabIndex = 1;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.Location = new System.Drawing.Point(142, 182);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(86, 17);
+			this.label7.TabIndex = 0;
+			this.label7.Text = "Dawdle Time:";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(279, 114);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(23, 17);
+			this.label5.TabIndex = 0;
+			this.label5.Text = "To";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(136, 151);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(92, 17);
+			this.label6.TabIndex = 0;
+			this.label6.Text = "Concentration:";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(84, 112);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(144, 17);
+			this.label4.TabIndex = 0;
+			this.label4.Text = "Number of Items From:";
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.Location = new System.Drawing.Point(55, 30);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(140, 17);
+			this.label10.TabIndex = 0;
+			this.label10.Text = "Customer Parameters";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(80, 74);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(148, 17);
+			this.label3.TabIndex = 0;
+			this.label3.Text = "Select a Customer Type:";
+			// 
 			// garnetTabStripItem3
 			// 
 			this.garnetTabStripItem3.Controls.Add(this.button4);
@@ -247,380 +370,26 @@
 			this.garnetTabStripItem3.TabIndex = 2;
 			this.garnetTabStripItem3.Title = "Checkouts";
 			// 
-			// garnetTabStripItem4
-			// 
-			this.garnetTabStripItem4.Controls.Add(this.button8);
-			this.garnetTabStripItem4.Controls.Add(this.button9);
-			this.garnetTabStripItem4.Controls.Add(this.comboBox3);
-			this.garnetTabStripItem4.Controls.Add(this.label21);
-			this.garnetTabStripItem4.Controls.Add(this.maskedTextBox10);
-			this.garnetTabStripItem4.Controls.Add(this.label12);
-			this.garnetTabStripItem4.Controls.Add(this.maskedTextBox11);
-			this.garnetTabStripItem4.Controls.Add(this.label20);
-			this.garnetTabStripItem4.Controls.Add(this.button6);
-			this.garnetTabStripItem4.Controls.Add(this.label19);
-			this.garnetTabStripItem4.IsDrawn = true;
-			this.garnetTabStripItem4.Name = "garnetTabStripItem4";
-			this.garnetTabStripItem4.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem4.TabIndex = 3;
-			this.garnetTabStripItem4.Title = "Staff";
-			// 
-			// garnetTabStripItem5
-			// 
-			this.garnetTabStripItem5.Controls.Add(this.dateTimePicker1);
-			this.garnetTabStripItem5.Controls.Add(this.button10);
-			this.garnetTabStripItem5.Controls.Add(this.maskedTextBox9);
-			this.garnetTabStripItem5.Controls.Add(this.comboBox5);
-			this.garnetTabStripItem5.Controls.Add(this.label13);
-			this.garnetTabStripItem5.Controls.Add(this.label23);
-			this.garnetTabStripItem5.Controls.Add(this.label24);
-			this.garnetTabStripItem5.Controls.Add(this.label22);
-			this.garnetTabStripItem5.IsDrawn = true;
-			this.garnetTabStripItem5.Name = "garnetTabStripItem5";
-			this.garnetTabStripItem5.Selected = true;
-			this.garnetTabStripItem5.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem5.TabIndex = 4;
-			this.garnetTabStripItem5.Title = "Activity";
-			// 
-			// garnetTabStripItem6
-			// 
-			this.garnetTabStripItem6.Controls.Add(this.button11);
-			this.garnetTabStripItem6.Controls.Add(this.comboBox4);
-			this.garnetTabStripItem6.Controls.Add(this.label26);
-			this.garnetTabStripItem6.Controls.Add(this.label25);
-			this.garnetTabStripItem6.Controls.Add(this.label14);
-			this.garnetTabStripItem6.Controls.Add(this.textBox1);
-			this.garnetTabStripItem6.IsDrawn = true;
-			this.garnetTabStripItem6.Name = "garnetTabStripItem6";
-			this.garnetTabStripItem6.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem6.TabIndex = 5;
-			this.garnetTabStripItem6.Title = "Pricing";
-			// 
-			// garnetTabStripItem7
-			// 
-			this.garnetTabStripItem7.Controls.Add(this.button12);
-			this.garnetTabStripItem7.Controls.Add(this.button13);
-			this.garnetTabStripItem7.Controls.Add(this.comboBox6);
-			this.garnetTabStripItem7.Controls.Add(this.label27);
-			this.garnetTabStripItem7.Controls.Add(this.maskedTextBox13);
-			this.garnetTabStripItem7.Controls.Add(this.label28);
-			this.garnetTabStripItem7.Controls.Add(this.button14);
-			this.garnetTabStripItem7.Controls.Add(this.label15);
-			this.garnetTabStripItem7.IsDrawn = true;
-			this.garnetTabStripItem7.Name = "garnetTabStripItem7";
-			this.garnetTabStripItem7.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem7.TabIndex = 6;
-			this.garnetTabStripItem7.Title = "Promotion";
-			// 
-			// garnetTabStripItem8
-			// 
-			this.garnetTabStripItem8.Controls.Add(this.commandLink5);
-			this.garnetTabStripItem8.Controls.Add(this.label16);
-			this.garnetTabStripItem8.IsDrawn = true;
-			this.garnetTabStripItem8.Name = "garnetTabStripItem8";
-			this.garnetTabStripItem8.Selected = true;
-			this.garnetTabStripItem8.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem8.TabIndex = 7;
-			this.garnetTabStripItem8.Title = "Summary / Run Simulation";
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(12, 84);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(99, 17);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Simulation Title:";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// txtSimTitle
-			// 
-			this.txtSimTitle.Enabled = false;
-			this.txtSimTitle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSimTitle.Location = new System.Drawing.Point(117, 80);
-			this.txtSimTitle.Name = "txtSimTitle";
-			this.txtSimTitle.Size = new System.Drawing.Size(226, 25);
-			this.txtSimTitle.TabIndex = 2;
-			// 
-			// label2
-			// 
-			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(595, 84);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(102, 17);
-			this.label2.TabIndex = 0;
-			this.label2.Text = "Simulation Date:";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// dtpSimDate
-			// 
-			this.dtpSimDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.dtpSimDate.Location = new System.Drawing.Point(703, 81);
-			this.dtpSimDate.Name = "dtpSimDate";
-			this.dtpSimDate.Size = new System.Drawing.Size(226, 23);
-			this.dtpSimDate.TabIndex = 4;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(80, 74);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(148, 17);
-			this.label3.TabIndex = 0;
-			this.label3.Text = "Select a Customer Type:";
-			// 
-			// comboBox1
-			// 
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(234, 70);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(200, 25);
-			this.comboBox1.TabIndex = 1;
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(450, 72);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "New";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(531, 72);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(75, 23);
-			this.button2.TabIndex = 2;
-			this.button2.Text = "Delete";
-			this.button2.UseVisualStyleBackColor = true;
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(84, 112);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(144, 17);
-			this.label4.TabIndex = 0;
-			this.label4.Text = "Number of Items From:";
-			// 
-			// maskedTextBox1
-			// 
-			this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox1.Location = new System.Drawing.Point(234, 111);
-			this.maskedTextBox1.Mask = "00000";
-			this.maskedTextBox1.Name = "maskedTextBox1";
-			this.maskedTextBox1.PromptChar = '-';
-			this.maskedTextBox1.Size = new System.Drawing.Size(39, 25);
-			this.maskedTextBox1.TabIndex = 3;
-			this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox1.ValidatingType = typeof(int);
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(279, 114);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(23, 17);
-			this.label5.TabIndex = 0;
-			this.label5.Text = "To";
-			// 
-			// maskedTextBox2
-			// 
-			this.maskedTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox2.Location = new System.Drawing.Point(308, 111);
-			this.maskedTextBox2.Mask = "00000";
-			this.maskedTextBox2.Name = "maskedTextBox2";
-			this.maskedTextBox2.PromptChar = '-';
-			this.maskedTextBox2.Size = new System.Drawing.Size(39, 25);
-			this.maskedTextBox2.TabIndex = 3;
-			this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox2.ValidatingType = typeof(int);
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(136, 151);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(92, 17);
-			this.label6.TabIndex = 0;
-			this.label6.Text = "Concentration:";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.Location = new System.Drawing.Point(142, 182);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(86, 17);
-			this.label7.TabIndex = 0;
-			this.label7.Text = "Dawdle Time:";
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.Location = new System.Drawing.Point(169, 213);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(59, 17);
-			this.label8.TabIndex = 0;
-			this.label8.Text = "Patience:";
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.Location = new System.Drawing.Point(55, 244);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(173, 17);
-			this.label9.TabIndex = 0;
-			this.label9.Text = "Promotion Response Factor:";
-			// 
-			// button3
-			// 
-			this.button3.Location = new System.Drawing.Point(234, 288);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(75, 23);
-			this.button3.TabIndex = 2;
-			this.button3.Text = "Save";
-			this.button3.UseVisualStyleBackColor = true;
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.Location = new System.Drawing.Point(55, 30);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(140, 17);
-			this.label10.TabIndex = 0;
-			this.label10.Text = "Customer Parameters";
-			// 
-			// maskedTextBox3
-			// 
-			this.maskedTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox3.Location = new System.Drawing.Point(234, 148);
-			this.maskedTextBox3.Mask = "000";
-			this.maskedTextBox3.Name = "maskedTextBox3";
-			this.maskedTextBox3.PromptChar = '-';
-			this.maskedTextBox3.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox3.TabIndex = 3;
-			this.maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox3.ValidatingType = typeof(int);
-			// 
-			// maskedTextBox4
-			// 
-			this.maskedTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox4.Location = new System.Drawing.Point(234, 179);
-			this.maskedTextBox4.Mask = "000";
-			this.maskedTextBox4.Name = "maskedTextBox4";
-			this.maskedTextBox4.PromptChar = '-';
-			this.maskedTextBox4.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox4.TabIndex = 3;
-			this.maskedTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox4.ValidatingType = typeof(int);
-			// 
-			// maskedTextBox5
-			// 
-			this.maskedTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox5.Location = new System.Drawing.Point(234, 210);
-			this.maskedTextBox5.Mask = "000";
-			this.maskedTextBox5.Name = "maskedTextBox5";
-			this.maskedTextBox5.PromptChar = '-';
-			this.maskedTextBox5.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox5.TabIndex = 3;
-			this.maskedTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox5.ValidatingType = typeof(int);
-			// 
-			// maskedTextBox6
-			// 
-			this.maskedTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox6.Location = new System.Drawing.Point(234, 241);
-			this.maskedTextBox6.Mask = "000";
-			this.maskedTextBox6.Name = "maskedTextBox6";
-			this.maskedTextBox6.PromptChar = '-';
-			this.maskedTextBox6.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox6.TabIndex = 3;
-			this.maskedTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox6.ValidatingType = typeof(int);
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(55, 30);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(138, 17);
-			this.label11.TabIndex = 1;
-			this.label11.Text = "Checkout Parameters";
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.Location = new System.Drawing.Point(55, 30);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(110, 17);
-			this.label12.TabIndex = 2;
-			this.label12.Text = "Staff Parameters";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(55, 30);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(164, 17);
-			this.label13.TabIndex = 2;
-			this.label13.Text = "Daily Activity Parameters";
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.Location = new System.Drawing.Point(55, 30);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(156, 17);
-			this.label14.TabIndex = 2;
-			this.label14.Text = "Item Pricing Parameters";
-			// 
-			// label15
-			// 
-			this.label15.AutoSize = true;
-			this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(55, 30);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(147, 17);
-			this.label15.TabIndex = 2;
-			this.label15.Text = "Promotion Parameters";
-			// 
-			// label16
-			// 
-			this.label16.AutoSize = true;
-			this.label16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label16.Location = new System.Drawing.Point(55, 30);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(137, 17);
-			this.label16.TabIndex = 2;
-			this.label16.Text = "Simulation Summary";
-			// 
-			// label17
-			// 
-			this.label17.AutoSize = true;
-			this.label17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label17.Location = new System.Drawing.Point(87, 74);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(192, 17);
-			this.label17.TabIndex = 8;
-			this.label17.Text = "Number of standard checkouts:";
+			// button4
+			// 
+			this.button4.Location = new System.Drawing.Point(285, 142);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(75, 23);
+			this.button4.TabIndex = 9;
+			this.button4.Text = "Save";
+			this.button4.UseVisualStyleBackColor = true;
+			// 
+			// maskedTextBox8
+			// 
+			this.maskedTextBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maskedTextBox8.Location = new System.Drawing.Point(285, 102);
+			this.maskedTextBox8.Mask = "000";
+			this.maskedTextBox8.Name = "maskedTextBox8";
+			this.maskedTextBox8.PromptChar = '-';
+			this.maskedTextBox8.Size = new System.Drawing.Size(113, 25);
+			this.maskedTextBox8.TabIndex = 8;
+			this.maskedTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.maskedTextBox8.ValidatingType = typeof(int);
 			// 
 			// maskedTextBox7
 			// 
@@ -644,107 +413,43 @@
 			this.label18.TabIndex = 8;
 			this.label18.Text = "Number of \"quick\" checkouts:";
 			// 
-			// maskedTextBox8
+			// label17
 			// 
-			this.maskedTextBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox8.Location = new System.Drawing.Point(285, 102);
-			this.maskedTextBox8.Mask = "000";
-			this.maskedTextBox8.Name = "maskedTextBox8";
-			this.maskedTextBox8.PromptChar = '-';
-			this.maskedTextBox8.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox8.TabIndex = 8;
-			this.maskedTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox8.ValidatingType = typeof(int);
+			this.label17.AutoSize = true;
+			this.label17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label17.Location = new System.Drawing.Point(87, 74);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(192, 17);
+			this.label17.TabIndex = 8;
+			this.label17.Text = "Number of standard checkouts:";
 			// 
-			// button4
+			// label11
 			// 
-			this.button4.Location = new System.Drawing.Point(285, 142);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(75, 23);
-			this.button4.TabIndex = 9;
-			this.button4.Text = "Save";
-			this.button4.UseVisualStyleBackColor = true;
+			this.label11.AutoSize = true;
+			this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.Location = new System.Drawing.Point(55, 30);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(138, 17);
+			this.label11.TabIndex = 1;
+			this.label11.Text = "Checkout Parameters";
 			// 
-			// maskedTextBox10
+			// garnetTabStripItem4
 			// 
-			this.maskedTextBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox10.Location = new System.Drawing.Point(201, 147);
-			this.maskedTextBox10.Mask = "000";
-			this.maskedTextBox10.Name = "maskedTextBox10";
-			this.maskedTextBox10.PromptChar = '-';
-			this.maskedTextBox10.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox10.TabIndex = 20;
-			this.maskedTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox10.ValidatingType = typeof(int);
-			// 
-			// maskedTextBox11
-			// 
-			this.maskedTextBox11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox11.Location = new System.Drawing.Point(201, 116);
-			this.maskedTextBox11.Mask = "000";
-			this.maskedTextBox11.Name = "maskedTextBox11";
-			this.maskedTextBox11.PromptChar = '-';
-			this.maskedTextBox11.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox11.TabIndex = 19;
-			this.maskedTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox11.ValidatingType = typeof(int);
-			// 
-			// button5
-			// 
-			this.button5.Location = new System.Drawing.Point(671, 134);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(75, 23);
-			this.button5.TabIndex = 17;
-			this.button5.Text = "Delete";
-			this.button5.UseVisualStyleBackColor = true;
-			// 
-			// button6
-			// 
-			this.button6.Location = new System.Drawing.Point(201, 194);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(75, 23);
-			this.button6.TabIndex = 18;
-			this.button6.Text = "Save";
-			this.button6.UseVisualStyleBackColor = true;
-			// 
-			// button7
-			// 
-			this.button7.Location = new System.Drawing.Point(590, 134);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(75, 23);
-			this.button7.TabIndex = 16;
-			this.button7.Text = "New";
-			this.button7.UseVisualStyleBackColor = true;
-			// 
-			// label19
-			// 
-			this.label19.AutoSize = true;
-			this.label19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label19.Location = new System.Drawing.Point(88, 150);
-			this.label19.Name = "label19";
-			this.label19.Size = new System.Drawing.Size(107, 17);
-			this.label19.TabIndex = 10;
-			this.label19.Text = "Speed up Factor:";
-			// 
-			// label20
-			// 
-			this.label20.AutoSize = true;
-			this.label20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label20.Location = new System.Drawing.Point(147, 119);
-			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(48, 17);
-			this.label20.TabIndex = 9;
-			this.label20.Text = "Speed:";
-			// 
-			// comboBox2
-			// 
-			this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(374, 132);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(200, 25);
-			this.comboBox2.TabIndex = 15;
+			this.garnetTabStripItem4.Controls.Add(this.button8);
+			this.garnetTabStripItem4.Controls.Add(this.button9);
+			this.garnetTabStripItem4.Controls.Add(this.comboBox3);
+			this.garnetTabStripItem4.Controls.Add(this.label21);
+			this.garnetTabStripItem4.Controls.Add(this.maskedTextBox10);
+			this.garnetTabStripItem4.Controls.Add(this.label12);
+			this.garnetTabStripItem4.Controls.Add(this.maskedTextBox11);
+			this.garnetTabStripItem4.Controls.Add(this.label20);
+			this.garnetTabStripItem4.Controls.Add(this.button6);
+			this.garnetTabStripItem4.Controls.Add(this.label19);
+			this.garnetTabStripItem4.IsDrawn = true;
+			this.garnetTabStripItem4.Name = "garnetTabStripItem4";
+			this.garnetTabStripItem4.Size = new System.Drawing.Size(939, 484);
+			this.garnetTabStripItem4.TabIndex = 3;
+			this.garnetTabStripItem4.Title = "Staff";
 			// 
 			// button8
 			// 
@@ -784,46 +489,102 @@
 			this.label21.TabIndex = 21;
 			this.label21.Text = "Select a Staff Type:";
 			// 
-			// label22
+			// maskedTextBox10
 			// 
-			this.label22.AutoSize = true;
-			this.label22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label22.Location = new System.Drawing.Point(148, 113);
-			this.label22.Name = "label22";
-			this.label22.Size = new System.Drawing.Size(199, 17);
-			this.label22.TabIndex = 0;
-			this.label22.Text = "Please select the Customer Type:";
-			this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.maskedTextBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maskedTextBox10.Location = new System.Drawing.Point(201, 147);
+			this.maskedTextBox10.Mask = "000";
+			this.maskedTextBox10.Name = "maskedTextBox10";
+			this.maskedTextBox10.PromptChar = '-';
+			this.maskedTextBox10.Size = new System.Drawing.Size(113, 25);
+			this.maskedTextBox10.TabIndex = 20;
+			this.maskedTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.maskedTextBox10.ValidatingType = typeof(int);
 			// 
-			// label23
+			// label12
 			// 
-			this.label23.AutoSize = true;
-			this.label23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label23.Location = new System.Drawing.Point(209, 84);
-			this.label23.Name = "label23";
-			this.label23.Size = new System.Drawing.Size(138, 17);
-			this.label23.TabIndex = 0;
-			this.label23.Text = "Please select the hour:";
-			this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.label12.AutoSize = true;
+			this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label12.Location = new System.Drawing.Point(55, 30);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(110, 17);
+			this.label12.TabIndex = 2;
+			this.label12.Text = "Staff Parameters";
 			// 
-			// comboBox5
+			// maskedTextBox11
 			// 
-			this.comboBox5.FormattingEnabled = true;
-			this.comboBox5.Location = new System.Drawing.Point(353, 112);
-			this.comboBox5.Name = "comboBox5";
-			this.comboBox5.Size = new System.Drawing.Size(161, 23);
-			this.comboBox5.TabIndex = 3;
+			this.maskedTextBox11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maskedTextBox11.Location = new System.Drawing.Point(201, 116);
+			this.maskedTextBox11.Mask = "000";
+			this.maskedTextBox11.Name = "maskedTextBox11";
+			this.maskedTextBox11.PromptChar = '-';
+			this.maskedTextBox11.Size = new System.Drawing.Size(113, 25);
+			this.maskedTextBox11.TabIndex = 19;
+			this.maskedTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.maskedTextBox11.ValidatingType = typeof(int);
 			// 
-			// label24
+			// label20
 			// 
-			this.label24.AutoSize = true;
-			this.label24.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label24.Location = new System.Drawing.Point(55, 144);
-			this.label24.Name = "label24";
-			this.label24.Size = new System.Drawing.Size(292, 17);
-			this.label24.TabIndex = 0;
-			this.label24.Text = "Number of Customers entering the supermarket:";
-			this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.label20.AutoSize = true;
+			this.label20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label20.Location = new System.Drawing.Point(147, 119);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(48, 17);
+			this.label20.TabIndex = 9;
+			this.label20.Text = "Speed:";
+			// 
+			// button6
+			// 
+			this.button6.Location = new System.Drawing.Point(201, 194);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(75, 23);
+			this.button6.TabIndex = 18;
+			this.button6.Text = "Save";
+			this.button6.UseVisualStyleBackColor = true;
+			// 
+			// label19
+			// 
+			this.label19.AutoSize = true;
+			this.label19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label19.Location = new System.Drawing.Point(88, 150);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(107, 17);
+			this.label19.TabIndex = 10;
+			this.label19.Text = "Speed up Factor:";
+			// 
+			// garnetTabStripItem5
+			// 
+			this.garnetTabStripItem5.Controls.Add(this.dateTimePicker1);
+			this.garnetTabStripItem5.Controls.Add(this.button10);
+			this.garnetTabStripItem5.Controls.Add(this.maskedTextBox9);
+			this.garnetTabStripItem5.Controls.Add(this.comboBox5);
+			this.garnetTabStripItem5.Controls.Add(this.label13);
+			this.garnetTabStripItem5.Controls.Add(this.label23);
+			this.garnetTabStripItem5.Controls.Add(this.label24);
+			this.garnetTabStripItem5.Controls.Add(this.label22);
+			this.garnetTabStripItem5.IsDrawn = true;
+			this.garnetTabStripItem5.Name = "garnetTabStripItem5";
+			this.garnetTabStripItem5.Size = new System.Drawing.Size(939, 484);
+			this.garnetTabStripItem5.TabIndex = 4;
+			this.garnetTabStripItem5.Title = "Activity";
+			// 
+			// dateTimePicker1
+			// 
+			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+			this.dateTimePicker1.Location = new System.Drawing.Point(353, 80);
+			this.dateTimePicker1.Name = "dateTimePicker1";
+			this.dateTimePicker1.ShowUpDown = true;
+			this.dateTimePicker1.Size = new System.Drawing.Size(161, 23);
+			this.dateTimePicker1.TabIndex = 22;
+			// 
+			// button10
+			// 
+			this.button10.Location = new System.Drawing.Point(353, 186);
+			this.button10.Name = "button10";
+			this.button10.Size = new System.Drawing.Size(75, 23);
+			this.button10.TabIndex = 21;
+			this.button10.Text = "Save";
+			this.button10.UseVisualStyleBackColor = true;
 			// 
 			// maskedTextBox9
 			// 
@@ -837,23 +598,79 @@
 			this.maskedTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.maskedTextBox9.ValidatingType = typeof(int);
 			// 
-			// button10
+			// comboBox5
 			// 
-			this.button10.Location = new System.Drawing.Point(353, 186);
-			this.button10.Name = "button10";
-			this.button10.Size = new System.Drawing.Size(75, 23);
-			this.button10.TabIndex = 21;
-			this.button10.Text = "Save";
-			this.button10.UseVisualStyleBackColor = true;
+			this.comboBox5.FormattingEnabled = true;
+			this.comboBox5.Location = new System.Drawing.Point(353, 112);
+			this.comboBox5.Name = "comboBox5";
+			this.comboBox5.Size = new System.Drawing.Size(161, 23);
+			this.comboBox5.TabIndex = 3;
 			// 
-			// dateTimePicker1
+			// label13
 			// 
-			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-			this.dateTimePicker1.Location = new System.Drawing.Point(353, 80);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.ShowUpDown = true;
-			this.dateTimePicker1.Size = new System.Drawing.Size(161, 23);
-			this.dateTimePicker1.TabIndex = 22;
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.Location = new System.Drawing.Point(55, 30);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(164, 17);
+			this.label13.TabIndex = 2;
+			this.label13.Text = "Daily Activity Parameters";
+			// 
+			// label23
+			// 
+			this.label23.AutoSize = true;
+			this.label23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label23.Location = new System.Drawing.Point(209, 84);
+			this.label23.Name = "label23";
+			this.label23.Size = new System.Drawing.Size(138, 17);
+			this.label23.TabIndex = 0;
+			this.label23.Text = "Please select the hour:";
+			this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// label24
+			// 
+			this.label24.AutoSize = true;
+			this.label24.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label24.Location = new System.Drawing.Point(55, 144);
+			this.label24.Name = "label24";
+			this.label24.Size = new System.Drawing.Size(292, 17);
+			this.label24.TabIndex = 0;
+			this.label24.Text = "Number of Customers entering the supermarket:";
+			this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// label22
+			// 
+			this.label22.AutoSize = true;
+			this.label22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label22.Location = new System.Drawing.Point(148, 113);
+			this.label22.Name = "label22";
+			this.label22.Size = new System.Drawing.Size(199, 17);
+			this.label22.TabIndex = 0;
+			this.label22.Text = "Please select the Customer Type:";
+			this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// garnetTabStripItem6
+			// 
+			this.garnetTabStripItem6.Controls.Add(this.button11);
+			this.garnetTabStripItem6.Controls.Add(this.comboBox4);
+			this.garnetTabStripItem6.Controls.Add(this.label26);
+			this.garnetTabStripItem6.Controls.Add(this.label25);
+			this.garnetTabStripItem6.Controls.Add(this.label14);
+			this.garnetTabStripItem6.Controls.Add(this.textBox1);
+			this.garnetTabStripItem6.IsDrawn = true;
+			this.garnetTabStripItem6.Name = "garnetTabStripItem6";
+			this.garnetTabStripItem6.Size = new System.Drawing.Size(939, 484);
+			this.garnetTabStripItem6.TabIndex = 5;
+			this.garnetTabStripItem6.Title = "Pricing";
+			// 
+			// button11
+			// 
+			this.button11.Location = new System.Drawing.Point(267, 154);
+			this.button11.Name = "button11";
+			this.button11.Size = new System.Drawing.Size(75, 23);
+			this.button11.TabIndex = 22;
+			this.button11.Text = "Save";
+			this.button11.UseVisualStyleBackColor = true;
 			// 
 			// comboBox4
 			// 
@@ -865,16 +682,6 @@
 			this.comboBox4.Size = new System.Drawing.Size(200, 25);
 			this.comboBox4.TabIndex = 4;
 			// 
-			// label25
-			// 
-			this.label25.AutoSize = true;
-			this.label25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label25.Location = new System.Drawing.Point(113, 71);
-			this.label25.Name = "label25";
-			this.label25.Size = new System.Drawing.Size(148, 17);
-			this.label25.TabIndex = 3;
-			this.label25.Text = "Select a Customer Type:";
-			// 
 			// label26
 			// 
 			this.label26.AutoSize = true;
@@ -885,6 +692,26 @@
 			this.label26.TabIndex = 3;
 			this.label26.Text = "Average price per item:";
 			// 
+			// label25
+			// 
+			this.label25.AutoSize = true;
+			this.label25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label25.Location = new System.Drawing.Point(113, 71);
+			this.label25.Name = "label25";
+			this.label25.Size = new System.Drawing.Size(148, 17);
+			this.label25.TabIndex = 3;
+			this.label25.Text = "Select a Customer Type:";
+			// 
+			// label14
+			// 
+			this.label14.AutoSize = true;
+			this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label14.Location = new System.Drawing.Point(55, 30);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(156, 17);
+			this.label14.TabIndex = 2;
+			this.label14.Text = "Item Pricing Parameters";
+			// 
 			// textBox1
 			// 
 			this.textBox1.Enabled = false;
@@ -894,14 +721,21 @@
 			this.textBox1.Size = new System.Drawing.Size(200, 25);
 			this.textBox1.TabIndex = 2;
 			// 
-			// button11
+			// garnetTabStripItem7
 			// 
-			this.button11.Location = new System.Drawing.Point(267, 154);
-			this.button11.Name = "button11";
-			this.button11.Size = new System.Drawing.Size(75, 23);
-			this.button11.TabIndex = 22;
-			this.button11.Text = "Save";
-			this.button11.UseVisualStyleBackColor = true;
+			this.garnetTabStripItem7.Controls.Add(this.button12);
+			this.garnetTabStripItem7.Controls.Add(this.button13);
+			this.garnetTabStripItem7.Controls.Add(this.comboBox6);
+			this.garnetTabStripItem7.Controls.Add(this.label27);
+			this.garnetTabStripItem7.Controls.Add(this.maskedTextBox13);
+			this.garnetTabStripItem7.Controls.Add(this.label28);
+			this.garnetTabStripItem7.Controls.Add(this.button14);
+			this.garnetTabStripItem7.Controls.Add(this.label15);
+			this.garnetTabStripItem7.IsDrawn = true;
+			this.garnetTabStripItem7.Name = "garnetTabStripItem7";
+			this.garnetTabStripItem7.Size = new System.Drawing.Size(939, 484);
+			this.garnetTabStripItem7.TabIndex = 6;
+			this.garnetTabStripItem7.Title = "Promotion";
 			// 
 			// button12
 			// 
@@ -972,6 +806,26 @@
 			this.button14.Text = "Save";
 			this.button14.UseVisualStyleBackColor = true;
 			// 
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.Location = new System.Drawing.Point(55, 30);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(147, 17);
+			this.label15.TabIndex = 2;
+			this.label15.Text = "Promotion Parameters";
+			// 
+			// garnetTabStripItem8
+			// 
+			this.garnetTabStripItem8.Controls.Add(this.commandLink5);
+			this.garnetTabStripItem8.Controls.Add(this.label16);
+			this.garnetTabStripItem8.IsDrawn = true;
+			this.garnetTabStripItem8.Name = "garnetTabStripItem8";
+			this.garnetTabStripItem8.Size = new System.Drawing.Size(939, 484);
+			this.garnetTabStripItem8.TabIndex = 7;
+			this.garnetTabStripItem8.Title = "Summary / Run Simulation";
+			// 
 			// commandLink5
 			// 
 			this.commandLink5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
@@ -984,6 +838,150 @@
 			this.commandLink5.TabIndex = 7;
 			this.commandLink5.Text = "Run Simulation";
 			this.commandLink5.UseVisualStyleBackColor = true;
+			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label16.Location = new System.Drawing.Point(55, 30);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(137, 17);
+			this.label16.TabIndex = 2;
+			this.label16.Text = "Simulation Summary";
+			// 
+			// commandLink1
+			// 
+			this.commandLink1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.commandLink1.Location = new System.Drawing.Point(3, 3);
+			this.commandLink1.Name = "commandLink1";
+			this.commandLink1.Note = "Create a new simulation";
+			this.commandLink1.Size = new System.Drawing.Size(193, 62);
+			this.commandLink1.TabIndex = 5;
+			this.commandLink1.Text = "New Simulation";
+			this.commandLink1.UseVisualStyleBackColor = true;
+			// 
+			// commandLink2
+			// 
+			this.commandLink2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.commandLink2.Location = new System.Drawing.Point(202, 3);
+			this.commandLink2.Name = "commandLink2";
+			this.commandLink2.Note = "Load parameters from a previous simulation";
+			this.commandLink2.Size = new System.Drawing.Size(289, 62);
+			this.commandLink2.TabIndex = 6;
+			this.commandLink2.Text = "Load Simulation";
+			this.commandLink2.UseVisualStyleBackColor = true;
+			// 
+			// commandLink4
+			// 
+			this.commandLink4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.commandLink4.Location = new System.Drawing.Point(710, 3);
+			this.commandLink4.Name = "commandLink4";
+			this.commandLink4.Note = "Log out of the Simulator";
+			this.commandLink4.Size = new System.Drawing.Size(228, 62);
+			this.commandLink4.TabIndex = 4;
+			this.commandLink4.Text = "Log out";
+			this.commandLink4.UseVisualStyleBackColor = true;
+			// 
+			// tlpCommandLinkPanel
+			// 
+			this.tlpCommandLinkPanel.AutoSize = true;
+			this.tlpCommandLinkPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.tlpCommandLinkPanel.ColumnCount = 4;
+			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.2834F));
+			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.7166F));
+			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
+			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
+			this.tlpCommandLinkPanel.Controls.Add(this.commandLink4, 3, 0);
+			this.tlpCommandLinkPanel.Controls.Add(this.commandLink1, 0, 0);
+			this.tlpCommandLinkPanel.Controls.Add(this.commandLink3, 2, 0);
+			this.tlpCommandLinkPanel.Controls.Add(this.commandLink2, 1, 0);
+			this.tlpCommandLinkPanel.Dock = System.Windows.Forms.DockStyle.Top;
+			this.tlpCommandLinkPanel.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
+			this.tlpCommandLinkPanel.Location = new System.Drawing.Point(0, 0);
+			this.tlpCommandLinkPanel.Name = "tlpCommandLinkPanel";
+			this.tlpCommandLinkPanel.RowCount = 1;
+			this.tlpCommandLinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tlpCommandLinkPanel.Size = new System.Drawing.Size(941, 68);
+			this.tlpCommandLinkPanel.TabIndex = 2;
+			// 
+			// commandLink3
+			// 
+			this.commandLink3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.commandLink3.Location = new System.Drawing.Point(497, 3);
+			this.commandLink3.Name = "commandLink3";
+			this.commandLink3.Note = "View previous simulations";
+			this.commandLink3.Size = new System.Drawing.Size(207, 62);
+			this.commandLink3.TabIndex = 3;
+			this.commandLink3.Text = "View Results";
+			this.commandLink3.UseVisualStyleBackColor = true;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(12, 84);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(99, 17);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Simulation Title:";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// txtSimTitle
+			// 
+			this.txtSimTitle.Enabled = false;
+			this.txtSimTitle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtSimTitle.Location = new System.Drawing.Point(117, 80);
+			this.txtSimTitle.Name = "txtSimTitle";
+			this.txtSimTitle.Size = new System.Drawing.Size(226, 25);
+			this.txtSimTitle.TabIndex = 2;
+			// 
+			// label2
+			// 
+			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(595, 84);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(102, 17);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "Simulation Date:";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// dtpSimDate
+			// 
+			this.dtpSimDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.dtpSimDate.Location = new System.Drawing.Point(703, 81);
+			this.dtpSimDate.Name = "dtpSimDate";
+			this.dtpSimDate.Size = new System.Drawing.Size(226, 23);
+			this.dtpSimDate.TabIndex = 4;
+			// 
+			// button5
+			// 
+			this.button5.Location = new System.Drawing.Point(671, 134);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(75, 23);
+			this.button5.TabIndex = 17;
+			this.button5.Text = "Delete";
+			this.button5.UseVisualStyleBackColor = true;
+			// 
+			// button7
+			// 
+			this.button7.Location = new System.Drawing.Point(590, 134);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(75, 23);
+			this.button7.TabIndex = 16;
+			this.button7.Text = "New";
+			this.button7.UseVisualStyleBackColor = true;
+			// 
+			// comboBox2
+			// 
+			this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.comboBox2.FormattingEnabled = true;
+			this.comboBox2.Location = new System.Drawing.Point(374, 132);
+			this.comboBox2.Name = "comboBox2";
+			this.comboBox2.Size = new System.Drawing.Size(200, 25);
+			this.comboBox2.TabIndex = 15;
 			// 
 			// Main
 			// 
@@ -1003,7 +1001,6 @@
 			this.Text = "GRPSIX Buyrite Supermarket Simulator";
 			((System.ComponentModel.ISupportInitialize)(this.garnetTabStrip1)).EndInit();
 			this.garnetTabStrip1.ResumeLayout(false);
-			this.tlpCommandLinkPanel.ResumeLayout(false);
 			this.garnetTabStripItem2.ResumeLayout(false);
 			this.garnetTabStripItem2.PerformLayout();
 			this.garnetTabStripItem3.ResumeLayout(false);
@@ -1018,6 +1015,7 @@
 			this.garnetTabStripItem7.PerformLayout();
 			this.garnetTabStripItem8.ResumeLayout(false);
 			this.garnetTabStripItem8.PerformLayout();
+			this.tlpCommandLinkPanel.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
