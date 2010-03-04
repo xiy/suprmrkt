@@ -1,11 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Windows.Forms;
+using Suprmrkt.Controllers;
+using Suprmrkt.Helpers;
+using System.Collections;
 
-namespace Suprmrkt.Controllers
+namespace Suprmrkt.Interfaces
 {
-	public sealed class LoginController : IController
+	public sealed class LoginController : ControllerBase, IController
 	{
 		#region Singleton
 		// Lazy loading implementation of the singleton pattern
@@ -27,9 +28,46 @@ namespace Suprmrkt.Controllers
 		} 
 		#endregion
 
+		/// <summary>
+		/// Handles all button click events sent from the Main form.
+		/// </summary>
+		/// <param name="sender">The control that sent the Click event.</param>
+		/// <param name="e">The EventArgs related to the sending Control.</param>
+		public void ActionHandler(object sender, ActionEventArgs e)
+		{
+			// OMG RAILS MVC FTW
+			Control sendingControl = (Control)sender;
+			switch ((UIAction)sendingControl.Tag)
+			{
+				case UIAction.Login:
+					// TODO: Validate, authenticate.
+					break;
+				case UIAction.Quit:
+					MessageBox.Show("Quit clicked!");
+					break;
+				default:
+					break;
+			}
+		}
+
+		private void AuthenticateUser(string username, string password)
+		{
+			throw new NotImplementedException();
+		}
+
+		/// <summary>
+		/// Actions that can be performed by this Controller through it's View.
+		/// </summary>
+		public enum UIAction
+		{
+			Login,
+			Quit
+		}
+
 		#region IController Members
 
-		public Views.IView View
+
+		public IView View
 		{
 			get
 			{
@@ -41,7 +79,7 @@ namespace Suprmrkt.Controllers
 			}
 		}
 
-		public Models.IModel Model
+		public IModel Model
 		{
 			get
 			{

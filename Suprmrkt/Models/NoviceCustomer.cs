@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Suprmrkt.Interfaces
 {
-	class UserPermissions
+	class NoviceCustomer
 	{
 	}
 }

@@ -1020,8 +1020,8 @@ namespace Pyramid.Garnet.Controls.Tabs
         {
             get
             {
-                return Color.FromArgb(217, 214, 196);
-                //return Color.White;
+                //return Color.FromArgb(217, 214, 196);
+                return Color.AliceBlue;
             }
         }
 

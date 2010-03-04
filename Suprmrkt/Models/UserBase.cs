@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Security.Cryptography;
 
-namespace Suprmrkt.Models
+namespace Suprmrkt.Interfaces
 {
 	public abstract class UserBase : IModel
 	{

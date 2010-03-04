@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
+using Suprmrkt.Interfaces;
 using Suprmrkt.Views;
-using Suprmrkt.Controllers;
 
 namespace Suprmrkt
 {

@@ -1,22 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data;
 using System.Data.SQLite;
-using System.IO;
 using System.Diagnostics;
+using System.IO;
+using Suprmrkt.Controllers;
 
-namespace Suprmrkt.Controllers
+namespace Suprmrkt.Interfaces
 {
-	public sealed class SQLiteController : IController
+	public sealed class SQLiteManager
 	{
 		#region Singleton
 		// Lazy loading implementation of the singleton pattern
-		private SQLiteController() { }
-		private static readonly SQLiteController _instance = new SQLiteController();
+		private SQLiteManager() { }
+		private static readonly SQLiteManager _instance = new SQLiteManager();
 
-		public static SQLiteController Instance
+		public static SQLiteManager Instance
 		{
 			get
 			{
@@ -30,7 +28,7 @@ namespace Suprmrkt.Controllers
 		class NestedSingleton
 		{
 			static NestedSingleton() { }
-			internal static SQLiteController _instance = new SQLiteController();
+			internal static SQLiteManager _instance = new SQLiteManager();
 		} 
 		#endregion
 
@@ -91,31 +89,5 @@ namespace Suprmrkt.Controllers
 					break;
 			}
 		}
-
-		/// <summary>
-		/// Handles an authentication request from the UI, passing
-		/// the given details to the DB which are then verified.
-		/// </summary>
-		/// <returns>True if the user is authenticated, False otherwise.</returns>
-		public bool AuthenticationRequested()
-		{
-			return false;
-		}
-
-		#region IController Members
-
-		public Views.IView View
-		{
-			get;
-			set;
-		}
-
-		public Models.IModel Model
-		{
-			get;
-			set;
-		}
-
-		#endregion
 	}
 }

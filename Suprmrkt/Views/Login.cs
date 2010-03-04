@@ -1,52 +1,64 @@
 ﻿using System;
 using System.Windows.Forms;
-using Suprmrkt.Controllers;
-using Suprmrkt.Models;
-using Pyramid.Garnet.Controls.Dialogs;
+using Suprmrkt.Helpers;
+using System.Collections;
 
-namespace Suprmrkt.Views
+namespace Suprmrkt.Interfaces
 {
 	public partial class Login : Form, IView
 	{
 		public Login()
 		{
 			InitializeComponent();
-			this.Controller = LoginController.Instance;
+			InitialiseController();
 		}
 
 		#region IView Members
 
 		public void ModelChanged(object sender, ModelChangedEventArgs e)
 		{
-			/*TODO: Validate Login:
-			 * Send input via EventHandler to Controler->
-			 * ->Controller validates against Users database->
-			 * <-Model sends back result to Controller-<
-			 * <-Controller returns result to View-<
-			 * View updates based on Controller action
-			 */
 			throw new NotImplementedException();
 		}
 
-		public IController Controller
+		public LoginController Controller
 		{
-			get;
-			set;
+			get
+			{
+				return LoginController.Instance;
+			}
 		}
 
-		public void RegisterHandlersWithController()
+		public void InitialiseController()
 		{
-			
+			// Hook View
+			this.Controller.RegisterView(this);
+
+			this.btnLogin.Tag = LoginController.UIAction.Login;
+			this.btnCancel.Tag = LoginController.UIAction.Quit;
+
+			// Hook Events
+			this.btnLogin.Click += new EventHandler(btnLogin_Click);
+			this.btnCancel.Click += new EventHandler(btnCancel_Click);
 		}
 
-		#endregion
-
-		#region IView Members
-
-
-		public void AssignController()
+		void btnCancel_Click(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			Application.Exit();
+		}
+
+		void btnLogin_Click(object sender, EventArgs e)
+		{
+			// Temporary for Prototyping
+			this.Close();
+		}
+
+		public delegate void ActionEventHandler(object sender, ActionEventArgs e);
+
+		void ActionHandlerRedirect(object sender, EventArgs e)
+		{
+			ActionEventArgs ae = new ActionEventArgs();
+			ae.Params.Add(this.txtPassword.Text);
+			Controller.ActionHandler(sender, ae);
 		}
 
 		#endregion

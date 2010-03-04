@@ -1,19 +1,28 @@
 ﻿using System;
 using System.Windows.Forms;
-using Suprmrkt.Controllers;
-using Suprmrkt.Models;
-using Pyramid.Garnet.Controls.Dialogs;
+using Suprmrkt.Helpers;
 
-namespace Suprmrkt.Views
+namespace Suprmrkt.Interfaces
 {
 	public partial class Main : Form, IView
 	{
-		MainController Controller;
-
 		public Main()
 		{
 			InitializeComponent();
-			AssignController();
+			InitialiseController();
+			DisableAllControls(true);
+		}
+
+		/// <summary>
+		/// Disables all the controls on tab pages for standard users.
+		/// </summary>
+		/// <param name="disable"></param>
+		private void DisableAllControls(bool disable)
+		{
+			foreach (Control item in this.garnetTabStrip1.Controls)
+			{
+				item.Enabled = disable;
+			}
 		}
 
 		#region IView Members
@@ -23,15 +32,17 @@ namespace Suprmrkt.Views
 			throw new NotImplementedException();
 		}
 
-		public void RegisterHandlersWithController()
+		public void InitialiseController()
 		{
-			//this.button1.Click += new EventHandler(Controller.ButtonClickHandler);
+
 		}
 
-		public void AssignController()
+		public MainController Controller
 		{
-			this.Controller = MainController.Instance;
-			RegisterHandlersWithController();
+			get
+			{
+				return MainController.Instance;
+			}
 		}
 
 		#endregion

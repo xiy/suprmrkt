@@ -1,4 +1,4 @@
-﻿namespace Suprmrkt.Views
+﻿namespace Suprmrkt.Interfaces
 {
 	partial class Login
 	{
@@ -28,52 +28,125 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.button1 = new System.Windows.Forms.Button();
-			this.textBox1 = new Pyramid.Garnet.Controls.Aero.TextBox();
-			this.textBox2 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.components = new System.ComponentModel.Container();
+			this.labelHeader = new System.Windows.Forms.Label();
+			this.panelTop = new System.Windows.Forms.Panel();
+			this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+			this.labelValidationError = new System.Windows.Forms.Label();
+			this.txtPassword = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.btnLogin = new System.Windows.Forms.Button();
+			this.btnCancel = new System.Windows.Forms.Button();
+			this.cmbUserType = new Pyramid.Garnet.Controls.Aero.ComboBox();
+			this.panelTop.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// button1
+			// labelHeader
 			// 
-			this.button1.Location = new System.Drawing.Point(12, 102);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(335, 39);
-			this.button1.TabIndex = 1;
-			this.button1.Text = "Login";
-			this.button1.UseVisualStyleBackColor = true;
+			this.labelHeader.AutoSize = true;
+			this.labelHeader.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelHeader.Location = new System.Drawing.Point(85, 16);
+			this.labelHeader.Name = "labelHeader";
+			this.labelHeader.Size = new System.Drawing.Size(189, 20);
+			this.labelHeader.TabIndex = 0;
+			this.labelHeader.Text = "GRPSIX Buyrite Simulator";
 			// 
-			// textBox1
+			// panelTop
 			// 
-			this.textBox1.CueBannerText = "Username";
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.Location = new System.Drawing.Point(12, 12);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(335, 39);
-			this.textBox1.TabIndex = 2;
+			this.panelTop.BackColor = System.Drawing.Color.White;
+			this.panelTop.Controls.Add(this.labelHeader);
+			this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panelTop.Location = new System.Drawing.Point(0, 0);
+			this.panelTop.Name = "panelTop";
+			this.panelTop.Size = new System.Drawing.Size(359, 51);
+			this.panelTop.TabIndex = 5;
 			// 
-			// textBox2
+			// errorProvider
 			// 
-			this.textBox2.CueBannerText = "Password";
-			this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox2.Location = new System.Drawing.Point(12, 57);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.PasswordChar = '*';
-			this.textBox2.Size = new System.Drawing.Size(335, 39);
-			this.textBox2.TabIndex = 2;
+			this.errorProvider.ContainerControl = this;
+			// 
+			// labelValidationError
+			// 
+			this.labelValidationError.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.labelValidationError.ForeColor = System.Drawing.Color.Red;
+			this.errorProvider.SetIconAlignment(this.labelValidationError, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
+			this.errorProvider.SetIconPadding(this.labelValidationError, 5);
+			this.labelValidationError.Location = new System.Drawing.Point(27, 161);
+			this.labelValidationError.Name = "labelValidationError";
+			this.labelValidationError.Size = new System.Drawing.Size(306, 15);
+			this.labelValidationError.TabIndex = 7;
+			this.labelValidationError.Text = "Validation Error";
+			this.labelValidationError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.labelValidationError.Visible = false;
+			// 
+			// txtPassword
+			// 
+			this.txtPassword.CueBannerText = "Password";
+			this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.errorProvider.SetIconAlignment(this.txtPassword, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
+			this.errorProvider.SetIconPadding(this.txtPassword, 5);
+			this.txtPassword.Location = new System.Drawing.Point(27, 117);
+			this.txtPassword.Name = "txtPassword";
+			this.txtPassword.PasswordChar = '•';
+			this.txtPassword.Size = new System.Drawing.Size(306, 23);
+			this.txtPassword.TabIndex = 1;
+			// 
+			// btnLogin
+			// 
+			this.btnLogin.Location = new System.Drawing.Point(27, 198);
+			this.btnLogin.Name = "btnLogin";
+			this.btnLogin.Size = new System.Drawing.Size(75, 23);
+			this.btnLogin.TabIndex = 6;
+			this.btnLogin.Tag = "Actions.PerformLogin";
+			this.btnLogin.Text = "&Login";
+			this.btnLogin.UseVisualStyleBackColor = true;
+			// 
+			// btnCancel
+			// 
+			this.btnCancel.Location = new System.Drawing.Point(258, 198);
+			this.btnCancel.Name = "btnCancel";
+			this.btnCancel.Size = new System.Drawing.Size(75, 23);
+			this.btnCancel.TabIndex = 6;
+			this.btnCancel.Text = "&Quit";
+			this.btnCancel.UseVisualStyleBackColor = true;
+			// 
+			// cmbUserType
+			// 
+			this.cmbUserType.CueBannerText = "Select your User Type...";
+			this.cmbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbUserType.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmbUserType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbUserType.FormattingEnabled = true;
+			this.cmbUserType.Items.AddRange(new object[] {
+            "Advanced User",
+            "Standard User"});
+			this.cmbUserType.Location = new System.Drawing.Point(27, 79);
+			this.cmbUserType.Name = "cmbUserType";
+			this.cmbUserType.Size = new System.Drawing.Size(306, 23);
+			this.cmbUserType.TabIndex = 0;
 			// 
 			// Login
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(359, 157);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.button1);
+			this.ClientSize = new System.Drawing.Size(359, 237);
+			this.Controls.Add(this.labelValidationError);
+			this.Controls.Add(this.btnCancel);
+			this.Controls.Add(this.btnLogin);
+			this.Controls.Add(this.panelTop);
+			this.Controls.Add(this.cmbUserType);
+			this.Controls.Add(this.txtPassword);
+			this.DoubleBuffered = true;
 			this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "Login";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Login";
+			this.ShowIcon = false;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "GRPSIX Buyrite Simulator - Login";
+			this.TopMost = true;
+			this.panelTop.ResumeLayout(false);
+			this.panelTop.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -81,8 +154,13 @@
 
 		#endregion
 
-		private System.Windows.Forms.Button button1;
-		private Pyramid.Garnet.Controls.Aero.TextBox textBox1;
-		private Pyramid.Garnet.Controls.Aero.TextBox textBox2;
+		private Pyramid.Garnet.Controls.Aero.TextBox txtPassword;
+		private Pyramid.Garnet.Controls.Aero.ComboBox cmbUserType;
+		private System.Windows.Forms.Label labelHeader;
+		private System.Windows.Forms.Panel panelTop;
+		private System.Windows.Forms.ErrorProvider errorProvider;
+		private System.Windows.Forms.Label labelValidationError;
+		private System.Windows.Forms.Button btnCancel;
+		private System.Windows.Forms.Button btnLogin;
 	}
 }

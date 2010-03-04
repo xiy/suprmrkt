@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Suprmrkt.Views;
-using Suprmrkt.Models;
-using System.Diagnostics;
+using Suprmrkt.Controllers;
 
-namespace Suprmrkt.Controllers
+namespace Suprmrkt.Interfaces
 {
-	public class MainController : IController
+	public class MainController : ControllerBase, IController
 	{
 		#region Singleton
 		// Lazy loading implementation of the singleton pattern

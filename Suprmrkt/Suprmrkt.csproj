@@ -12,7 +12,7 @@
     <AssemblyName>Suprmrkt.UI</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <StartupObject>Suprmrkt.UI.Program</StartupObject>
+    <StartupObject>Suprmrkt.Program</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -73,15 +73,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\IController.cs" />
+    <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\SQLiteController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Helpers\ActionParameterList.cs" />
+    <Compile Include="Helpers\ApplicationHelper.cs" />
+    <Compile Include="Interfaces\IController.cs" />
+    <Compile Include="Interfaces\IModel.cs" />
+    <Compile Include="Interfaces\IView.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\IModel.cs" />
+    <Compile Include="Models\CustomerBase.cs" />
+    <Compile Include="Models\NoviceCustomer.cs" />
+    <Compile Include="Models\Simulation.cs" />
     <Compile Include="Models\Supermarket.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="Views\IView.cs" />
+    <Compile Include="Models\UserBase.cs" />
+    <Compile Include="Models\UserPermissions.cs" />
+    <Compile Include="Properties\Program.cs" />
     <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,7 +102,6 @@
     <Compile Include="Views\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -105,7 +112,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -146,6 +153,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\125_FullView_16x16_721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\125_FullView_16x16_72.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

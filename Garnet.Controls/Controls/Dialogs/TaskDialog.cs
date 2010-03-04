@@ -407,10 +407,7 @@ namespace Pyramid.Garnet.Controls.Dialogs
     /// Specifies the width of the Task Dialog’s client area in DLU’s. If 0, Task Dialog will calculate the ideal width.
     /// </summary>
     private uint width;
-    
-    /// <summary>
-    /// Specifies the state of the progress if any is shown.
-    /// </summary>
+ 
     //private ProgressBarState progressState;
 
     /// <summary>
