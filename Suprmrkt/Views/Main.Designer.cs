@@ -1,4 +1,4 @@
-﻿namespace Suprmrkt.Interfaces
+﻿namespace Suprmrkt.Views
 {
 	partial class Main
 	{

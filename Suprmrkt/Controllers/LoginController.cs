@@ -3,8 +3,11 @@ using System.Windows.Forms;
 using Suprmrkt.Controllers;
 using Suprmrkt.Helpers;
 using System.Collections;
+using Suprmrkt.Interfaces;
+using System.Linq;
+using System.Collections.Generic;
 
-namespace Suprmrkt.Interfaces
+namespace Suprmrkt.Controllers
 {
 	public sealed class LoginController : ControllerBase, IController
 	{
@@ -29,21 +32,20 @@ namespace Suprmrkt.Interfaces
 		#endregion
 
 		/// <summary>
-		/// Handles all button click events sent from the Main form.
+		/// Handles all button click events sent from the Login form.
 		/// </summary>
 		/// <param name="sender">The control that sent the Click event.</param>
 		/// <param name="e">The EventArgs related to the sending Control.</param>
-		public void ActionHandler(object sender, ActionEventArgs e)
+		public void ButtonActionHandler(ButtonActionEventArgs e)
 		{
-			// OMG RAILS MVC FTW
-			Control sendingControl = (Control)sender;
-			switch ((UIAction)sendingControl.Tag)
+			switch ((UIAction)e.Button.Tag)
 			{
 				case UIAction.Login:
-					// TODO: Validate, authenticate.
+					string username = e.Params["username"].ToString();
+					string password = e.Params["password"].ToString();
+					this.AuthenticateUser(username, password);
 					break;
 				case UIAction.Quit:
-					MessageBox.Show("Quit clicked!");
 					break;
 				default:
 					break;
@@ -52,7 +54,14 @@ namespace Suprmrkt.Interfaces
 
 		private void AuthenticateUser(string username, string password)
 		{
-			throw new NotImplementedException();
+			switch (username)
+			{
+				case "Advanced":
+					
+					break;
+				default:
+					break;
+			}
 		}
 
 		/// <summary>

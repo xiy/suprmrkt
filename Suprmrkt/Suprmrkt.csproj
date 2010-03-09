@@ -8,8 +8,8 @@
     <ProjectGuid>{7A51028F-3F62-4153-BB7E-8243A2C8445C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Suprmrkt.UI</RootNamespace>
-    <AssemblyName>Suprmrkt.UI</AssemblyName>
+    <RootNamespace>Suprmrkt</RootNamespace>
+    <AssemblyName>Suprmrkt</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartupObject>Suprmrkt.Program</StartupObject>
@@ -89,6 +89,7 @@
     <Compile Include="Models\Supermarket.cs" />
     <Compile Include="Models\UserBase.cs" />
     <Compile Include="Models\UserPermissions.cs" />
+    <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\Program.cs" />
     <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
@@ -116,6 +117,14 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Results.resx">
+      <DependentUpon>Results.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -129,6 +138,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Views\Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Results.Designer.cs">
+      <DependentUpon>Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +179,7 @@
     <None Include="Resources\125_FullView_16x16_721.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Resources\125_FullView_16x16_72.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -168,4 +190,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <PropertyGroup>
+    <PreBuildEvent>copy $(SolutionDir)\buyrite.s3db $(TargetDir)</PreBuildEvent>
+  </PropertyGroup>
 </Project>

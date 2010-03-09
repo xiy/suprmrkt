@@ -12,3 +12,4 @@ _ReSharper.*
 *.dll
 *.exe
 *.pdb
+bin2010

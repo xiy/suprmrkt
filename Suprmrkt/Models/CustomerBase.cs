@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Suprmrkt.Interfaces
+namespace Suprmrkt.Models
 {
 	/// <summary>
 	/// The base class for all Customer types. Must inherit.

@@ -2,8 +2,10 @@
 using System.Windows.Forms;
 using Suprmrkt.Helpers;
 using System.Collections;
+using Suprmrkt.Interfaces;
+using Suprmrkt.Controllers;
 
-namespace Suprmrkt.Interfaces
+namespace Suprmrkt.Views
 {
 	public partial class Login : Form, IView
 	{
@@ -33,34 +35,41 @@ namespace Suprmrkt.Interfaces
 			// Hook View
 			this.Controller.RegisterView(this);
 
-			this.btnLogin.Tag = LoginController.UIAction.Login;
-			this.btnCancel.Tag = LoginController.UIAction.Quit;
-
 			// Hook Events
-			this.btnLogin.Click += new EventHandler(btnLogin_Click);
-			this.btnCancel.Click += new EventHandler(btnCancel_Click);
+			this.btnLogin.Click += new EventHandler(ActionHandlerRedirect);
+			this.btnQuit.Click += new EventHandler(ActionHandlerRedirect);
+			this.btnLogin.Tag = LoginController.UIAction.Login;
+			this.btnQuit.Tag = LoginController.UIAction.Quit;
 		}
-
-		void btnCancel_Click(object sender, EventArgs e)
-		{
-			Application.Exit();
-		}
-
-		void btnLogin_Click(object sender, EventArgs e)
-		{
-			// Temporary for Prototyping
-			this.Close();
-		}
-
-		public delegate void ActionEventHandler(object sender, ActionEventArgs e);
 
 		void ActionHandlerRedirect(object sender, EventArgs e)
 		{
-			ActionEventArgs ae = new ActionEventArgs();
-			ae.Params.Add(this.txtPassword.Text);
-			Controller.ActionHandler(sender, ae);
+			ButtonActionEventArgs baInfo = new ButtonActionEventArgs();
+			baInfo.Button = (Button)sender;
+
+			switch ((LoginController.UIAction)baInfo.Button.Tag)
+			{
+				case LoginController.UIAction.Login:
+					baInfo.Params.Add("username", this.cmbUserType.SelectedValue.ToString());
+					baInfo.Params.Add("password", this.txtPassword.Text);
+					baInfo.Type = ButtonActionEventArgs.ButtonType.Button;
+					break;
+				case LoginController.UIAction.Quit:
+					break;
+				default:
+					break;
+			}
+
+			Controller.ButtonActionHandler(baInfo);
 		}
 
 		#endregion
+
+		private void Login_Load(object sender, EventArgs e)
+		{
+			// TODO: This line of code loads data into the 'buyrite.users' table. You can move, or remove it, as needed.
+			this.usersTableAdapter.Fill(this.buyrite.users);
+
+		}
 	}
 }

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
 using Suprmrkt.Controllers;
+using Suprmrkt.Interfaces;
+using Suprmrkt.Views;
 
-namespace Suprmrkt.Interfaces
+namespace Suprmrkt.Controllers
 {
 	public class MainController : ControllerBase, IController
 	{

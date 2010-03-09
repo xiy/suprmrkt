@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using Suprmrkt.Interfaces;
 using Suprmrkt.Views;
+using System.IO;
 
 namespace Suprmrkt
 {
@@ -15,7 +15,7 @@ namespace Suprmrkt
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Main());
+			Application.Run(new Login());
 		}
 	}
 }

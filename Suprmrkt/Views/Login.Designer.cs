@@ -1,4 +1,4 @@
-﻿namespace Suprmrkt.Interfaces
+﻿namespace Suprmrkt.Views
 {
 	partial class Login
 	{
@@ -35,10 +35,12 @@
 			this.labelValidationError = new System.Windows.Forms.Label();
 			this.txtPassword = new Pyramid.Garnet.Controls.Aero.TextBox();
 			this.btnLogin = new System.Windows.Forms.Button();
-			this.btnCancel = new System.Windows.Forms.Button();
+			this.btnQuit = new System.Windows.Forms.Button();
 			this.cmbUserType = new Pyramid.Garnet.Controls.Aero.ComboBox();
 			this.panelTop.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.buyrite)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// labelHeader
@@ -93,6 +95,7 @@
 			// 
 			// btnLogin
 			// 
+			this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
 			this.btnLogin.Location = new System.Drawing.Point(27, 198);
 			this.btnLogin.Name = "btnLogin";
 			this.btnLogin.Size = new System.Drawing.Size(75, 23);
@@ -101,14 +104,15 @@
 			this.btnLogin.Text = "&Login";
 			this.btnLogin.UseVisualStyleBackColor = true;
 			// 
-			// btnCancel
+			// btnQuit
 			// 
-			this.btnCancel.Location = new System.Drawing.Point(258, 198);
-			this.btnCancel.Name = "btnCancel";
-			this.btnCancel.Size = new System.Drawing.Size(75, 23);
-			this.btnCancel.TabIndex = 6;
-			this.btnCancel.Text = "&Quit";
-			this.btnCancel.UseVisualStyleBackColor = true;
+			this.btnQuit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+			this.btnQuit.Location = new System.Drawing.Point(258, 198);
+			this.btnQuit.Name = "btnQuit";
+			this.btnQuit.Size = new System.Drawing.Size(75, 23);
+			this.btnQuit.TabIndex = 6;
+			this.btnQuit.Text = "&Quit";
+			this.btnQuit.UseVisualStyleBackColor = true;
 			// 
 			// cmbUserType
 			// 
@@ -116,10 +120,6 @@
 			this.cmbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cmbUserType.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.cmbUserType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cmbUserType.FormattingEnabled = true;
-			this.cmbUserType.Items.AddRange(new object[] {
-            "Advanced User",
-            "Standard User"});
 			this.cmbUserType.Location = new System.Drawing.Point(27, 79);
 			this.cmbUserType.Name = "cmbUserType";
 			this.cmbUserType.Size = new System.Drawing.Size(306, 23);
@@ -131,7 +131,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(359, 237);
 			this.Controls.Add(this.labelValidationError);
-			this.Controls.Add(this.btnCancel);
+			this.Controls.Add(this.btnQuit);
 			this.Controls.Add(this.btnLogin);
 			this.Controls.Add(this.panelTop);
 			this.Controls.Add(this.cmbUserType);
@@ -144,9 +144,12 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "GRPSIX Buyrite Simulator - Login";
 			this.TopMost = true;
+			this.Load += new System.EventHandler(this.Login_Load);
 			this.panelTop.ResumeLayout(false);
 			this.panelTop.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.buyrite)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -160,7 +163,7 @@
 		private System.Windows.Forms.Panel panelTop;
 		private System.Windows.Forms.ErrorProvider errorProvider;
 		private System.Windows.Forms.Label labelValidationError;
-		private System.Windows.Forms.Button btnCancel;
+		private System.Windows.Forms.Button btnQuit;
 		private System.Windows.Forms.Button btnLogin;
 	}
 }

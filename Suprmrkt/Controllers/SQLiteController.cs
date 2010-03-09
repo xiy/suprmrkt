@@ -4,17 +4,18 @@ using System.Data.SQLite;
 using System.Diagnostics;
 using System.IO;
 using Suprmrkt.Controllers;
+using System.Windows.Forms;
 
-namespace Suprmrkt.Interfaces
+namespace Suprmrkt.Controllers
 {
-	public sealed class SQLiteManager
+	public sealed class SQLiteController
 	{
 		#region Singleton
 		// Lazy loading implementation of the singleton pattern
-		private SQLiteManager() { }
-		private static readonly SQLiteManager _instance = new SQLiteManager();
+		private SQLiteController() { }
+		private static readonly SQLiteController _instance = new SQLiteController();
 
-		public static SQLiteManager Instance
+		public static SQLiteController Instance
 		{
 			get
 			{
@@ -28,13 +29,12 @@ namespace Suprmrkt.Interfaces
 		class NestedSingleton
 		{
 			static NestedSingleton() { }
-			internal static SQLiteManager _instance = new SQLiteManager();
+			internal static SQLiteController _instance = new SQLiteController();
 		} 
 		#endregion
 
-		//TODO: Move the database name to a settings variable..
-		private string dbPath = Path.Combine(Environment.CurrentDirectory, "SQLDB");
 		private SQLiteConnection sqlConn;
+		private string dbPath = Path.Combine(Application.ExecutablePath + "buyrite.s3db");
 
 		private void CreateDatabase()
 		{

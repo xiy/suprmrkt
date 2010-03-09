@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
 using Suprmrkt.Helpers;
+using Suprmrkt.Interfaces;
+using Suprmrkt.Controllers;
 
-namespace Suprmrkt.Interfaces
+namespace Suprmrkt.Views
 {
 	public partial class Main : Form, IView
 	{

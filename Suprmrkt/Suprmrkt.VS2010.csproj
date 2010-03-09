@@ -45,7 +45,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin2010\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -95,8 +95,10 @@
     <Compile Include="Models\NoviceCustomer.cs" />
     <Compile Include="Models\Simulation.cs" />
     <Compile Include="Models\Supermarket.cs" />
-    <Compile Include="Models\UserBase.cs" />
-    <Compile Include="Models\UserPermissions.cs" />
+    <Compile Include="Models\Users\AdvancedUser.cs" />
+    <Compile Include="Models\Users\UserBase.cs" />
+    <Compile Include="Models\Users\UserPermissions.cs" />
+    <Compile Include="Models\Users\Users.cs" />
     <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +148,7 @@
     <EmbeddedResource Include="Views\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

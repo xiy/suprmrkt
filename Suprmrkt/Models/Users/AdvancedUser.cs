@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Suprmrkt.Models
+namespace Suprmrkt.Models.Users
 {
-	class NoviceCustomer
+	class AdvancedUser : UserBase
 	{
+		public AdvancedUser()
+		{
+			
+		}
 	}
 }

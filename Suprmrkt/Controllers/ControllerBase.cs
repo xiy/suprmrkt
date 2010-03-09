@@ -1,4 +1,5 @@
 ﻿using Suprmrkt.Helpers;
+using Suprmrkt.Views;
 using Suprmrkt.Interfaces;
 
 namespace Suprmrkt.Controllers
