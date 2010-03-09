@@ -46,6 +46,7 @@ namespace Suprmrkt.Controllers
 					this.AuthenticateUser(username, password);
 					break;
 				case UIAction.Quit:
+					Application.Exit();
 					break;
 				default:
 					break;

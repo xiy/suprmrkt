@@ -55,6 +55,7 @@ namespace Suprmrkt.Views
 					baInfo.Type = ButtonActionEventArgs.ButtonType.Button;
 					break;
 				case LoginController.UIAction.Quit:
+					
 					break;
 				default:
 					break;
@@ -64,12 +65,5 @@ namespace Suprmrkt.Views
 		}
 
 		#endregion
-
-		private void Login_Load(object sender, EventArgs e)
-		{
-			// TODO: This line of code loads data into the 'buyrite.users' table. You can move, or remove it, as needed.
-			this.usersTableAdapter.Fill(this.buyrite.users);
-
-		}
 	}
 }

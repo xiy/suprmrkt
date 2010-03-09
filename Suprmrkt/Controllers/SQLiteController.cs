@@ -34,7 +34,7 @@ namespace Suprmrkt.Controllers
 		#endregion
 
 		private SQLiteConnection sqlConn;
-		private string dbPath = Path.Combine(Application.ExecutablePath + "buyrite.s3db");
+		private string dbPath = Path.Combine(Application.ExecutablePath, "buyrite.s3db");
 
 		private void CreateDatabase()
 		{

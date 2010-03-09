@@ -12,7 +12,7 @@ namespace Suprmrkt.Models.Users
 			switch (user)
 			{
 				case UserType.Advanced:
-
+					
 					break;
 				case UserType.Standard:
 					break;

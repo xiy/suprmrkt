@@ -7,7 +7,8 @@ namespace Suprmrkt.Models.Users
 {
 	class AdvancedUser : UserBase
 	{
-		public AdvancedUser()
+		public AdvancedUser(string username, string plaintextPassword)
+			: base(username, plaintextPassword)
 		{
 			
 		}

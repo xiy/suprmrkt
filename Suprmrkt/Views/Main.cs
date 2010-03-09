@@ -48,5 +48,6 @@ namespace Suprmrkt.Views
 		}
 
 		#endregion
+
 	}
 }

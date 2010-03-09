@@ -39,8 +39,6 @@
 			this.cmbUserType = new Pyramid.Garnet.Controls.Aero.ComboBox();
 			this.panelTop.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.buyrite)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// labelHeader

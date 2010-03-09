@@ -15,9 +15,8 @@ namespace Suprmrkt.Models.Users
 		/// <param name="fullName">The real full name of the user.</param>
 		/// <param name="username">The username of the advanced user.</param>
 		/// <param name="plaintextPassword">The password of the advanced user, as plain-text.</param>
-		public UserBase(string fullName, string username, string plaintextPassword) 
+		public UserBase(string username, string plaintextPassword) 
 		{
-			this.FullName = fullName;
 			this.Username = username;
 			this.PasswordHashed = HashPassword(plaintextPassword);
 		}
