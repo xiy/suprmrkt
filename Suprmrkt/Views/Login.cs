@@ -60,6 +60,7 @@ namespace Suprmrkt.Views
 				case LoginActions.Login:
 					baInfo.Params.Add("username", this.cmbUserType.SelectedItem.ToString());
 					baInfo.Params.Add("password", this.txtPassword.Text);
+					baInfo.Params.Add("view", this);
 					baInfo.TypeOfButton = ButtonActionEventArgs.ButtonType.Button;
 					break;
 				case LoginActions.Quit:

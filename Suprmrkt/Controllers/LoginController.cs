@@ -46,7 +46,9 @@ namespace Suprmrkt.Controllers
 				case LoginActions.Login:
 					string username = e.Params["username"].ToString();
 					string password = e.Params["password"].ToString();
+					Login loginView = (Login)e.Params["view"];
 					this.AuthenticateUser(username, password);
+					loginView.Hide();
 					break;
 				case LoginActions.Quit:
 					Application.Exit();
