@@ -33,10 +33,10 @@
 			this.panelTop = new System.Windows.Forms.Panel();
 			this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
 			this.labelValidationError = new System.Windows.Forms.Label();
+			this.txtPassword = new Pyramid.Garnet.Controls.Aero.TextBox();
 			this.btnLogin = new System.Windows.Forms.Button();
 			this.btnQuit = new System.Windows.Forms.Button();
 			this.cmbUserType = new Pyramid.Garnet.Controls.Aero.ComboBox();
-			this.txtPassword = new Pyramid.Garnet.Controls.Aero.TextBox();
 			this.panelTop.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
 			this.SuspendLayout();
@@ -79,6 +79,18 @@
 			this.labelValidationError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.labelValidationError.Visible = false;
 			// 
+			// txtPassword
+			// 
+			this.txtPassword.CueBannerText = "Password";
+			this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.errorProvider.SetIconAlignment(this.txtPassword, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
+			this.errorProvider.SetIconPadding(this.txtPassword, 5);
+			this.txtPassword.Location = new System.Drawing.Point(27, 117);
+			this.txtPassword.Name = "txtPassword";
+			this.txtPassword.PasswordChar = '•';
+			this.txtPassword.Size = new System.Drawing.Size(306, 23);
+			this.txtPassword.TabIndex = 1;
+			// 
 			// btnLogin
 			// 
 			this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
@@ -114,18 +126,6 @@
 			this.cmbUserType.Size = new System.Drawing.Size(306, 23);
 			this.cmbUserType.TabIndex = 0;
 			// 
-			// txtPassword
-			// 
-			this.txtPassword.CueBannerText = "Password";
-			this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.errorProvider.SetIconAlignment(this.txtPassword, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
-			this.errorProvider.SetIconPadding(this.txtPassword, 5);
-			this.txtPassword.Location = new System.Drawing.Point(27, 117);
-			this.txtPassword.Name = "txtPassword";
-			this.txtPassword.PasswordChar = '•';
-			this.txtPassword.Size = new System.Drawing.Size(306, 23);
-			this.txtPassword.TabIndex = 1;
-			// 
 			// Login
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -140,6 +140,7 @@
 			this.DoubleBuffered = true;
 			this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.MaximizeBox = false;
 			this.Name = "Login";
 			this.ShowIcon = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

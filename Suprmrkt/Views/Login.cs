@@ -44,6 +44,14 @@ namespace Suprmrkt.Views
 
 		void ActionHandlerRedirect(object sender, EventArgs e)
 		{
+			if (this.cmbUserType.SelectedItem == null)
+			{
+				errorProvider.SetError(cmbUserType, "No User Type selected!");
+				this.labelValidationError.Visible = true;
+				this.labelValidationError.Text = "No User Type selected!";
+				return;
+			}
+
 			ButtonActionEventArgs baInfo = new ButtonActionEventArgs();
 			baInfo.Button = (Button)sender;
 

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Collections.Generic;
 using Pyramid.Garnet.Controls.Dialogs;
 using Suprmrkt.Models.Users;
+using Suprmrkt.Views;
 
 namespace Suprmrkt.Controllers
 {
@@ -61,7 +62,10 @@ namespace Suprmrkt.Controllers
 			{
 				case "Advanced":
 					string checkPassword = User.Instance.GetPasswordForUser(UserType.Advanced);
-					if (checkPassword == password) { }
+					if (checkPassword == password) {
+						Main mainForm = new Main();
+						mainForm.Show();
+					}
 					break;
 				default:
 					break;
