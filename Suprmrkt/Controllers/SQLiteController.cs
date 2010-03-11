@@ -33,35 +33,42 @@ namespace Suprmrkt.Controllers
 		} 
 		#endregion
 
-		private SQLiteConnection sqlConn;
-		private string dbPath = Path.Combine(Application.ExecutablePath, "buyrite.s3db");
+		private SQLiteConnection _sqlConnection;
+		private string dbPath = Path.Combine(Environment.CurrentDirectory, "buyrite.s3db");
 
-		private void CreateDatabase()
+		public SQLiteConnection SqlConnection
 		{
-			// Check to see if the database file exists, if not, create it. 
-			// SQLite can do this for us.
-			SQLiteConnection.CreateFile(dbPath);
+			get 
+			{
+				if (this._sqlConnection == null)
+					// Connect to the database file.
+					SqlConnection = new SQLiteConnection("data source=" + dbPath);
+				if (this._sqlConnection.State == ConnectionState.Closed)
+					this.Connect();
+				return _sqlConnection; 
+			}
+			set { _sqlConnection = value; }
 		}
 
+		/// <summary>
+		/// Connect to the database file.
+		/// </summary>
+		/// <returns>True if successfully connected to the database.</returns>
 		public bool Connect()
 		{
-			// Connect to the database file.
-			sqlConn = new SQLiteConnection("data source=" + dbPath);
-
 			// Assign a handler to notify the UI of the database state.
-			sqlConn.StateChange += new StateChangeEventHandler(SqlStateChanged);
-			sqlConn.Commit += new SQLiteCommitHandler(sqlConn_Commit);
+			this._sqlConnection.StateChange += new StateChangeEventHandler(SqlStateChanged);
 
-			// Perform the actuall connection.
-			sqlConn.Open();
-			return sqlConn.State == ConnectionState.Open;
+			// Perform the actual connection.
+			this._sqlConnection.Open();
+			return this._sqlConnection.State == ConnectionState.Open;
 		}
 
-		void sqlConn_Commit(object sender, CommitEventArgs e)
-		{
-			Debug.WriteLine("Committing..");
-		}
-
+		/// <summary>
+		/// Handles state changes in the database.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		public void SqlStateChanged(object sender, StateChangeEventArgs e)
 		{
 			switch (e.CurrentState)

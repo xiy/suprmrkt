@@ -6,6 +6,8 @@ using System.Collections;
 using Suprmrkt.Interfaces;
 using System.Linq;
 using System.Collections.Generic;
+using Pyramid.Garnet.Controls.Dialogs;
+using Suprmrkt.Models.Users;
 
 namespace Suprmrkt.Controllers
 {
@@ -38,14 +40,14 @@ namespace Suprmrkt.Controllers
 		/// <param name="e">The EventArgs related to the sending Control.</param>
 		public void ButtonActionHandler(ButtonActionEventArgs e)
 		{
-			switch ((UIAction)e.Button.Tag)
+			switch ((LoginActions)e.Button.Tag)
 			{
-				case UIAction.Login:
+				case LoginActions.Login:
 					string username = e.Params["username"].ToString();
 					string password = e.Params["password"].ToString();
 					this.AuthenticateUser(username, password);
 					break;
-				case UIAction.Quit:
+				case LoginActions.Quit:
 					Application.Exit();
 					break;
 				default:
@@ -58,20 +60,12 @@ namespace Suprmrkt.Controllers
 			switch (username)
 			{
 				case "Advanced":
-					
+					string checkPassword = User.Instance.GetPasswordForUser(UserType.Advanced);
+					if (checkPassword == password) { }
 					break;
 				default:
 					break;
 			}
-		}
-
-		/// <summary>
-		/// Actions that can be performed by this Controller through it's View.
-		/// </summary>
-		public enum UIAction
-		{
-			Login,
-			Quit
 		}
 
 		#region IController Members

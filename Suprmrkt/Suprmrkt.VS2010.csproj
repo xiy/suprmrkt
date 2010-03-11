@@ -49,7 +49,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>
+    </NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -65,6 +67,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Data.SQLite, Version=1.0.65.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
     <Reference Include="System.Data.SQLite.Linq, Version=2.0.38.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL" />
     <Reference Include="System.Design" />
@@ -81,6 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Actions.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\SQLiteController.cs" />
@@ -94,14 +98,11 @@
     <Compile Include="Models\CustomerBase.cs" />
     <Compile Include="Models\NoviceCustomer.cs" />
     <Compile Include="Models\Queues.cs" />
-    <Compile Include="Models\Simulation.cs" />
-    <Compile Include="Models\Supermarket.cs" />
-    <Compile Include="Models\UserBase.cs" />
-    <Compile Include="Models\UserPermissions.cs" />
+    <Compile Include="Models\Staff.cs" />
     <Compile Include="Models\Users\AdvancedUser.cs" />
     <Compile Include="Models\Users\UserBase.cs" />
     <Compile Include="Models\Users\UserPermissions.cs" />
-    <Compile Include="Models\Users\Users.cs" />
+    <Compile Include="Models\Users\User.cs" />
     <Compile Include="Models\Simulator\Simulator.cs" />
     <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
@@ -194,8 +195,13 @@
   <ItemGroup>
     <None Include="Resources\125_FullView_16x16_72.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy $(SolutionDir)buyrite.s3db $(TargetPath)</PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

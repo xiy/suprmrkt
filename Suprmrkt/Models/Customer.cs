@@ -9,11 +9,7 @@ namespace Suprmrkt.Models
     {
 		public int QueueNumber { get; set; }
 
-        public int Items
-        {
-            set { Items++; }
-            get { return Items; }
-        }
+		public int Items { get; set; }
 
         public int Concentration { set; get; }
 
@@ -21,19 +17,11 @@ namespace Suprmrkt.Models
 
 		public int EntryTime { get; set; }
 
-        public int LeavingTime
-        {
-            set { LeavingTime = value; }
-            get { return LeavingTime; }
-        }
+		public int LeavingTime { get; set; }
 
         public int timeForEvent { set; get; }
 
-        public bool Shopping
-        {
-            set { Shopping = false; }
-            get { return Shopping; }
-        }
+		public bool Shopping { get; set; }
 
         public Customer()
         {

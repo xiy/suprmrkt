@@ -16,6 +16,8 @@ namespace Suprmrkt.Models
         public int Customers { get; set; }
         public int Items { get; set; }
 
+		public Staff StaffMember { get; set; }
+
         // entry time and everything have to be set!
         public Queues()
         {

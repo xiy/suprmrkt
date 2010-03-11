@@ -6,8 +6,8 @@ namespace Suprmrkt.Controllers
 {
 	public abstract class ControllerBase
 	{
-		public delegate void ModelChangedDelegate(object sender, ModelChangedEventArgs e);
-		public event ModelChangedDelegate ModelChanged;
+		protected delegate void ModelChangedDelegate(object sender, ModelChangedEventArgs e);
+		protected event ModelChangedDelegate ModelChanged;
 
 		public void RegisterView(IView view)
 		{

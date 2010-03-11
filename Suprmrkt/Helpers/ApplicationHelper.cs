@@ -41,7 +41,7 @@ namespace Suprmrkt.Helpers
 			}
 		}
 		
-		public ButtonType Type { get; set; }
+		public ButtonType TypeOfButton { get; set; }
 
 		public enum ButtonType
 		{

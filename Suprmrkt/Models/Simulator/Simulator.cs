@@ -76,13 +76,13 @@ namespace Suprmrkt.Models
                         for(int c=0; c<forTheMinute; c++) // create the customers and add the to the shoppers list
                         {
                             Customer cust = new Customer();
-                            cust.entryTime = dayTimer;
+                            cust.EntryTime = dayTimer;
                             Shoppers.Add(cust);
                             custsIn++;
                         }
 
                         calcEventTimes(dayTimer, Shoppers.Count);
-                        sortShoppers();
+                        SortShoppers();
                     }
                 }
             }
@@ -120,20 +120,20 @@ namespace Suprmrkt.Models
                 {
                     int timeDiff = dayTimer-lastCalcTime;
 
-                    foreach(Customer cust in Shoppers)
+                    foreach(Customer customer in Shoppers)
                     {
-                        if (cust.shopping)
+                        if (customer.Shopping)
                         {
-                            cust.timeForEvent = custNumber ^ cust.concentration + cust.dawdling; // calculate time for next item (formula)
+                            customer.timeForEvent = custNumber ^ customer.Concentration + customer.Dawdling; // calculate time for next item (formula)
                         }
                         else // customer is queueing so the next event is his checkout, whose time is calculated by a different method
                         {
-                            cust.timeForEvent = timesInQueues(cust.QueueNumber, cust);
+                            customer.timeForEvent = TimesInQueues(customer.QueueNumber, customer);
                         }
                     }
 
                     // we have the times for the next event for every customer, we sort the customers by that and then set the nextEventTime
-                    sortShoppers();
+                    SortShoppers();
                     nextEventTime = dayTimer + Shoppers.ElementAt(0).timeForEvent;
                     lastCalcTime = dayTimer;
                 }
@@ -141,26 +141,26 @@ namespace Suprmrkt.Models
 		        /// <summary>
                 /// Sorts the list of shoppers based on the next event time.
 		        /// </summary>
-		        private void sortShoppers()
+		        private void SortShoppers()
 		        {
 			        var shoppers = from customer in Shoppers
 						           orderby customer.timeForEvent ascending
 						           select customer;
-			                        this.Shoppers = shoppers.ToList<Customer>();
+			        this.Shoppers = shoppers.ToList<Customer>();
 		        }
                 
                 /// <summary>
                 /// calculates the time the customer CUST will spend in the queue
                 /// QueueNumber is the number of the Queue customer CUST is at
                 /// </summary>
-                private int timesInQueues(int QueueNumber, Customer cust)
+                private int TimesInQueues(int QueueNumber, Customer cust)
                 {
-                    if (Queues.ElementAt(QueueNumber).customers > 4) // if there are more than 4 customers, Queue becomes faster
+                    if (Queues.ElementAt(QueueNumber).Customers > 4) // if there are more than 4 customers, Queue becomes faster
                     {
-                        Queues.ElementAt(QueueNumber).speed = Queues.ElementAt(QueueNumber).maxSpeed;
+                        Queues.ElementAt(QueueNumber).Speed = Queues.ElementAt(QueueNumber).MaxSpeed;
                     }
 
-                    return (cust.items + Queues.ElementAt(QueueNumber).items) * Queues.ElementAt(QueueNumber).speed;
+                    return (cust.Items + Queues.ElementAt(QueueNumber).Items) * Queues.ElementAt(QueueNumber).Speed;
                 }
         }
     }

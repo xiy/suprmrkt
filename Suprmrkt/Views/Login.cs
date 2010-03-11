@@ -38,8 +38,8 @@ namespace Suprmrkt.Views
 			// Hook Events
 			this.btnLogin.Click += new EventHandler(ActionHandlerRedirect);
 			this.btnQuit.Click += new EventHandler(ActionHandlerRedirect);
-			this.btnLogin.Tag = LoginController.UIAction.Login;
-			this.btnQuit.Tag = LoginController.UIAction.Quit;
+			this.btnLogin.Tag = LoginActions.Login;
+			this.btnQuit.Tag = LoginActions.Quit;
 		}
 
 		void ActionHandlerRedirect(object sender, EventArgs e)
@@ -47,15 +47,15 @@ namespace Suprmrkt.Views
 			ButtonActionEventArgs baInfo = new ButtonActionEventArgs();
 			baInfo.Button = (Button)sender;
 
-			switch ((LoginController.UIAction)baInfo.Button.Tag)
+			switch ((LoginActions)baInfo.Button.Tag)
 			{
-				case LoginController.UIAction.Login:
-					baInfo.Params.Add("username", this.cmbUserType.SelectedValue.ToString());
+				case LoginActions.Login:
+					baInfo.Params.Add("username", this.cmbUserType.SelectedItem.ToString());
 					baInfo.Params.Add("password", this.txtPassword.Text);
-					baInfo.Type = ButtonActionEventArgs.ButtonType.Button;
+					baInfo.TypeOfButton = ButtonActionEventArgs.ButtonType.Button;
 					break;
-				case LoginController.UIAction.Quit:
-					
+				case LoginActions.Quit:
+					Application.Exit();
 					break;
 				default:
 					break;
