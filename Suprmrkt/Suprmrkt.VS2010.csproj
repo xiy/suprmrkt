@@ -93,13 +93,16 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\CustomerBase.cs" />
     <Compile Include="Models\NoviceCustomer.cs" />
+    <Compile Include="Models\Queues.cs" />
     <Compile Include="Models\Simulation.cs" />
     <Compile Include="Models\Supermarket.cs" />
+    <Compile Include="Models\UserBase.cs" />
+    <Compile Include="Models\UserPermissions.cs" />
     <Compile Include="Models\Users\AdvancedUser.cs" />
     <Compile Include="Models\Users\UserBase.cs" />
     <Compile Include="Models\Users\UserPermissions.cs" />
     <Compile Include="Models\Users\Users.cs" />
-    <Compile Include="Simulator\Simulator.cs" />
+    <Compile Include="Models\Simulator\Simulator.cs" />
     <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
