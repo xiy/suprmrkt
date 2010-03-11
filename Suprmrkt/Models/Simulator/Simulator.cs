@@ -3,137 +3,164 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Suprmrkt.Models;
 
-namespace Suprmrkt.Models.Simulator
+namespace Suprmrkt.Models
 {
-	public class Simulation
-	{
-		private List<Customer> _shoppers = new List<Customer>();
-		/// <summary>
-		/// A List that contains all the Customers entering the store.
-		/// </summary>
-		private  List<Customer> Shoppers
-		{
-			get { return _shoppers; }
-			set { _shoppers = value; }
-		}
+    public class Simulation
+    {
+        /// <summary>
+        /// A List that contains all the Customers entering the store.
+        /// </summary>
+        private List<Customer> _shoppers = new List<Customer>();
+        private List<Customer> Shoppers
+        {
+            get { return _shoppers; }
+            set { _shoppers = value; }
+        }
 
-		private List<Queues> _queues = new List<Queues>();
-		/// <summary>
-		/// A List that contains all of the current Queues.
-		/// </summary>
-		private List<Queues> Queues
-		{
-			get 
-			{
-				if (_queues == null)
-					_queues = new List<Queues>();
-				return _queues; 
-			}
-			set { _queues = value; }
-		}
+        /// <summary>
+        /// A List that contains all of the current Queues.
+        /// </summary>
+        private List<Queues> _queues = new List<Queues>();
+        private List<Queues> Queues
+        {
+            get
+            {
+                if (_queues == null)
+                    _queues = new List<Queues>();
+                return _queues;
+            }
+            set { _queues = value; }
+        }
 
-		// last time event times were calculated
-		private static int lastCalcTime = 0;
-		private static int nextEventTime = 0;
-		private static int dayTimer = 0;
-		private static int secondsTimer = 0;
-		// for the customers entering the store method
-		private static float custRemainder = 0; 
-		private static int custsEntering = 0;
-		private static int custsPerMinute = 0;
+        /// <summary>
+        /// Initialization
+        /// </summary>
+        private static int lastCalcTime = 0; // last time event times were calculated
+        private static int nextEventTime = 0;
+        private static int dayTimer = 0;
+        private static int secondsTimer = 0;
+        private static float CustRemainder = 0; // for the customers entering the store method
+        private static int custsEntering = 0;
+        private static int custsIn = 0;
+        private static float customersPerMinute = 0;
+        private static int forTheMinute;
 
-		public Simulation()
-		{
-			// create a simulation table (copying the sim table) [DB]
+        public Simulation()
+        {
+            // create a simulation table (copying the sim table) [DB]
 
-			// create Queues objects with attributes from the Staff db table
-			// populate the Queues list with these Queues objects
-		}
+            // create Queues objects with attributes from the Staff db table
+            // populate the Queues list with these Queues objects
+        }
 
-		/// <summary>
-		/// Begins running the simulation.	
-		/// </summary>
-		public void Run()
-		{
-			for (int hour=1; hour<=12; hour++)
+        /// <summary>
+        /// Begins running the simulation.	
+        /// </summary>
+        public void Run()
+        {
+
+            for (int hour=1; hour<=12; hour++)
             {
                 secondsTimer = 0;
                 // get customer number for that hour [DB] : custsEntering
+                customersPerMinute = custsEntering/60;
+                custsIn = 0;
 
-                while (secondsTimer < 3600)
+                while (secondsTimer<3600)
                 {
-                    if (secondsTimer % 60 == 0)
+                    if (secondsTimer%60 == 0)
                     {
-                        custsPerMinute = customersPerMinute(custsEntering);
+                        forTheMinute = customersPerMinuteMethod(customersPerMinute, secondsTimer);
 
-                        for(int c=0; c<custsPerMinute; c++) // create the customers and add the to the shoppers list
+                        for(int c=0; c<forTheMinute; c++) // create the customers and add the to the shoppers list
                         {
                             Customer cust = new Customer();
-                            cust.EntryTime = dayTimer;
-                            _shoppers.Add(cust);
+                            cust.entryTime = dayTimer;
+                            Shoppers.Add(cust);
+                            custsIn++;
                         }
 
-                        calcEventTimes(dayTimer, _shoppers.Count);
-                        SortShoppers();
+                        calcEventTimes(dayTimer, Shoppers.Count);
+                        sortShoppers();
                     }
                 }
-			}
-		}
+            }
+        }
+                /// <summary>
+                /// The method takes the number of the customers to enter the store (which is a float number by then),
+                /// add the remainder from the previous time and seperates the integer part and the decimal part. 
+                /// In the end the integer is returned and the decimal part is stored as the remainder.
+                /// </summary>
+                private int customersPerMinuteMethod(float customersPerMinute, int secondsTimer)
+                {
+                    int customersToEnter;
 
-		private int customersPerMinute(int custsEntering)
-		{
-			throw new NotImplementedException();
-		}
+                    if (secondsTimer == 3540)
+                    {
+                        customersToEnter = custsEntering - custsIn;
+                    }
+                    else
+                    {
+                        float x = customersPerMinute + CustRemainder;
+                        customersToEnter = (int)x;
+                        float y = (float)customersToEnter;
+                        CustRemainder = x - y;
+                    }
 
-		/// <summary>
-		/// Sorts the list of shoppers based on the next event time.
-		/// </summary>
-		private void SortShoppers()
-		{
-			var shoppers = from customer in Shoppers
-						   orderby customer.timeForEvent ascending
-						   select customer;
-			this.Shoppers = shoppers.ToList<Customer>();
-		}
+                    return customersToEnter;
+                }
+                
+                /// <summary>
+                /// calculates the event times for every customer in the store
+                /// </summary>
+                /// <param name="dayTimer"></param>
+                /// <param name="custNumber"></param>
+                private void calcEventTimes(int dayTimer, int custNumber)
+                {
+                    int timeDiff = dayTimer-lastCalcTime;
 
-		/// <summary>
-		/// Calculates the event times for every customer in the store
-		/// </summary>
-		/// <param name="dayTimer"></param>
-		/// <param name="custNumber"></param>
-		private void calcEventTimes(int dayTimer, int custNumber)
-		{
-			int timeDiff = dayTimer - lastCalcTime;
+                    foreach(Customer cust in Shoppers)
+                    {
+                        if (cust.shopping)
+                        {
+                            cust.timeForEvent = custNumber ^ cust.concentration + cust.dawdling; // calculate time for next item (formula)
+                        }
+                        else // customer is queueing so the next event is his checkout, whose time is calculated by a different method
+                        {
+                            cust.timeForEvent = timesInQueues(cust.QueueNumber, cust);
+                        }
+                    }
 
-			foreach (Customer cust in _shoppers)
-			{
-				if (cust.Shopping)
-				{
-					cust.timeForEvent = custNumber ^ cust.Concentration + cust.Dawdling; // calculate time for next item (formula)
-				}
-				else // customer is queueing so the next event is his checkout, whose time is calculated by a different method
-				{
-					cust.timeForEvent = timesInQueues(cust.QueueNumber, cust);
-				}
-			}
+                    // we have the times for the next event for every customer, we sort the customers by that and then set the nextEventTime
+                    sortShoppers();
+                    nextEventTime = dayTimer + Shoppers.ElementAt(0).timeForEvent;
+                    lastCalcTime = dayTimer;
+                }
 
-			// we have the times for the next event for every customer, we sort the customers by that and then set the nextEventTime
-			SortShoppers();
-			nextEventTime = dayTimer + _shoppers.ElementAt(0).timeForEvent;
-			lastCalcTime = dayTimer;
-		}
+		        /// <summary>
+                /// Sorts the list of shoppers based on the next event time.
+		        /// </summary>
+		        private void sortShoppers()
+		        {
+			        var shoppers = from customer in Shoppers
+						           orderby customer.timeForEvent ascending
+						           select customer;
+			                        this.Shoppers = shoppers.ToList<Customer>();
+		        }
+                
+                /// <summary>
+                /// calculates the time the customer CUST will spend in the queue
+                /// QueueNumber is the number of the Queue customer CUST is at
+                /// </summary>
+                private int timesInQueues(int QueueNumber, Customer cust)
+                {
+                    if (Queues.ElementAt(QueueNumber).customers > 4) // if there are more than 4 customers, Queue becomes faster
+                    {
+                        Queues.ElementAt(QueueNumber).speed = Queues.ElementAt(QueueNumber).maxSpeed;
+                    }
 
-		// calculates the time the customer CUST will spend in the queue
-		private int timesInQueues(int QueueNumber, Customer cust) // QueueNumber is the number of the Queue customer CUST is at
-		{
-			if (_queues.ElementAt(QueueNumber).Customers > 4) // if there are more than 4 customers, Queue becomes faster
-			{
-				_queues.ElementAt(QueueNumber).Speed = _queues.ElementAt(QueueNumber).MaxSpeed;
-			}
-
-			return (cust.Items + _queues.ElementAt(QueueNumber).Items) * _queues.ElementAt(QueueNumber).Speed;
-		}
-	}
-}
+                    return (cust.items + Queues.ElementAt(QueueNumber).items) * Queues.ElementAt(QueueNumber).speed;
+                }
+        }
+    }
