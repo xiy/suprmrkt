@@ -92,7 +92,6 @@
 			this.button14 = new System.Windows.Forms.Button();
 			this.label15 = new System.Windows.Forms.Label();
 			this.tabSummaryRunSim = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.button15 = new System.Windows.Forms.Button();
 			this.cmdlRunSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.label16 = new System.Windows.Forms.Label();
 			this.cmdlNewSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
@@ -135,7 +134,7 @@
             this.tabSummaryRunSim});
 			this.tabstripMainTabs.Location = new System.Drawing.Point(0, 110);
 			this.tabstripMainTabs.Name = "tabstripMainTabs";
-			this.tabstripMainTabs.SelectedItem = this.tabActivity;
+			this.tabstripMainTabs.SelectedItem = this.tabSummaryRunSim;
 			this.tabstripMainTabs.Size = new System.Drawing.Size(941, 508);
 			this.tabstripMainTabs.TabActiveUnderlineColor = System.Drawing.Color.Empty;
 			this.tabstripMainTabs.TabIndex = 1;
@@ -564,7 +563,6 @@
 			this.tabActivity.Controls.Add(this.label22);
 			this.tabActivity.IsDrawn = true;
 			this.tabActivity.Name = "tabActivity";
-			this.tabActivity.Selected = true;
 			this.tabActivity.Size = new System.Drawing.Size(939, 484);
 			this.tabActivity.TabIndex = 4;
 			this.tabActivity.Title = "Activity";
@@ -819,24 +817,14 @@
 			// 
 			// tabSummaryRunSim
 			// 
-			this.tabSummaryRunSim.Controls.Add(this.button15);
 			this.tabSummaryRunSim.Controls.Add(this.cmdlRunSimulation);
 			this.tabSummaryRunSim.Controls.Add(this.label16);
 			this.tabSummaryRunSim.IsDrawn = true;
 			this.tabSummaryRunSim.Name = "tabSummaryRunSim";
+			this.tabSummaryRunSim.Selected = true;
 			this.tabSummaryRunSim.Size = new System.Drawing.Size(939, 484);
 			this.tabSummaryRunSim.TabIndex = 7;
 			this.tabSummaryRunSim.Title = "Summary / Run Simulation";
-			// 
-			// button15
-			// 
-			this.button15.Location = new System.Drawing.Point(368, 301);
-			this.button15.Name = "button15";
-			this.button15.Size = new System.Drawing.Size(161, 23);
-			this.button15.TabIndex = 8;
-			this.button15.Text = "Seb\'s Little Run Button";
-			this.button15.UseVisualStyleBackColor = true;
-			this.button15.Click += new System.EventHandler(this.button15_Click);
 			// 
 			// cmdlRunSimulation
 			// 
@@ -850,6 +838,7 @@
 			this.cmdlRunSimulation.TabIndex = 7;
 			this.cmdlRunSimulation.Text = "Run Simulation";
 			this.cmdlRunSimulation.UseVisualStyleBackColor = true;
+			this.cmdlRunSimulation.Click += new System.EventHandler(this.cmdlRunSimulation_Click);
 			// 
 			// label16
 			// 
@@ -1118,7 +1107,6 @@
 		private System.Windows.Forms.Label label28;
 		private System.Windows.Forms.Button button14;
 		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlRunSimulation;
-		private System.Windows.Forms.Button button15;
 
 	}
 }

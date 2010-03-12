@@ -139,12 +139,13 @@ namespace Suprmrkt.Views
 			this.Hide();
 		}
 
-		private void button15_Click(object sender, EventArgs e)
+		private void cmdlRunSimulation_Click(object sender, EventArgs e)
 		{
 			Simulator s = new Simulator();
 			Thread t = new Thread(new ThreadStart(s.Run));
 			t.IsBackground = true;
 			t.Start();
+			cmdlRunSimulation.Note = "Running Simulation..";
 		}
 
 	}

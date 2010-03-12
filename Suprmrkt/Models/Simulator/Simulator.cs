@@ -196,6 +196,8 @@ namespace Suprmrkt.Models
 			SortShoppers();
 			nextEventTime = dayTimer + Shoppers.ElementAt(0).timeForEvent;
 			lastCalcTime = dayTimer;
+			Debug.WriteLine("nextEventTime: " + nextEventTime);
+			Debug.WriteLine("lastCalcTime: " + lastCalcTime);
 		}
 
 		/// <summary>
