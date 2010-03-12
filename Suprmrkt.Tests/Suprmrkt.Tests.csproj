@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimulationTest.cs" />
+    <Compile Include="SimulatorTest.cs" />
     <Compile Include="UsersTest.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -14,16 +14,15 @@ namespace Suprmrkt.Helpers
 
 	public class ActionEventArgs : EventArgs
 	{
-		ArrayList _params;
-		public ArrayList Params 
+		Dictionary<string, object> _params;
+		public Dictionary<string, object> Params
 		{
 			get
 			{
 				if (this._params == null)
-					this._params = new ArrayList();
+					this._params = new Dictionary<string, object>();
 				return this._params;
 			}
-			set { this._params = value; }
 		}
 	}
 
@@ -67,12 +66,15 @@ namespace Suprmrkt.Helpers
 	
 	public class ModelChangedEventArgs : EventArgs
 	{
-		int customerIndex;
-		private ModelChangedEventArgs() { }
-		public ModelChangedEventArgs(int customerIndex)
+		Dictionary<string, object> _params;
+		public Dictionary<string, object> Params
 		{
-			// push some event details here
-			this.customerIndex = customerIndex;
+			get
+			{
+				if (this._params == null)
+					this._params = new Dictionary<string, object>();
+				return this._params;
+			}
 		}
 	}
 

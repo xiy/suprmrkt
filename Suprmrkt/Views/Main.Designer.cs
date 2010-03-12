@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.garnetTabStrip1 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStrip();
-			this.garnetTabStripItem2 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.tabstripMainTabs = new Pyramid.Garnet.Controls.Tabs.GarnetTabStrip();
+			this.tabCustomers = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
 			this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
 			this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
@@ -41,24 +41,24 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.label9 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.cmbCustomersCustomerTypes = new System.Windows.Forms.ComboBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.garnetTabStripItem3 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.tabCheckouts = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.button4 = new System.Windows.Forms.Button();
 			this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
 			this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
 			this.label18 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
-			this.garnetTabStripItem4 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.tabStaff = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.button8 = new System.Windows.Forms.Button();
 			this.button9 = new System.Windows.Forms.Button();
-			this.comboBox3 = new System.Windows.Forms.ComboBox();
+			this.cmbStaffTypes = new System.Windows.Forms.ComboBox();
 			this.label21 = new System.Windows.Forms.Label();
 			this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
 			this.label12 = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@
 			this.label20 = new System.Windows.Forms.Label();
 			this.button6 = new System.Windows.Forms.Button();
 			this.label19 = new System.Windows.Forms.Label();
-			this.garnetTabStripItem5 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.tabActivity = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			this.button10 = new System.Windows.Forms.Button();
 			this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
@@ -75,30 +75,30 @@
 			this.label23 = new System.Windows.Forms.Label();
 			this.label24 = new System.Windows.Forms.Label();
 			this.label22 = new System.Windows.Forms.Label();
-			this.garnetTabStripItem6 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.tabPricing = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.button11 = new System.Windows.Forms.Button();
-			this.comboBox4 = new System.Windows.Forms.ComboBox();
+			this.cmbPricingCustomerTypes = new System.Windows.Forms.ComboBox();
 			this.label26 = new System.Windows.Forms.Label();
 			this.label25 = new System.Windows.Forms.Label();
 			this.label14 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.garnetTabStripItem7 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.tabPromotion = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.button12 = new System.Windows.Forms.Button();
 			this.button13 = new System.Windows.Forms.Button();
-			this.comboBox6 = new System.Windows.Forms.ComboBox();
+			this.cmbPromotionTypes = new System.Windows.Forms.ComboBox();
 			this.label27 = new System.Windows.Forms.Label();
 			this.maskedTextBox13 = new System.Windows.Forms.MaskedTextBox();
 			this.label28 = new System.Windows.Forms.Label();
 			this.button14 = new System.Windows.Forms.Button();
 			this.label15 = new System.Windows.Forms.Label();
-			this.garnetTabStripItem8 = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.commandLink5 = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.tabSummaryRunSim = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.cmdlRunSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.label16 = new System.Windows.Forms.Label();
-			this.commandLink1 = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.commandLink2 = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.commandLink4 = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlNewSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlLoadSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlLogout = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.tlpCommandLinkPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.commandLink3 = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlViewResults = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtSimTitle = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
@@ -106,66 +106,66 @@
 			this.button5 = new System.Windows.Forms.Button();
 			this.button7 = new System.Windows.Forms.Button();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			((System.ComponentModel.ISupportInitialize)(this.garnetTabStrip1)).BeginInit();
-			this.garnetTabStrip1.SuspendLayout();
-			this.garnetTabStripItem2.SuspendLayout();
-			this.garnetTabStripItem3.SuspendLayout();
-			this.garnetTabStripItem4.SuspendLayout();
-			this.garnetTabStripItem5.SuspendLayout();
-			this.garnetTabStripItem6.SuspendLayout();
-			this.garnetTabStripItem7.SuspendLayout();
-			this.garnetTabStripItem8.SuspendLayout();
+			this.button15 = new System.Windows.Forms.Button();
+			((System.ComponentModel.ISupportInitialize)(this.tabstripMainTabs)).BeginInit();
+			this.tabstripMainTabs.SuspendLayout();
+			this.tabCustomers.SuspendLayout();
+			this.tabCheckouts.SuspendLayout();
+			this.tabStaff.SuspendLayout();
+			this.tabActivity.SuspendLayout();
+			this.tabPricing.SuspendLayout();
+			this.tabPromotion.SuspendLayout();
+			this.tabSummaryRunSim.SuspendLayout();
 			this.tlpCommandLinkPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// garnetTabStrip1
+			// tabstripMainTabs
 			// 
-			this.garnetTabStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+			this.tabstripMainTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
 						| System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
-			this.garnetTabStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.garnetTabStrip1.Items.AddRange(new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem[] {
-            this.garnetTabStripItem2,
-            this.garnetTabStripItem3,
-            this.garnetTabStripItem4,
-            this.garnetTabStripItem5,
-            this.garnetTabStripItem6,
-            this.garnetTabStripItem7,
-            this.garnetTabStripItem8});
-			this.garnetTabStrip1.Location = new System.Drawing.Point(0, 110);
-			this.garnetTabStrip1.Name = "garnetTabStrip1";
-			this.garnetTabStrip1.SelectedItem = this.garnetTabStripItem2;
-			this.garnetTabStrip1.Size = new System.Drawing.Size(941, 508);
-			this.garnetTabStrip1.TabActiveUnderlineColor = System.Drawing.Color.Empty;
-			this.garnetTabStrip1.TabIndex = 1;
-			this.garnetTabStrip1.Text = "garnetTabStrip1";
+			this.tabstripMainTabs.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tabstripMainTabs.Items.AddRange(new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem[] {
+            this.tabCustomers,
+            this.tabCheckouts,
+            this.tabStaff,
+            this.tabActivity,
+            this.tabPricing,
+            this.tabPromotion,
+            this.tabSummaryRunSim});
+			this.tabstripMainTabs.Location = new System.Drawing.Point(0, 110);
+			this.tabstripMainTabs.Name = "tabstripMainTabs";
+			this.tabstripMainTabs.SelectedItem = this.tabSummaryRunSim;
+			this.tabstripMainTabs.Size = new System.Drawing.Size(941, 508);
+			this.tabstripMainTabs.TabActiveUnderlineColor = System.Drawing.Color.Empty;
+			this.tabstripMainTabs.TabIndex = 1;
+			this.tabstripMainTabs.Text = "garnetTabStrip1";
 			// 
-			// garnetTabStripItem2
+			// tabCustomers
 			// 
-			this.garnetTabStripItem2.Controls.Add(this.maskedTextBox2);
-			this.garnetTabStripItem2.Controls.Add(this.maskedTextBox6);
-			this.garnetTabStripItem2.Controls.Add(this.maskedTextBox5);
-			this.garnetTabStripItem2.Controls.Add(this.maskedTextBox4);
-			this.garnetTabStripItem2.Controls.Add(this.maskedTextBox3);
-			this.garnetTabStripItem2.Controls.Add(this.maskedTextBox1);
-			this.garnetTabStripItem2.Controls.Add(this.button2);
-			this.garnetTabStripItem2.Controls.Add(this.button3);
-			this.garnetTabStripItem2.Controls.Add(this.button1);
-			this.garnetTabStripItem2.Controls.Add(this.label9);
-			this.garnetTabStripItem2.Controls.Add(this.label8);
-			this.garnetTabStripItem2.Controls.Add(this.comboBox1);
-			this.garnetTabStripItem2.Controls.Add(this.label7);
-			this.garnetTabStripItem2.Controls.Add(this.label5);
-			this.garnetTabStripItem2.Controls.Add(this.label6);
-			this.garnetTabStripItem2.Controls.Add(this.label4);
-			this.garnetTabStripItem2.Controls.Add(this.label10);
-			this.garnetTabStripItem2.Controls.Add(this.label3);
-			this.garnetTabStripItem2.IsDrawn = true;
-			this.garnetTabStripItem2.Name = "garnetTabStripItem2";
-			this.garnetTabStripItem2.Selected = true;
-			this.garnetTabStripItem2.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem2.TabIndex = 1;
-			this.garnetTabStripItem2.Title = "Customers";
+			this.tabCustomers.Controls.Add(this.maskedTextBox2);
+			this.tabCustomers.Controls.Add(this.maskedTextBox6);
+			this.tabCustomers.Controls.Add(this.maskedTextBox5);
+			this.tabCustomers.Controls.Add(this.maskedTextBox4);
+			this.tabCustomers.Controls.Add(this.maskedTextBox3);
+			this.tabCustomers.Controls.Add(this.maskedTextBox1);
+			this.tabCustomers.Controls.Add(this.button2);
+			this.tabCustomers.Controls.Add(this.button3);
+			this.tabCustomers.Controls.Add(this.button1);
+			this.tabCustomers.Controls.Add(this.label9);
+			this.tabCustomers.Controls.Add(this.label8);
+			this.tabCustomers.Controls.Add(this.cmbCustomersCustomerTypes);
+			this.tabCustomers.Controls.Add(this.label7);
+			this.tabCustomers.Controls.Add(this.label5);
+			this.tabCustomers.Controls.Add(this.label6);
+			this.tabCustomers.Controls.Add(this.label4);
+			this.tabCustomers.Controls.Add(this.label10);
+			this.tabCustomers.Controls.Add(this.label3);
+			this.tabCustomers.IsDrawn = true;
+			this.tabCustomers.Name = "tabCustomers";
+			this.tabCustomers.Size = new System.Drawing.Size(939, 484);
+			this.tabCustomers.TabIndex = 1;
+			this.tabCustomers.Title = "Customers";
 			// 
 			// maskedTextBox2
 			// 
@@ -286,15 +286,15 @@
 			this.label8.TabIndex = 0;
 			this.label8.Text = "Patience:";
 			// 
-			// comboBox1
+			// cmbCustomersCustomerTypes
 			// 
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(234, 70);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(200, 25);
-			this.comboBox1.TabIndex = 1;
+			this.cmbCustomersCustomerTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbCustomersCustomerTypes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbCustomersCustomerTypes.FormattingEnabled = true;
+			this.cmbCustomersCustomerTypes.Location = new System.Drawing.Point(234, 70);
+			this.cmbCustomersCustomerTypes.Name = "cmbCustomersCustomerTypes";
+			this.cmbCustomersCustomerTypes.Size = new System.Drawing.Size(200, 25);
+			this.cmbCustomersCustomerTypes.TabIndex = 1;
 			// 
 			// label7
 			// 
@@ -356,19 +356,19 @@
 			this.label3.TabIndex = 0;
 			this.label3.Text = "Select a Customer Type:";
 			// 
-			// garnetTabStripItem3
+			// tabCheckouts
 			// 
-			this.garnetTabStripItem3.Controls.Add(this.button4);
-			this.garnetTabStripItem3.Controls.Add(this.maskedTextBox8);
-			this.garnetTabStripItem3.Controls.Add(this.maskedTextBox7);
-			this.garnetTabStripItem3.Controls.Add(this.label18);
-			this.garnetTabStripItem3.Controls.Add(this.label17);
-			this.garnetTabStripItem3.Controls.Add(this.label11);
-			this.garnetTabStripItem3.IsDrawn = true;
-			this.garnetTabStripItem3.Name = "garnetTabStripItem3";
-			this.garnetTabStripItem3.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem3.TabIndex = 2;
-			this.garnetTabStripItem3.Title = "Checkouts";
+			this.tabCheckouts.Controls.Add(this.button4);
+			this.tabCheckouts.Controls.Add(this.maskedTextBox8);
+			this.tabCheckouts.Controls.Add(this.maskedTextBox7);
+			this.tabCheckouts.Controls.Add(this.label18);
+			this.tabCheckouts.Controls.Add(this.label17);
+			this.tabCheckouts.Controls.Add(this.label11);
+			this.tabCheckouts.IsDrawn = true;
+			this.tabCheckouts.Name = "tabCheckouts";
+			this.tabCheckouts.Size = new System.Drawing.Size(939, 484);
+			this.tabCheckouts.TabIndex = 2;
+			this.tabCheckouts.Title = "Checkouts";
 			// 
 			// button4
 			// 
@@ -433,23 +433,23 @@
 			this.label11.TabIndex = 1;
 			this.label11.Text = "Checkout Parameters";
 			// 
-			// garnetTabStripItem4
+			// tabStaff
 			// 
-			this.garnetTabStripItem4.Controls.Add(this.button8);
-			this.garnetTabStripItem4.Controls.Add(this.button9);
-			this.garnetTabStripItem4.Controls.Add(this.comboBox3);
-			this.garnetTabStripItem4.Controls.Add(this.label21);
-			this.garnetTabStripItem4.Controls.Add(this.maskedTextBox10);
-			this.garnetTabStripItem4.Controls.Add(this.label12);
-			this.garnetTabStripItem4.Controls.Add(this.maskedTextBox11);
-			this.garnetTabStripItem4.Controls.Add(this.label20);
-			this.garnetTabStripItem4.Controls.Add(this.button6);
-			this.garnetTabStripItem4.Controls.Add(this.label19);
-			this.garnetTabStripItem4.IsDrawn = true;
-			this.garnetTabStripItem4.Name = "garnetTabStripItem4";
-			this.garnetTabStripItem4.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem4.TabIndex = 3;
-			this.garnetTabStripItem4.Title = "Staff";
+			this.tabStaff.Controls.Add(this.button8);
+			this.tabStaff.Controls.Add(this.button9);
+			this.tabStaff.Controls.Add(this.cmbStaffTypes);
+			this.tabStaff.Controls.Add(this.label21);
+			this.tabStaff.Controls.Add(this.maskedTextBox10);
+			this.tabStaff.Controls.Add(this.label12);
+			this.tabStaff.Controls.Add(this.maskedTextBox11);
+			this.tabStaff.Controls.Add(this.label20);
+			this.tabStaff.Controls.Add(this.button6);
+			this.tabStaff.Controls.Add(this.label19);
+			this.tabStaff.IsDrawn = true;
+			this.tabStaff.Name = "tabStaff";
+			this.tabStaff.Size = new System.Drawing.Size(939, 484);
+			this.tabStaff.TabIndex = 3;
+			this.tabStaff.Title = "Staff";
 			// 
 			// button8
 			// 
@@ -469,15 +469,15 @@
 			this.button9.Text = "New";
 			this.button9.UseVisualStyleBackColor = true;
 			// 
-			// comboBox3
+			// cmbStaffTypes
 			// 
-			this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Location = new System.Drawing.Point(201, 75);
-			this.comboBox3.Name = "comboBox3";
-			this.comboBox3.Size = new System.Drawing.Size(200, 25);
-			this.comboBox3.TabIndex = 22;
+			this.cmbStaffTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbStaffTypes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbStaffTypes.FormattingEnabled = true;
+			this.cmbStaffTypes.Location = new System.Drawing.Point(201, 75);
+			this.cmbStaffTypes.Name = "cmbStaffTypes";
+			this.cmbStaffTypes.Size = new System.Drawing.Size(200, 25);
+			this.cmbStaffTypes.TabIndex = 22;
 			// 
 			// label21
 			// 
@@ -552,21 +552,21 @@
 			this.label19.TabIndex = 10;
 			this.label19.Text = "Speed up Factor:";
 			// 
-			// garnetTabStripItem5
+			// tabActivity
 			// 
-			this.garnetTabStripItem5.Controls.Add(this.dateTimePicker1);
-			this.garnetTabStripItem5.Controls.Add(this.button10);
-			this.garnetTabStripItem5.Controls.Add(this.maskedTextBox9);
-			this.garnetTabStripItem5.Controls.Add(this.comboBox5);
-			this.garnetTabStripItem5.Controls.Add(this.label13);
-			this.garnetTabStripItem5.Controls.Add(this.label23);
-			this.garnetTabStripItem5.Controls.Add(this.label24);
-			this.garnetTabStripItem5.Controls.Add(this.label22);
-			this.garnetTabStripItem5.IsDrawn = true;
-			this.garnetTabStripItem5.Name = "garnetTabStripItem5";
-			this.garnetTabStripItem5.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem5.TabIndex = 4;
-			this.garnetTabStripItem5.Title = "Activity";
+			this.tabActivity.Controls.Add(this.dateTimePicker1);
+			this.tabActivity.Controls.Add(this.button10);
+			this.tabActivity.Controls.Add(this.maskedTextBox9);
+			this.tabActivity.Controls.Add(this.comboBox5);
+			this.tabActivity.Controls.Add(this.label13);
+			this.tabActivity.Controls.Add(this.label23);
+			this.tabActivity.Controls.Add(this.label24);
+			this.tabActivity.Controls.Add(this.label22);
+			this.tabActivity.IsDrawn = true;
+			this.tabActivity.Name = "tabActivity";
+			this.tabActivity.Size = new System.Drawing.Size(939, 484);
+			this.tabActivity.TabIndex = 4;
+			this.tabActivity.Title = "Activity";
 			// 
 			// dateTimePicker1
 			// 
@@ -649,19 +649,19 @@
 			this.label22.Text = "Please select the Customer Type:";
 			this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
-			// garnetTabStripItem6
+			// tabPricing
 			// 
-			this.garnetTabStripItem6.Controls.Add(this.button11);
-			this.garnetTabStripItem6.Controls.Add(this.comboBox4);
-			this.garnetTabStripItem6.Controls.Add(this.label26);
-			this.garnetTabStripItem6.Controls.Add(this.label25);
-			this.garnetTabStripItem6.Controls.Add(this.label14);
-			this.garnetTabStripItem6.Controls.Add(this.textBox1);
-			this.garnetTabStripItem6.IsDrawn = true;
-			this.garnetTabStripItem6.Name = "garnetTabStripItem6";
-			this.garnetTabStripItem6.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem6.TabIndex = 5;
-			this.garnetTabStripItem6.Title = "Pricing";
+			this.tabPricing.Controls.Add(this.button11);
+			this.tabPricing.Controls.Add(this.cmbPricingCustomerTypes);
+			this.tabPricing.Controls.Add(this.label26);
+			this.tabPricing.Controls.Add(this.label25);
+			this.tabPricing.Controls.Add(this.label14);
+			this.tabPricing.Controls.Add(this.textBox1);
+			this.tabPricing.IsDrawn = true;
+			this.tabPricing.Name = "tabPricing";
+			this.tabPricing.Size = new System.Drawing.Size(939, 484);
+			this.tabPricing.TabIndex = 5;
+			this.tabPricing.Title = "Pricing";
 			// 
 			// button11
 			// 
@@ -672,15 +672,15 @@
 			this.button11.Text = "Save";
 			this.button11.UseVisualStyleBackColor = true;
 			// 
-			// comboBox4
+			// cmbPricingCustomerTypes
 			// 
-			this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboBox4.FormattingEnabled = true;
-			this.comboBox4.Location = new System.Drawing.Point(267, 67);
-			this.comboBox4.Name = "comboBox4";
-			this.comboBox4.Size = new System.Drawing.Size(200, 25);
-			this.comboBox4.TabIndex = 4;
+			this.cmbPricingCustomerTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbPricingCustomerTypes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbPricingCustomerTypes.FormattingEnabled = true;
+			this.cmbPricingCustomerTypes.Location = new System.Drawing.Point(267, 67);
+			this.cmbPricingCustomerTypes.Name = "cmbPricingCustomerTypes";
+			this.cmbPricingCustomerTypes.Size = new System.Drawing.Size(200, 25);
+			this.cmbPricingCustomerTypes.TabIndex = 4;
 			// 
 			// label26
 			// 
@@ -721,21 +721,21 @@
 			this.textBox1.Size = new System.Drawing.Size(200, 25);
 			this.textBox1.TabIndex = 2;
 			// 
-			// garnetTabStripItem7
+			// tabPromotion
 			// 
-			this.garnetTabStripItem7.Controls.Add(this.button12);
-			this.garnetTabStripItem7.Controls.Add(this.button13);
-			this.garnetTabStripItem7.Controls.Add(this.comboBox6);
-			this.garnetTabStripItem7.Controls.Add(this.label27);
-			this.garnetTabStripItem7.Controls.Add(this.maskedTextBox13);
-			this.garnetTabStripItem7.Controls.Add(this.label28);
-			this.garnetTabStripItem7.Controls.Add(this.button14);
-			this.garnetTabStripItem7.Controls.Add(this.label15);
-			this.garnetTabStripItem7.IsDrawn = true;
-			this.garnetTabStripItem7.Name = "garnetTabStripItem7";
-			this.garnetTabStripItem7.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem7.TabIndex = 6;
-			this.garnetTabStripItem7.Title = "Promotion";
+			this.tabPromotion.Controls.Add(this.button12);
+			this.tabPromotion.Controls.Add(this.button13);
+			this.tabPromotion.Controls.Add(this.cmbPromotionTypes);
+			this.tabPromotion.Controls.Add(this.label27);
+			this.tabPromotion.Controls.Add(this.maskedTextBox13);
+			this.tabPromotion.Controls.Add(this.label28);
+			this.tabPromotion.Controls.Add(this.button14);
+			this.tabPromotion.Controls.Add(this.label15);
+			this.tabPromotion.IsDrawn = true;
+			this.tabPromotion.Name = "tabPromotion";
+			this.tabPromotion.Size = new System.Drawing.Size(939, 484);
+			this.tabPromotion.TabIndex = 6;
+			this.tabPromotion.Title = "Promotion";
 			// 
 			// button12
 			// 
@@ -755,15 +755,15 @@
 			this.button13.Text = "New";
 			this.button13.UseVisualStyleBackColor = true;
 			// 
-			// comboBox6
+			// cmbPromotionTypes
 			// 
-			this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboBox6.FormattingEnabled = true;
-			this.comboBox6.Location = new System.Drawing.Point(237, 72);
-			this.comboBox6.Name = "comboBox6";
-			this.comboBox6.Size = new System.Drawing.Size(200, 25);
-			this.comboBox6.TabIndex = 31;
+			this.cmbPromotionTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbPromotionTypes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbPromotionTypes.FormattingEnabled = true;
+			this.cmbPromotionTypes.Location = new System.Drawing.Point(237, 72);
+			this.cmbPromotionTypes.Name = "cmbPromotionTypes";
+			this.cmbPromotionTypes.Size = new System.Drawing.Size(200, 25);
+			this.cmbPromotionTypes.TabIndex = 31;
 			// 
 			// label27
 			// 
@@ -816,28 +816,30 @@
 			this.label15.TabIndex = 2;
 			this.label15.Text = "Promotion Parameters";
 			// 
-			// garnetTabStripItem8
+			// tabSummaryRunSim
 			// 
-			this.garnetTabStripItem8.Controls.Add(this.commandLink5);
-			this.garnetTabStripItem8.Controls.Add(this.label16);
-			this.garnetTabStripItem8.IsDrawn = true;
-			this.garnetTabStripItem8.Name = "garnetTabStripItem8";
-			this.garnetTabStripItem8.Size = new System.Drawing.Size(939, 484);
-			this.garnetTabStripItem8.TabIndex = 7;
-			this.garnetTabStripItem8.Title = "Summary / Run Simulation";
+			this.tabSummaryRunSim.Controls.Add(this.button15);
+			this.tabSummaryRunSim.Controls.Add(this.cmdlRunSimulation);
+			this.tabSummaryRunSim.Controls.Add(this.label16);
+			this.tabSummaryRunSim.IsDrawn = true;
+			this.tabSummaryRunSim.Name = "tabSummaryRunSim";
+			this.tabSummaryRunSim.Selected = true;
+			this.tabSummaryRunSim.Size = new System.Drawing.Size(939, 484);
+			this.tabSummaryRunSim.TabIndex = 7;
+			this.tabSummaryRunSim.Title = "Summary / Run Simulation";
 			// 
-			// commandLink5
+			// cmdlRunSimulation
 			// 
-			this.commandLink5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+			this.cmdlRunSimulation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
-			this.commandLink5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink5.Location = new System.Drawing.Point(290, 357);
-			this.commandLink5.Name = "commandLink5";
-			this.commandLink5.Note = "Click here to run the simulation with these parameters";
-			this.commandLink5.Size = new System.Drawing.Size(357, 62);
-			this.commandLink5.TabIndex = 7;
-			this.commandLink5.Text = "Run Simulation";
-			this.commandLink5.UseVisualStyleBackColor = true;
+			this.cmdlRunSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlRunSimulation.Location = new System.Drawing.Point(290, 357);
+			this.cmdlRunSimulation.Name = "cmdlRunSimulation";
+			this.cmdlRunSimulation.Note = "Click here to run the simulation with these parameters";
+			this.cmdlRunSimulation.Size = new System.Drawing.Size(357, 62);
+			this.cmdlRunSimulation.TabIndex = 7;
+			this.cmdlRunSimulation.Text = "Run Simulation";
+			this.cmdlRunSimulation.UseVisualStyleBackColor = true;
 			// 
 			// label16
 			// 
@@ -849,38 +851,41 @@
 			this.label16.TabIndex = 2;
 			this.label16.Text = "Simulation Summary";
 			// 
-			// commandLink1
+			// cmdlNewSimulation
 			// 
-			this.commandLink1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink1.Location = new System.Drawing.Point(3, 3);
-			this.commandLink1.Name = "commandLink1";
-			this.commandLink1.Note = "Create a new simulation";
-			this.commandLink1.Size = new System.Drawing.Size(193, 62);
-			this.commandLink1.TabIndex = 5;
-			this.commandLink1.Text = "New Simulation";
-			this.commandLink1.UseVisualStyleBackColor = true;
+			this.cmdlNewSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlNewSimulation.Location = new System.Drawing.Point(3, 3);
+			this.cmdlNewSimulation.Name = "cmdlNewSimulation";
+			this.cmdlNewSimulation.Note = "Create a new simulation";
+			this.cmdlNewSimulation.Size = new System.Drawing.Size(193, 62);
+			this.cmdlNewSimulation.TabIndex = 5;
+			this.cmdlNewSimulation.Text = "New Simulation";
+			this.cmdlNewSimulation.UseVisualStyleBackColor = true;
+			this.cmdlNewSimulation.Click += new System.EventHandler(this.cmdlNewSimulation_Click);
 			// 
-			// commandLink2
+			// cmdlLoadSimulation
 			// 
-			this.commandLink2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink2.Location = new System.Drawing.Point(202, 3);
-			this.commandLink2.Name = "commandLink2";
-			this.commandLink2.Note = "Load parameters from a previous simulation";
-			this.commandLink2.Size = new System.Drawing.Size(289, 62);
-			this.commandLink2.TabIndex = 6;
-			this.commandLink2.Text = "Load Simulation";
-			this.commandLink2.UseVisualStyleBackColor = true;
+			this.cmdlLoadSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlLoadSimulation.Location = new System.Drawing.Point(202, 3);
+			this.cmdlLoadSimulation.Name = "cmdlLoadSimulation";
+			this.cmdlLoadSimulation.Note = "Load parameters from a previous simulation";
+			this.cmdlLoadSimulation.Size = new System.Drawing.Size(289, 62);
+			this.cmdlLoadSimulation.TabIndex = 6;
+			this.cmdlLoadSimulation.Text = "Load Simulation";
+			this.cmdlLoadSimulation.UseVisualStyleBackColor = true;
+			this.cmdlLoadSimulation.Click += new System.EventHandler(this.cmdlLoadSimulation_Click);
 			// 
-			// commandLink4
+			// cmdlLogout
 			// 
-			this.commandLink4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink4.Location = new System.Drawing.Point(710, 3);
-			this.commandLink4.Name = "commandLink4";
-			this.commandLink4.Note = "Log out of the Simulator";
-			this.commandLink4.Size = new System.Drawing.Size(228, 62);
-			this.commandLink4.TabIndex = 4;
-			this.commandLink4.Text = "Log out";
-			this.commandLink4.UseVisualStyleBackColor = true;
+			this.cmdlLogout.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlLogout.Location = new System.Drawing.Point(710, 3);
+			this.cmdlLogout.Name = "cmdlLogout";
+			this.cmdlLogout.Note = "Log out of the Simulator";
+			this.cmdlLogout.Size = new System.Drawing.Size(228, 62);
+			this.cmdlLogout.TabIndex = 4;
+			this.cmdlLogout.Text = "Log out";
+			this.cmdlLogout.UseVisualStyleBackColor = true;
+			this.cmdlLogout.Click += new System.EventHandler(this.cmdlLogout_Click);
 			// 
 			// tlpCommandLinkPanel
 			// 
@@ -891,10 +896,10 @@
 			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.7166F));
 			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
 			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
-			this.tlpCommandLinkPanel.Controls.Add(this.commandLink4, 3, 0);
-			this.tlpCommandLinkPanel.Controls.Add(this.commandLink1, 0, 0);
-			this.tlpCommandLinkPanel.Controls.Add(this.commandLink3, 2, 0);
-			this.tlpCommandLinkPanel.Controls.Add(this.commandLink2, 1, 0);
+			this.tlpCommandLinkPanel.Controls.Add(this.cmdlLogout, 3, 0);
+			this.tlpCommandLinkPanel.Controls.Add(this.cmdlNewSimulation, 0, 0);
+			this.tlpCommandLinkPanel.Controls.Add(this.cmdlViewResults, 2, 0);
+			this.tlpCommandLinkPanel.Controls.Add(this.cmdlLoadSimulation, 1, 0);
 			this.tlpCommandLinkPanel.Dock = System.Windows.Forms.DockStyle.Top;
 			this.tlpCommandLinkPanel.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
 			this.tlpCommandLinkPanel.Location = new System.Drawing.Point(0, 0);
@@ -904,16 +909,17 @@
 			this.tlpCommandLinkPanel.Size = new System.Drawing.Size(941, 68);
 			this.tlpCommandLinkPanel.TabIndex = 2;
 			// 
-			// commandLink3
+			// cmdlViewResults
 			// 
-			this.commandLink3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink3.Location = new System.Drawing.Point(497, 3);
-			this.commandLink3.Name = "commandLink3";
-			this.commandLink3.Note = "View previous simulations";
-			this.commandLink3.Size = new System.Drawing.Size(207, 62);
-			this.commandLink3.TabIndex = 3;
-			this.commandLink3.Text = "View Results";
-			this.commandLink3.UseVisualStyleBackColor = true;
+			this.cmdlViewResults.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlViewResults.Location = new System.Drawing.Point(497, 3);
+			this.cmdlViewResults.Name = "cmdlViewResults";
+			this.cmdlViewResults.Note = "View previous simulations";
+			this.cmdlViewResults.Size = new System.Drawing.Size(207, 62);
+			this.cmdlViewResults.TabIndex = 3;
+			this.cmdlViewResults.Text = "View Results";
+			this.cmdlViewResults.UseVisualStyleBackColor = true;
+			this.cmdlViewResults.Click += new System.EventHandler(this.cmdlViewResults_Click);
 			// 
 			// label1
 			// 
@@ -928,7 +934,6 @@
 			// 
 			// txtSimTitle
 			// 
-			this.txtSimTitle.Enabled = false;
 			this.txtSimTitle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtSimTitle.Location = new System.Drawing.Point(117, 80);
 			this.txtSimTitle.Name = "txtSimTitle";
@@ -983,6 +988,16 @@
 			this.comboBox2.Size = new System.Drawing.Size(200, 25);
 			this.comboBox2.TabIndex = 15;
 			// 
+			// button15
+			// 
+			this.button15.Location = new System.Drawing.Point(368, 301);
+			this.button15.Name = "button15";
+			this.button15.Size = new System.Drawing.Size(161, 23);
+			this.button15.TabIndex = 8;
+			this.button15.Text = "Seb\'s Little Run Button";
+			this.button15.UseVisualStyleBackColor = true;
+			this.button15.Click += new System.EventHandler(this.button15_Click);
+			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -993,29 +1008,29 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.txtSimTitle);
-			this.Controls.Add(this.garnetTabStrip1);
+			this.Controls.Add(this.tabstripMainTabs);
 			this.DoubleBuffered = true;
 			this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.MinimumSize = new System.Drawing.Size(957, 655);
 			this.Name = "Main";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "GRPSIX Buyrite Supermarket Simulator";
-			((System.ComponentModel.ISupportInitialize)(this.garnetTabStrip1)).EndInit();
-			this.garnetTabStrip1.ResumeLayout(false);
-			this.garnetTabStripItem2.ResumeLayout(false);
-			this.garnetTabStripItem2.PerformLayout();
-			this.garnetTabStripItem3.ResumeLayout(false);
-			this.garnetTabStripItem3.PerformLayout();
-			this.garnetTabStripItem4.ResumeLayout(false);
-			this.garnetTabStripItem4.PerformLayout();
-			this.garnetTabStripItem5.ResumeLayout(false);
-			this.garnetTabStripItem5.PerformLayout();
-			this.garnetTabStripItem6.ResumeLayout(false);
-			this.garnetTabStripItem6.PerformLayout();
-			this.garnetTabStripItem7.ResumeLayout(false);
-			this.garnetTabStripItem7.PerformLayout();
-			this.garnetTabStripItem8.ResumeLayout(false);
-			this.garnetTabStripItem8.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.tabstripMainTabs)).EndInit();
+			this.tabstripMainTabs.ResumeLayout(false);
+			this.tabCustomers.ResumeLayout(false);
+			this.tabCustomers.PerformLayout();
+			this.tabCheckouts.ResumeLayout(false);
+			this.tabCheckouts.PerformLayout();
+			this.tabStaff.ResumeLayout(false);
+			this.tabStaff.PerformLayout();
+			this.tabActivity.ResumeLayout(false);
+			this.tabActivity.PerformLayout();
+			this.tabPricing.ResumeLayout(false);
+			this.tabPricing.PerformLayout();
+			this.tabPromotion.ResumeLayout(false);
+			this.tabPromotion.PerformLayout();
+			this.tabSummaryRunSim.ResumeLayout(false);
+			this.tabSummaryRunSim.PerformLayout();
 			this.tlpCommandLinkPanel.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -1024,19 +1039,19 @@
 
 		#endregion
 
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStrip garnetTabStrip1;
-		private Pyramid.Garnet.Controls.Aero.CommandLink commandLink1;
-		private Pyramid.Garnet.Controls.Aero.CommandLink commandLink2;
-		private Pyramid.Garnet.Controls.Aero.CommandLink commandLink4;
+		private Pyramid.Garnet.Controls.Tabs.GarnetTabStrip tabstripMainTabs;
+		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlNewSimulation;
+		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlLoadSimulation;
+		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlLogout;
 		private System.Windows.Forms.TableLayoutPanel tlpCommandLinkPanel;
-		private Pyramid.Garnet.Controls.Aero.CommandLink commandLink3;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem garnetTabStripItem2;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem garnetTabStripItem3;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem garnetTabStripItem5;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem garnetTabStripItem6;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem garnetTabStripItem7;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem garnetTabStripItem8;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem garnetTabStripItem4;
+		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlViewResults;
+		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabCustomers;
+		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabCheckouts;
+		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabActivity;
+		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabPricing;
+		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabPromotion;
+		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabSummaryRunSim;
+		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabStaff;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtSimTitle;
@@ -1045,7 +1060,7 @@
 		private System.Windows.Forms.MaskedTextBox maskedTextBox1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ComboBox cmbCustomersCustomerTypes;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label3;
@@ -1072,7 +1087,7 @@
 		private System.Windows.Forms.Label label17;
 		private System.Windows.Forms.Button button8;
 		private System.Windows.Forms.Button button9;
-		private System.Windows.Forms.ComboBox comboBox3;
+		private System.Windows.Forms.ComboBox cmbStaffTypes;
 		private System.Windows.Forms.Label label21;
 		private System.Windows.Forms.MaskedTextBox maskedTextBox10;
 		private System.Windows.Forms.MaskedTextBox maskedTextBox11;
@@ -1090,18 +1105,19 @@
 		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.DateTimePicker dateTimePicker1;
 		private System.Windows.Forms.Button button11;
-		private System.Windows.Forms.ComboBox comboBox4;
+		private System.Windows.Forms.ComboBox cmbPricingCustomerTypes;
 		private System.Windows.Forms.Label label26;
 		private System.Windows.Forms.Label label25;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Button button12;
 		private System.Windows.Forms.Button button13;
-		private System.Windows.Forms.ComboBox comboBox6;
+		private System.Windows.Forms.ComboBox cmbPromotionTypes;
 		private System.Windows.Forms.Label label27;
 		private System.Windows.Forms.MaskedTextBox maskedTextBox13;
 		private System.Windows.Forms.Label label28;
 		private System.Windows.Forms.Button button14;
-		private Pyramid.Garnet.Controls.Aero.CommandLink commandLink5;
+		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlRunSimulation;
+		private System.Windows.Forms.Button button15;
 
 	}
 }

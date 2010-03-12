@@ -11,7 +11,7 @@ namespace Suprmrkt.Tests
     ///to contain all SimulationTest Unit Tests
     ///</summary>
 	[TestClass()]
-	public class SimulationTest
+	public class SimulatorTest
 	{
 
 
@@ -70,7 +70,7 @@ namespace Suprmrkt.Tests
 		[TestMethod()]
 		public void RunTest()
 		{
-			Simulation target = new Simulation(); // TODO: Initialize to an appropriate value
+			Simulator target = new Simulator(); // TODO: Initialize to an appropriate value
 			target.Run();
 			Assert.Inconclusive("A method that does not return a value cannot be verified.");
 		}

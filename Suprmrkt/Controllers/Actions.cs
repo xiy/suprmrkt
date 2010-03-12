@@ -18,6 +18,9 @@ namespace Suprmrkt.Controllers
 		LoadSimulation,
 		ViewResults,
 		Logout,
+		GetCustomerTypes,
+		GetStaffTypes,
+		GetPromotionTypes,
 		Quit
 	}
 }

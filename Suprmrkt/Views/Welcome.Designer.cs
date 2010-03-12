@@ -28,38 +28,38 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.commandLink1 = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.commandLink3 = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlNewSim = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlViewResults = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.commandLink2 = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.commandLink4 = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlRunSim = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlLogout = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.SuspendLayout();
 			// 
-			// commandLink1
+			// cmdlNewSim
 			// 
-			this.commandLink1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink1.Location = new System.Drawing.Point(35, 89);
-			this.commandLink1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.commandLink1.Name = "commandLink1";
-			this.commandLink1.Note = "Create a new simulation";
-			this.commandLink1.ShowShield = true;
-			this.commandLink1.Size = new System.Drawing.Size(350, 65);
-			this.commandLink1.TabIndex = 7;
-			this.commandLink1.Text = "New Simulation";
-			this.commandLink1.UseVisualStyleBackColor = true;
+			this.cmdlNewSim.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlNewSim.Location = new System.Drawing.Point(35, 89);
+			this.cmdlNewSim.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.cmdlNewSim.Name = "cmdlNewSim";
+			this.cmdlNewSim.Note = "Create a new simulation";
+			this.cmdlNewSim.ShowShield = true;
+			this.cmdlNewSim.Size = new System.Drawing.Size(350, 65);
+			this.cmdlNewSim.TabIndex = 7;
+			this.cmdlNewSim.Text = "New Simulation";
+			this.cmdlNewSim.UseVisualStyleBackColor = true;
 			// 
-			// commandLink3
+			// cmdlViewResults
 			// 
-			this.commandLink3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink3.Location = new System.Drawing.Point(35, 162);
-			this.commandLink3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.commandLink3.Name = "commandLink3";
-			this.commandLink3.Note = "View the results of previous simulation runs";
-			this.commandLink3.Size = new System.Drawing.Size(350, 65);
-			this.commandLink3.TabIndex = 6;
-			this.commandLink3.Text = "View Results";
-			this.commandLink3.UseVisualStyleBackColor = true;
+			this.cmdlViewResults.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlViewResults.Location = new System.Drawing.Point(35, 162);
+			this.cmdlViewResults.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.cmdlViewResults.Name = "cmdlViewResults";
+			this.cmdlViewResults.Note = "View the results of previous simulation runs";
+			this.cmdlViewResults.Size = new System.Drawing.Size(350, 65);
+			this.cmdlViewResults.TabIndex = 6;
+			this.cmdlViewResults.Text = "View Results";
+			this.cmdlViewResults.UseVisualStyleBackColor = true;
 			// 
 			// label1
 			// 
@@ -80,29 +80,30 @@
 			this.label2.TabIndex = 9;
 			this.label2.Text = "To get started, select an available option from below.";
 			// 
-			// commandLink2
+			// cmdlRunSim
 			// 
-			this.commandLink2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink2.Location = new System.Drawing.Point(35, 235);
-			this.commandLink2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.commandLink2.Name = "commandLink2";
-			this.commandLink2.Note = "Run a previously saved simulation";
-			this.commandLink2.Size = new System.Drawing.Size(350, 65);
-			this.commandLink2.TabIndex = 6;
-			this.commandLink2.Text = "Run a Simulation";
-			this.commandLink2.UseVisualStyleBackColor = true;
+			this.cmdlRunSim.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlRunSim.Location = new System.Drawing.Point(35, 235);
+			this.cmdlRunSim.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.cmdlRunSim.Name = "cmdlRunSim";
+			this.cmdlRunSim.Note = "Run a previously saved simulation";
+			this.cmdlRunSim.Size = new System.Drawing.Size(350, 65);
+			this.cmdlRunSim.TabIndex = 6;
+			this.cmdlRunSim.Text = "Run a Simulation";
+			this.cmdlRunSim.UseVisualStyleBackColor = true;
+			this.cmdlRunSim.Click += new System.EventHandler(this.cmdlRunSim_Click);
 			// 
-			// commandLink4
+			// cmdlLogout
 			// 
-			this.commandLink4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.commandLink4.Location = new System.Drawing.Point(35, 308);
-			this.commandLink4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.commandLink4.Name = "commandLink4";
-			this.commandLink4.Note = "Log out of the Simulator entirely";
-			this.commandLink4.Size = new System.Drawing.Size(350, 65);
-			this.commandLink4.TabIndex = 6;
-			this.commandLink4.Text = "Log out";
-			this.commandLink4.UseVisualStyleBackColor = true;
+			this.cmdlLogout.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlLogout.Location = new System.Drawing.Point(35, 308);
+			this.cmdlLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.cmdlLogout.Name = "cmdlLogout";
+			this.cmdlLogout.Note = "Log out of the Simulator entirely";
+			this.cmdlLogout.Size = new System.Drawing.Size(350, 65);
+			this.cmdlLogout.TabIndex = 6;
+			this.cmdlLogout.Text = "Log out";
+			this.cmdlLogout.UseVisualStyleBackColor = true;
 			// 
 			// Welcome
 			// 
@@ -112,10 +113,10 @@
 			this.ClientSize = new System.Drawing.Size(417, 415);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.commandLink1);
-			this.Controls.Add(this.commandLink4);
-			this.Controls.Add(this.commandLink2);
-			this.Controls.Add(this.commandLink3);
+			this.Controls.Add(this.cmdlNewSim);
+			this.Controls.Add(this.cmdlLogout);
+			this.Controls.Add(this.cmdlRunSim);
+			this.Controls.Add(this.cmdlViewResults);
 			this.DoubleBuffered = true;
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -132,11 +133,11 @@
 
 		#endregion
 
-		private Pyramid.Garnet.Controls.Aero.CommandLink commandLink1;
-		private Pyramid.Garnet.Controls.Aero.CommandLink commandLink3;
+		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlNewSim;
+		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlViewResults;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
-		private Pyramid.Garnet.Controls.Aero.CommandLink commandLink2;
-		private Pyramid.Garnet.Controls.Aero.CommandLink commandLink4;
+		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlRunSim;
+		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlLogout;
 	}
 }

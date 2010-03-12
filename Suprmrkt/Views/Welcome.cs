@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Suprmrkt.Interfaces;
+using Suprmrkt.Models;
 
 namespace Suprmrkt.Views
 {
@@ -30,5 +31,11 @@ namespace Suprmrkt.Views
 		}
 
 		#endregion
+
+		private void cmdlRunSim_Click(object sender, EventArgs e)
+		{
+			Simulator s = new Simulator();
+			s.Run();
+		}
 	}
 }

@@ -42,7 +42,7 @@ namespace Suprmrkt.Views
 			this.btnQuit.Tag = LoginActions.Quit;
 		}
 
-		void ButtonActionHandlerRedirect(object sender, EventArgs e)
+		private void ButtonActionHandlerRedirect(object sender, EventArgs e)
 		{
 			ButtonActionEventArgs baInfo = new ButtonActionEventArgs();
 			baInfo.Button = (Button)sender;
@@ -71,6 +71,7 @@ namespace Suprmrkt.Views
 						baInfo.Params.Add("password", this.txtPassword.Text);
 						baInfo.Params.Add("view", this);
 						baInfo.TypeOfButton = ButtonActionEventArgs.ButtonType.Button;
+						this.txtPassword.Clear();
 					}
 					break;
 				case LoginActions.Quit:

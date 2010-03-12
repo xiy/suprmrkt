@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using Suprmrkt.Controllers;
 using Suprmrkt.Helpers;
-using System.Collections;
 using Suprmrkt.Interfaces;
-using System.Linq;
-using System.Collections.Generic;
-using Pyramid.Garnet.Controls.Dialogs;
 using Suprmrkt.Models.Users;
 using Suprmrkt.Views;
 
@@ -70,7 +65,7 @@ namespace Suprmrkt.Controllers
 					}
 					else if (checkPassword == string.Empty)
 					{
-
+						// notify view!
 					}
 					break;
 				default:

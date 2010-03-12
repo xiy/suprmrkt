@@ -28,11 +28,23 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Christmas Eve Model",
+            "24/21/2010",
+            "12/07/2010",
+            "Advanced User"}, -1);
+			System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Mondays",
+            "15/04/2010",
+            "10/04/2010",
+            "Standard User"}, -1);
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.label4 = new System.Windows.Forms.Label();
 			this.listView1 = new Pyramid.Garnet.Controls.Aero.ListView();
 			this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -40,8 +52,6 @@
 			this.commandLink1 = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.commandLink3 = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.commandLink2 = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.label4 = new System.Windows.Forms.Label();
 			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
 			this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -59,6 +69,15 @@
 			this.panel1.Size = new System.Drawing.Size(683, 307);
 			this.panel1.TabIndex = 2;
 			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(269, 115);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(144, 15);
+			this.label4.TabIndex = 0;
+			this.label4.Text = "[Result Chart Placeholder]";
+			// 
 			// listView1
 			// 
 			this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -66,6 +85,10 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
+			this.listView1.FullRowSelect = true;
+			this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2});
 			this.listView1.Location = new System.Drawing.Point(15, 85);
 			this.listView1.Name = "listView1";
 			this.listView1.Size = new System.Drawing.Size(683, 151);
@@ -87,6 +110,11 @@
 			// 
 			this.columnHeader3.Text = "Actual Run Date";
 			this.columnHeader3.Width = 181;
+			// 
+			// columnHeader4
+			// 
+			this.columnHeader4.Text = "Run By";
+			this.columnHeader4.Width = 134;
 			// 
 			// label1
 			// 
@@ -155,7 +183,7 @@
 			this.commandLink3.Location = new System.Drawing.Point(471, 3);
 			this.commandLink3.Name = "commandLink3";
 			this.commandLink3.Note = "Save the results to a file";
-			this.commandLink3.Size = new System.Drawing.Size(207, 62);
+			this.commandLink3.Size = new System.Drawing.Size(236, 62);
 			this.commandLink3.TabIndex = 3;
 			this.commandLink3.Text = "Export";
 			this.commandLink3.UseVisualStyleBackColor = true;
@@ -170,20 +198,6 @@
 			this.commandLink2.TabIndex = 6;
 			this.commandLink2.Text = "Save";
 			this.commandLink2.UseVisualStyleBackColor = true;
-			// 
-			// columnHeader4
-			// 
-			this.columnHeader4.Text = "Run By";
-			this.columnHeader4.Width = 134;
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(269, 115);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(144, 15);
-			this.label4.TabIndex = 0;
-			this.label4.Text = "[Result Chart Placeholder]";
 			// 
 			// numericUpDown1
 			// 
@@ -233,8 +247,11 @@
 			// 
 			// comboBox1
 			// 
+			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Items.AddRange(new object[] {
+            "Happiness"});
 			this.comboBox1.Location = new System.Drawing.Point(460, 258);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(238, 25);
@@ -255,6 +272,7 @@
 			this.Controls.Add(this.listView1);
 			this.Controls.Add(this.panel1);
 			this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;

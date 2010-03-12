@@ -3,6 +3,8 @@ using System.Windows.Forms;
 using Suprmrkt.Controllers;
 using Suprmrkt.Interfaces;
 using Suprmrkt.Views;
+using Suprmrkt.Helpers;
+using Suprmrkt.Models;
 
 namespace Suprmrkt.Controllers
 {
@@ -31,19 +33,27 @@ namespace Suprmrkt.Controllers
 		} 
 		#endregion
 
-		/// <summary>
-		/// Handles all button click events sent from the Main form.
-		/// </summary>
-		/// <param name="sender">The control that sent the Click event.</param>
-		/// <param name="e">The EventArgs related to the sending Control.</param>
-		public void ButtonClickHandler(object sender, EventArgs e)
+
+		public void ButtonActionHandler(object sender, ButtonActionEventArgs e)
 		{
-			Button sendingButton = (Button)sender;
-			switch (sendingButton.Text)
+			switch ((MainActions)e.Button.Tag)
 			{
-				case "New Simulation":
-					Login l = new Login();
-					l.ShowDialog(sendingButton.FindForm());
+				case MainActions.RunSimulation:
+					Simulator s = new Simulator();
+					s.Run();
+					break;
+				case MainActions.GetCustomerTypes:
+					Customer.Instance.GetCustomerTypes();
+					break;
+				case MainActions.NewSimulation:
+					break;
+				case MainActions.LoadSimulation:
+					break;
+				case MainActions.ViewResults:
+					break;
+				case MainActions.Logout:
+					break;
+				case MainActions.Quit:
 					break;
 				default:
 					break;

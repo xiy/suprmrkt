@@ -71,5 +71,10 @@ namespace Suprmrkt.Models
             Pro,
             Novice
         }
-    }
+
+		internal void GetCustomerTypes()
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

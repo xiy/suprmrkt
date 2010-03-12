@@ -9,7 +9,7 @@ using System.Data;
 
 namespace Suprmrkt.Models
 {
-	public class Simulation
+	public class Simulator
 	{
 		/// <summary>
 		/// A List that contains all the Customers entering the store.
@@ -57,10 +57,10 @@ namespace Suprmrkt.Models
 		private Dictionary<int, List<Customer.CustomerType>> CustDict;
 		private int sebvar = 0;
 
-		public Simulation()
+		public Simulator()
 		{
 			SQLiteResult result = SQLiteController.Instance.Query("SELECT COUNT(Type) from staff");
-			staffCounter = (int)result.Rows[0]["COUNT(Type)"];
+			staffCounter = Convert.ToInt32(result.Rows[0]["COUNT(Type)"]);
 
 			// create Queues objects with attributes from the Staff db table
 			// populate the Queues list with these Queues objects (DONE BELOW)
@@ -70,7 +70,7 @@ namespace Suprmrkt.Models
 			{
 				result = SQLiteController.Instance.Query("SELECT number FROM staff");
 				// make sure this actually gets the number field correctly!
-				staffNumber = (int)result.Rows[0]["number"];
+				staffNumber = Convert.ToInt32(result.Rows[0]["number"]);
 
 				// create Queues that have that staff's attributes (speed, maxSpeed)
 				for (int r = 0; r < staffNumber; r++)

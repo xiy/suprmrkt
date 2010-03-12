@@ -3,6 +3,8 @@ using System.Windows.Forms;
 using Suprmrkt.Helpers;
 using Suprmrkt.Interfaces;
 using Suprmrkt.Controllers;
+using Pyramid.Garnet.Controls.Tabs;
+using Suprmrkt.Models;
 
 namespace Suprmrkt.Views
 {
@@ -21,9 +23,9 @@ namespace Suprmrkt.Views
 		/// <param name="disable"></param>
 		private void DisableAllControls(bool disable)
 		{
-			foreach (Control item in this.garnetTabStrip1.Controls)
+			foreach (GarnetTabStripItem tab in this.tabstripMainTabs.Items)
 			{
-				item.Enabled = disable;
+				tab.Enabled = disable;
 			}
 		}
 
@@ -36,7 +38,32 @@ namespace Suprmrkt.Views
 
 		public void InitialiseController()
 		{
-			this.FormClosed += new FormClosedEventHandler(MainController.Instance.ButtonClickHandler);
+			this.Controller.RegisterView(this);
+
+			this.FormClosed += new FormClosedEventHandler(Main_FormClosed);
+			this.cmdlRunSimulation.Click += new EventHandler(ButtonActionHandlerRedirect);
+			this.cmbCustomersCustomerTypes.Click += new EventHandler(ButtonActionHandlerRedirect);
+
+			this.cmdlRunSimulation.Tag = MainActions.RunSimulation;
+			this.cmbCustomersCustomerTypes.Tag = MainActions.GetCustomerTypes;
+		}
+
+		void Main_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			Application.Exit();
+		}
+
+		/// <summary>
+		/// Redirects standard EventHandler driven form events to the custom ButtonClick
+		/// handler inside the controller.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void ButtonActionHandlerRedirect(object sender, EventArgs e)
+		{
+			ButtonActionEventArgs baInfo = new ButtonActionEventArgs();
+			baInfo.Button = (Button)sender;
+			Controller.ButtonActionHandler(sender, baInfo);
 		}
 
 		public MainController Controller
@@ -48,6 +75,38 @@ namespace Suprmrkt.Views
 		}
 
 		#endregion
+
+		private void cmdlNewSimulation_Click(object sender, EventArgs e)
+		{
+			this.txtSimTitle.Clear();
+			this.tabstripMainTabs.SelectedItem = this.tabCustomers;
+		}
+
+		private void cmdlLoadSimulation_Click(object sender, EventArgs e)
+		{
+			OpenFileDialog ofd = new OpenFileDialog();
+			ofd.Title = "Choose a Simulation to load..";
+			ofd.ShowDialog();
+		}
+
+		private void cmdlViewResults_Click(object sender, EventArgs e)
+		{
+			Results r = new Results();
+			r.ShowDialog(this);
+		}
+
+		private void cmdlLogout_Click(object sender, EventArgs e)
+		{
+			Login loginView = (Login)Application.OpenForms["Login"];
+			loginView.Show();
+			this.Hide();
+		}
+
+		private void button15_Click(object sender, EventArgs e)
+		{
+			Simulator s = new Simulator();
+			s.Run();
+		}
 
 	}
 }

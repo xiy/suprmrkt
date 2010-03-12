@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Suprmrkt.Interfaces;
+using Suprmrkt.Models;
+using Suprmrkt.Helpers;
+using System.Windows.Forms;
 
 namespace Suprmrkt.Controllers
 {
@@ -27,6 +30,11 @@ namespace Suprmrkt.Controllers
 			internal static SimulationController _instance = new SimulationController();
 		} 
 		#endregion
+
+		public void New(string name, DateTime date)
+		{
+			Simulation sim = new Simulation(name, date, true);
+		}
 
 		#region IController Members
 

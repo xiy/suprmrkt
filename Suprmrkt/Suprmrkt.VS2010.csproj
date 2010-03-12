@@ -99,6 +99,7 @@
     <Compile Include="Models\CustomerBase.cs" />
     <Compile Include="Models\NoviceCustomer.cs" />
     <Compile Include="Models\Queues.cs" />
+    <Compile Include="Models\Simulation.cs" />
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Models\Users\AdvancedUser.cs" />
     <Compile Include="Models\Users\UserBase.cs" />
@@ -201,7 +202,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>copy $(SolutionDir)buyrite.s3db $(TargetPath)</PreBuildEvent>
+    <PreBuildEvent>copy $(TargetDir)\buyrite.s3db $(SolutionDir)</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
