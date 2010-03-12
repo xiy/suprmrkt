@@ -9,7 +9,7 @@ using System.Data;
 
 namespace Suprmrkt.Models
 {
-	public class Simulator
+	public class Simulation
 	{
 		/// <summary>
 		/// A List that contains all the Customers entering the store.
@@ -51,16 +51,15 @@ namespace Suprmrkt.Models
 		private static int staffCounter = 0;
 		private static int staffNumber = 0;
 		private Suprmrkt.Models.Queues.StaffType staffType;
-		private int[] hourdb = new int[12];
-		private Suprmrkt.Models.Customer.CustomerType custType;
-		private List<Customer.CustomerType> CustTypeList;
-		private Dictionary<int, List<Customer.CustomerType>> CustDict;
-		private int sebvar = 0;
+        private Suprmrkt.Models.Customer.CustomerType custType;
+        private Dictionary<Suprmrkt.Models.Customer.CustomerType, int> CTypeDict;
+		private Dictionary<int, Dictionary<Suprmrkt.Models.Customer.CustomerType, int>> CustDict;
+		private Suprmrkt.Models.Customer.CustomerType sebType;
 
-		public Simulator()
+		public Simulation()
 		{
 			SQLiteResult result = SQLiteController.Instance.Query("SELECT COUNT(Type) from staff");
-			staffCounter = Convert.ToInt32(result.Rows[0]["COUNT(Type)"]);
+			staffCounter = (int)result.Rows[0]["COUNT(Type)"];
 
 			// create Queues objects with attributes from the Staff db table
 			// populate the Queues list with these Queues objects (DONE BELOW)
@@ -70,13 +69,13 @@ namespace Suprmrkt.Models
 			{
 				result = SQLiteController.Instance.Query("SELECT number FROM staff");
 				// make sure this actually gets the number field correctly!
-				staffNumber = Convert.ToInt32(result.Rows[0]["number"]);
+				staffNumber = (int)result.Rows[0]["number"];
 
 				// create Queues that have that staff's attributes (speed, maxSpeed)
 				for (int r = 0; r < staffNumber; r++)
 				{
 					result = SQLiteController.Instance.Query("SELECT Type FROM staff");
-					// TODO: set staffType here
+                    staffType = (Suprmrkt.Models.Queues.StaffType)result.Rows[0]["Type"];
 
 					// staffType is the type we feed the Queue constructor with
 					Queues.Add(new Queues(staffType));
@@ -93,7 +92,7 @@ namespace Suprmrkt.Models
 			for (int hour = 1; hour <= 12; hour++)
 			{
 				secondsTimer = 0;
-				custsEntering = CustTypeList.Count();
+                custsEntering = CTypeDict.Count();
 				customersPerMinute = custsEntering / 60;
 				custsIn = 0;
 
@@ -105,18 +104,28 @@ namespace Suprmrkt.Models
 
 						for (int c = 0; c < forTheMinute; c++) // create the customers and add the to the shoppers list
 						{
-							foreach (Suprmrkt.Models.Customer.CustomerType CType in CustTypeList)
+                            SQLiteResult resultX = SQLiteController.Instance.Query("SELECT Type FROM Customers");
+                            custType = (Suprmrkt.Models.Customer.CustomerType)resultX.Rows[0]["Type"];
+                            /**
+                            var TypeNumber = from customerType in CTypeDict
+                                             where CTypeDict.Contains<custType, int>
+                                             select customer.number;
+                            */
+                            
+                            foreach (KeyValuePair<Suprmrkt.Models.Customer.CustomerType, int> entry in CTypeDict)
 							{
-								custType = CustTypeList[sebvar];
-								Customer cust = new Customer(custType); //new Customer();
-								cust.EntryTime = dayTimer;
-								Shoppers.Add(cust);
-								custsIn++;
+                                sebType = entry.Key;
+                                for (int l = 0; l < entry.Value; l++)
+                                {
+                                    Customer cust = new Customer(sebType); //new Customer();
+                                    cust.EntryTime = dayTimer;
+                                    Shoppers.Add(cust);
+                                    custsIn++;
+                                }
 							}
 
 							calcEventTimes(dayTimer, Shoppers.Count);
 							SortShoppers();
-							sebvar++;
 						}
 					}
 				}
