@@ -13,6 +13,10 @@ namespace Suprmrkt.Controllers
 
 	public enum MainActions
 	{
+		RunSimulation,
+		NewSimulation,
+		LoadSimulation,
+		ViewResults,
 		Logout,
 		Quit
 	}

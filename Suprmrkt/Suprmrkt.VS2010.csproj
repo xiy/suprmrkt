@@ -87,6 +87,7 @@
     <Compile Include="Controllers\Actions.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Controllers\SimulationController.cs" />
     <Compile Include="Controllers\SQLiteController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Helpers\ActionParameterList.cs" />
