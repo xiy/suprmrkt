@@ -23,8 +23,8 @@ namespace Suprmrkt.Models
         public Queues(StaffType type)
         {
 			SQLiteResult result = SQLiteController.Instance.Query("SELECT * FROM staff WHERE (type = '" + type.ToString() + "')");
-			this.Speed = (int)result.Rows[0]["speed"];
-			this.MaxSpeed = (int)result.Rows[0]["speedUp"];
+			this.Speed = Convert.ToInt32(result.Rows[0]["speed"]);
+			this.MaxSpeed = Convert.ToInt32(result.Rows[0]["speedUp"]);
         }
 
         public enum StaffType

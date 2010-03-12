@@ -70,7 +70,7 @@
 			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			this.button10 = new System.Windows.Forms.Button();
 			this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
-			this.comboBox5 = new System.Windows.Forms.ComboBox();
+			this.cmbActivityCustomerTypes = new System.Windows.Forms.ComboBox();
 			this.label13 = new System.Windows.Forms.Label();
 			this.label23 = new System.Windows.Forms.Label();
 			this.label24 = new System.Windows.Forms.Label();
@@ -135,7 +135,7 @@
             this.tabSummaryRunSim});
 			this.tabstripMainTabs.Location = new System.Drawing.Point(0, 110);
 			this.tabstripMainTabs.Name = "tabstripMainTabs";
-			this.tabstripMainTabs.SelectedItem = this.tabSummaryRunSim;
+			this.tabstripMainTabs.SelectedItem = this.tabActivity;
 			this.tabstripMainTabs.Size = new System.Drawing.Size(941, 508);
 			this.tabstripMainTabs.TabActiveUnderlineColor = System.Drawing.Color.Empty;
 			this.tabstripMainTabs.TabIndex = 1;
@@ -557,13 +557,14 @@
 			this.tabActivity.Controls.Add(this.dateTimePicker1);
 			this.tabActivity.Controls.Add(this.button10);
 			this.tabActivity.Controls.Add(this.maskedTextBox9);
-			this.tabActivity.Controls.Add(this.comboBox5);
+			this.tabActivity.Controls.Add(this.cmbActivityCustomerTypes);
 			this.tabActivity.Controls.Add(this.label13);
 			this.tabActivity.Controls.Add(this.label23);
 			this.tabActivity.Controls.Add(this.label24);
 			this.tabActivity.Controls.Add(this.label22);
 			this.tabActivity.IsDrawn = true;
 			this.tabActivity.Name = "tabActivity";
+			this.tabActivity.Selected = true;
 			this.tabActivity.Size = new System.Drawing.Size(939, 484);
 			this.tabActivity.TabIndex = 4;
 			this.tabActivity.Title = "Activity";
@@ -598,13 +599,13 @@
 			this.maskedTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.maskedTextBox9.ValidatingType = typeof(int);
 			// 
-			// comboBox5
+			// cmbActivityCustomerTypes
 			// 
-			this.comboBox5.FormattingEnabled = true;
-			this.comboBox5.Location = new System.Drawing.Point(353, 112);
-			this.comboBox5.Name = "comboBox5";
-			this.comboBox5.Size = new System.Drawing.Size(161, 23);
-			this.comboBox5.TabIndex = 3;
+			this.cmbActivityCustomerTypes.FormattingEnabled = true;
+			this.cmbActivityCustomerTypes.Location = new System.Drawing.Point(353, 112);
+			this.cmbActivityCustomerTypes.Name = "cmbActivityCustomerTypes";
+			this.cmbActivityCustomerTypes.Size = new System.Drawing.Size(161, 23);
+			this.cmbActivityCustomerTypes.TabIndex = 3;
 			// 
 			// label13
 			// 
@@ -823,7 +824,6 @@
 			this.tabSummaryRunSim.Controls.Add(this.label16);
 			this.tabSummaryRunSim.IsDrawn = true;
 			this.tabSummaryRunSim.Name = "tabSummaryRunSim";
-			this.tabSummaryRunSim.Selected = true;
 			this.tabSummaryRunSim.Size = new System.Drawing.Size(939, 484);
 			this.tabSummaryRunSim.TabIndex = 7;
 			this.tabSummaryRunSim.Title = "Summary / Run Simulation";
@@ -1100,7 +1100,7 @@
 		private System.Windows.Forms.ComboBox comboBox2;
 		private System.Windows.Forms.Button button10;
 		private System.Windows.Forms.MaskedTextBox maskedTextBox9;
-		private System.Windows.Forms.ComboBox comboBox5;
+		private System.Windows.Forms.ComboBox cmbActivityCustomerTypes;
 		private System.Windows.Forms.Label label23;
 		private System.Windows.Forms.Label label24;
 		private System.Windows.Forms.Label label22;

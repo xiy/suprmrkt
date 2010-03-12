@@ -6,6 +6,7 @@ using System.Text;
 using Suprmrkt.Controllers;
 using System.Data.SQLite;
 using System.Data;
+using System.Diagnostics;
 
 namespace Suprmrkt.Models
 {
@@ -75,7 +76,7 @@ namespace Suprmrkt.Models
 				for (int r = 0; r < staffNumber; r++)
 				{
 					result = SQLiteController.Instance.Query("SELECT Type FROM staff");
-                    staffType = (Suprmrkt.Models.Queues.StaffType)result.Rows[0]["Type"];
+                    staffType = (Queues.StaffType)Enum.Parse(typeof(Queues.StaffType), (string)result.Rows[0]["Type"]);
 
 					// staffType is the type we feed the Queue constructor with
 					Queues.Add(new Queues(staffType));
@@ -92,7 +93,16 @@ namespace Suprmrkt.Models
 			for (int hour = 1; hour <= 12; hour++)
 			{
 				secondsTimer = 0;
-                custsEntering = CTypeDict.Count();
+
+				// Dummy values for now..
+				CTypeDict = new Dictionary<Customer.CustomerType, int>();
+				CTypeDict.Add(Customer.CustomerType.Family, 15);
+				CTypeDict.Add(Customer.CustomerType.Novice, 10);
+				CTypeDict.Add(Customer.CustomerType.Pro, 6);
+				CTypeDict.Add(Customer.CustomerType.Quick, 20);
+
+				custsEntering = CTypeDict.Count();
+				Debug.WriteLine("customersEntering: " + custsEntering);
 				customersPerMinute = custsEntering / 60;
 				custsIn = 0;
 
@@ -105,7 +115,7 @@ namespace Suprmrkt.Models
 						for (int c = 0; c < forTheMinute; c++) // create the customers and add the to the shoppers list
 						{
                             SQLiteResult resultX = SQLiteController.Instance.Query("SELECT Type FROM Customers");
-                            custType = (Suprmrkt.Models.Customer.CustomerType)resultX.Rows[0]["Type"];
+							custType = (Customer.CustomerType)Enum.Parse(typeof(Suprmrkt.Models.Customer.CustomerType), resultX.Rows[0]["Type"].ToString());
                             /**
                             var TypeNumber = from customerType in CTypeDict
                                              where CTypeDict.Contains<custType, int>
@@ -143,6 +153,8 @@ namespace Suprmrkt.Models
 			if (secondsTimer == 3540)
 			{
 				customersToEnter = custsEntering - custsIn;
+				Debug.WriteLine("custToEnter: " + customersToEnter);
+				customersToEnter = 4;
 			}
 			else
 			{
@@ -150,9 +162,13 @@ namespace Suprmrkt.Models
 				customersToEnter = (int)x;
 				float y = (float)customersToEnter;
 				CustRemainder = x - y;
+				Debug.WriteLine("custRemainder: " + CustRemainder);
+				Debug.WriteLine("custToEnter: " + customersToEnter);
+				CustRemainder = 0.4f;
 			}
-
-			return customersToEnter;
+			
+			//return customersToEnter;
+			return 3;
 		}
 
 		/// <summary>

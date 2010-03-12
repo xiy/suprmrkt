@@ -37,10 +37,10 @@ namespace Suprmrkt.Models
 			SQLiteResult result = SQLiteController.Instance.Query("SELECT * FROM customers WHERE (type = '" + type.ToString() + "')");
 			if (result.HasRows)
 			{
-				this.Items = r.Next((int)result.Rows[0]["minItems"], (int)result.Rows[0]["maxItems"]);
-				this.Concentration = (int)result.Rows[0]["concentration"];
-				this.Dawdling = (int)result.Rows[0]["dawdling"];
-				this.Patience = (float)result.Rows[0]["patience"];
+				this.Items = r.Next(Convert.ToInt32(result.Rows[0]["minItems"]), Convert.ToInt32(result.Rows[0]["maxItems"]));
+				this.Concentration = Convert.ToInt32(result.Rows[0]["concentration"]);
+				this.Dawdling = Convert.ToInt32(result.Rows[0]["dawdling"]);
+				this.Patience = Convert.ToInt32(result.Rows[0]["patience"]);
 			}
         }
 		

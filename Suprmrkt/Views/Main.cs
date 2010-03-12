@@ -5,6 +5,7 @@ using Suprmrkt.Interfaces;
 using Suprmrkt.Controllers;
 using Pyramid.Garnet.Controls.Tabs;
 using Suprmrkt.Models;
+using System.Threading;
 
 namespace Suprmrkt.Views
 {
@@ -48,8 +49,10 @@ namespace Suprmrkt.Views
 				case MainActions.GetCustomerTypes:
 					this.cmbCustomersCustomerTypes.Items.Clear();
 					this.cmbPricingCustomerTypes.Items.Clear();
+					this.cmbActivityCustomerTypes.Items.Clear();
 					this.cmbCustomersCustomerTypes.Items.AddRange((string[])e.Params["Customer Types"]);
 					this.cmbPricingCustomerTypes.Items.AddRange((string[])e.Params["Customer Types"]);
+					this.cmbActivityCustomerTypes.Items.AddRange((string[])e.Params["Customer Types"]);
 					break;
 				case MainActions.GetStaffTypes:
 					this.cmbStaffTypes.Items.Clear();
@@ -72,11 +75,13 @@ namespace Suprmrkt.Views
 			this.cmdlRunSimulation.Click += new EventHandler(Controller.ButtonActionHandler);
 			this.cmbCustomersCustomerTypes.Click += new EventHandler(Controller.ButtonActionHandler);
 			this.cmbPricingCustomerTypes.Click += new EventHandler(Controller.ButtonActionHandler);
+			this.cmbActivityCustomerTypes.Click += new EventHandler(Controller.ButtonActionHandler);
 			this.cmbStaffTypes.Click += new EventHandler(Controller.ButtonActionHandler);
 
 			this.cmdlRunSimulation.Tag = MainActions.RunSimulation;
 			this.cmbCustomersCustomerTypes.Tag = MainActions.GetCustomerTypes;
 			this.cmbPricingCustomerTypes.Tag = MainActions.GetCustomerTypes;
+			this.cmbActivityCustomerTypes.Tag = MainActions.GetCustomerTypes;
 			this.cmbStaffTypes.Tag = MainActions.GetStaffTypes;
 		}
 
@@ -137,7 +142,9 @@ namespace Suprmrkt.Views
 		private void button15_Click(object sender, EventArgs e)
 		{
 			Simulator s = new Simulator();
-			s.Run();
+			Thread t = new Thread(new ThreadStart(s.Run));
+			t.IsBackground = true;
+			t.Start();
 		}
 
 	}
