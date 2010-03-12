@@ -19,7 +19,20 @@ namespace Suprmrkt.Views
 
 		public void ModelChanged(object sender, ModelChangedEventArgs e)
 		{
-			throw new NotImplementedException();
+			switch ((LoginActions)e.ActionReference)
+			{
+				case LoginActions.Login:
+					if (e.Params.ContainsKey("Fail"))
+					{
+						this.labelValidationError.Text = e.Params["Fail"].ToString();
+						this.labelValidationError.Visible = true;
+					}
+					break;
+				case LoginActions.Quit:
+					break;
+				default:
+					break;
+			}
 		}
 
 		public LoginController Controller
@@ -72,6 +85,8 @@ namespace Suprmrkt.Views
 						baInfo.Params.Add("view", this);
 						baInfo.TypeOfButton = ButtonActionEventArgs.ButtonType.Button;
 						this.txtPassword.Clear();
+						errorProvider.Clear();
+						labelValidationError.Hide();
 					}
 					break;
 				case LoginActions.Quit:

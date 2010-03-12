@@ -5,6 +5,7 @@ using Suprmrkt.Interfaces;
 using Suprmrkt.Views;
 using Suprmrkt.Helpers;
 using Suprmrkt.Models;
+using System.Collections.Generic;
 
 namespace Suprmrkt.Controllers
 {
@@ -34,17 +35,35 @@ namespace Suprmrkt.Controllers
 		#endregion
 
 
-		public void ButtonActionHandler(object sender, ButtonActionEventArgs e)
+		public void ButtonActionHandler(object sender, EventArgs e)
 		{
-			switch ((MainActions)e.Button.Tag)
+			Control sendingControl = (Control)sender;
+			switch ((MainActions)sendingControl.Tag)
 			{
 				case MainActions.RunSimulation:
 					Simulator s = new Simulator();
 					s.Run();
 					break;
 				case MainActions.GetCustomerTypes:
-					Customer.Instance.GetCustomerTypes();
-					break;
+					string[] ctypes = Customer.Instance.GetCustomerTypes();
+					ModelChangedEventArgs cm = new ModelChangedEventArgs();
+					cm.ActionReference = MainActions.GetCustomerTypes;
+					cm.Params.Add("Customer Types", ctypes);
+					RaiseModelChange(this, cm);
+					return;
+				case MainActions.GetStaffTypes:
+					SQLiteResult result = SQLiteController.Instance.Query("SELECT Type FROM staff");
+					List<string> types = new List<string>();
+					for (int i = 0; i < result.Rows.Count; i++)
+					{
+						types.Add(result.Rows[i]["Type"].ToString());
+					}
+					string[] stypes = types.ToArray();
+					ModelChangedEventArgs sm = new ModelChangedEventArgs();
+					sm.ActionReference = MainActions.GetStaffTypes;
+					sm.Params.Add("Staff Types", stypes);
+					RaiseModelChange(this, sm);
+					return;
 				case MainActions.NewSimulation:
 					break;
 				case MainActions.LoadSimulation:

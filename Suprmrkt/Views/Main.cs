@@ -33,7 +33,35 @@ namespace Suprmrkt.Views
 
 		public void ModelChanged(object sender, ModelChangedEventArgs e)
 		{
-			throw new NotImplementedException();
+			switch ((MainActions)e.ActionReference)
+			{
+				case MainActions.RunSimulation:
+					break;
+				case MainActions.NewSimulation:
+					break;
+				case MainActions.LoadSimulation:
+					break;
+				case MainActions.ViewResults:
+					break;
+				case MainActions.Logout:
+					break;
+				case MainActions.GetCustomerTypes:
+					this.cmbCustomersCustomerTypes.Items.Clear();
+					this.cmbPricingCustomerTypes.Items.Clear();
+					this.cmbCustomersCustomerTypes.Items.AddRange((string[])e.Params["Customer Types"]);
+					this.cmbPricingCustomerTypes.Items.AddRange((string[])e.Params["Customer Types"]);
+					break;
+				case MainActions.GetStaffTypes:
+					this.cmbStaffTypes.Items.Clear();
+					this.cmbStaffTypes.Items.AddRange((string[])e.Params["Staff Types"]);
+					break;
+				case MainActions.GetPromotionTypes:
+					break;
+				case MainActions.Quit:
+					break;
+				default:
+					break;
+			}
 		}
 
 		public void InitialiseController()
@@ -41,11 +69,15 @@ namespace Suprmrkt.Views
 			this.Controller.RegisterView(this);
 
 			this.FormClosed += new FormClosedEventHandler(Main_FormClosed);
-			this.cmdlRunSimulation.Click += new EventHandler(ButtonActionHandlerRedirect);
-			this.cmbCustomersCustomerTypes.Click += new EventHandler(ButtonActionHandlerRedirect);
+			this.cmdlRunSimulation.Click += new EventHandler(Controller.ButtonActionHandler);
+			this.cmbCustomersCustomerTypes.Click += new EventHandler(Controller.ButtonActionHandler);
+			this.cmbPricingCustomerTypes.Click += new EventHandler(Controller.ButtonActionHandler);
+			this.cmbStaffTypes.Click += new EventHandler(Controller.ButtonActionHandler);
 
 			this.cmdlRunSimulation.Tag = MainActions.RunSimulation;
 			this.cmbCustomersCustomerTypes.Tag = MainActions.GetCustomerTypes;
+			this.cmbPricingCustomerTypes.Tag = MainActions.GetCustomerTypes;
+			this.cmbStaffTypes.Tag = MainActions.GetStaffTypes;
 		}
 
 		void Main_FormClosed(object sender, FormClosedEventArgs e)

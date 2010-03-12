@@ -42,8 +42,8 @@ namespace Suprmrkt.Controllers
 					string username = e.Params["username"].ToString();
 					string password = e.Params["password"].ToString();
 					Login loginView = (Login)e.Params["view"];
+					//this.View = loginView;
 					this.AuthenticateUser(username, password);
-					loginView.Hide();
 					break;
 				case LoginActions.Quit:
 					Application.Exit();
@@ -62,10 +62,15 @@ namespace Suprmrkt.Controllers
 					if (checkPassword == password) {
 						Main mainForm = new Main();
 						mainForm.Show();
+						Application.OpenForms["Login"].Hide();
 					}
-					else if (checkPassword == string.Empty)
+					else if (checkPassword == string.Empty || checkPassword != password)
 					{
 						// notify view!
+						ModelChangedEventArgs m = new ModelChangedEventArgs();
+						m.ActionReference = LoginActions.Login;
+						m.Params.Add("Fail", "Password was invalid!");
+						RaiseModelChange(this, m);
 					}
 					break;
 				default:

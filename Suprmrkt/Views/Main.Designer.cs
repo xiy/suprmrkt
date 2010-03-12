@@ -92,6 +92,7 @@
 			this.button14 = new System.Windows.Forms.Button();
 			this.label15 = new System.Windows.Forms.Label();
 			this.tabSummaryRunSim = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.button15 = new System.Windows.Forms.Button();
 			this.cmdlRunSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.label16 = new System.Windows.Forms.Label();
 			this.cmdlNewSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
@@ -106,7 +107,6 @@
 			this.button5 = new System.Windows.Forms.Button();
 			this.button7 = new System.Windows.Forms.Button();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.button15 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.tabstripMainTabs)).BeginInit();
 			this.tabstripMainTabs.SuspendLayout();
 			this.tabCustomers.SuspendLayout();
@@ -828,6 +828,16 @@
 			this.tabSummaryRunSim.TabIndex = 7;
 			this.tabSummaryRunSim.Title = "Summary / Run Simulation";
 			// 
+			// button15
+			// 
+			this.button15.Location = new System.Drawing.Point(368, 301);
+			this.button15.Name = "button15";
+			this.button15.Size = new System.Drawing.Size(161, 23);
+			this.button15.TabIndex = 8;
+			this.button15.Text = "Seb\'s Little Run Button";
+			this.button15.UseVisualStyleBackColor = true;
+			this.button15.Click += new System.EventHandler(this.button15_Click);
+			// 
 			// cmdlRunSimulation
 			// 
 			this.cmdlRunSimulation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
@@ -988,16 +998,6 @@
 			this.comboBox2.Size = new System.Drawing.Size(200, 25);
 			this.comboBox2.TabIndex = 15;
 			// 
-			// button15
-			// 
-			this.button15.Location = new System.Drawing.Point(368, 301);
-			this.button15.Name = "button15";
-			this.button15.Size = new System.Drawing.Size(161, 23);
-			this.button15.TabIndex = 8;
-			this.button15.Text = "Seb\'s Little Run Button";
-			this.button15.UseVisualStyleBackColor = true;
-			this.button15.Click += new System.EventHandler(this.button15_Click);
-			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1011,6 +1011,7 @@
 			this.Controls.Add(this.tabstripMainTabs);
 			this.DoubleBuffered = true;
 			this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.MaximizeBox = false;
 			this.MinimumSize = new System.Drawing.Size(957, 655);
 			this.Name = "Main";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

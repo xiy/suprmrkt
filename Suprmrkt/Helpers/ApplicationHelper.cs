@@ -66,6 +66,9 @@ namespace Suprmrkt.Helpers
 	
 	public class ModelChangedEventArgs : EventArgs
 	{
+		public Control SendingControl { get; set; }
+		public object ActionReference { get; set; }
+
 		Dictionary<string, object> _params;
 		public Dictionary<string, object> Params
 		{

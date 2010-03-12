@@ -72,9 +72,15 @@ namespace Suprmrkt.Models
             Novice
         }
 
-		internal void GetCustomerTypes()
+		internal string[] GetCustomerTypes()
 		{
-			throw new NotImplementedException();
+			SQLiteResult result = SQLiteController.Instance.Query("SELECT Type FROM customers");
+			List<string> types = new List<string>();
+			for (int i = 0; i < result.Rows.Count; i++)
+			{
+				types.Add(result.Rows[i]["Type"].ToString());
+			}
+			return types.ToArray();
 		}
 	}
 }
