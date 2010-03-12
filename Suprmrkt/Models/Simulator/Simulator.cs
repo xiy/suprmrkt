@@ -9,7 +9,7 @@ using System.Data;
 
 namespace Suprmrkt.Models
 {
-	public class Simulation
+	public class Simulator
 	{
 		/// <summary>
 		/// A List that contains all the Customers entering the store.
@@ -56,7 +56,7 @@ namespace Suprmrkt.Models
 		private Dictionary<int, Dictionary<Suprmrkt.Models.Customer.CustomerType, int>> CustDict;
 		private Suprmrkt.Models.Customer.CustomerType sebType;
 
-		public Simulation()
+		public Simulator()
 		{
 			SQLiteResult result = SQLiteController.Instance.Query("SELECT COUNT(Type) from staff");
 			staffCounter = (int)result.Rows[0]["COUNT(Type)"];
