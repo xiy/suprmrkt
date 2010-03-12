@@ -44,20 +44,20 @@ namespace Suprmrkt.Views
 
 		void ActionHandlerRedirect(object sender, EventArgs e)
 		{
-			if (this.cmbUserType.SelectedItem == null)
-			{
-				errorProvider.SetError(cmbUserType, "No User Type selected!");
-				this.labelValidationError.Visible = true;
-				this.labelValidationError.Text = "No User Type selected!";
-				return;
-			}
-
 			ButtonActionEventArgs baInfo = new ButtonActionEventArgs();
 			baInfo.Button = (Button)sender;
 
 			switch ((LoginActions)baInfo.Button.Tag)
 			{
 				case LoginActions.Login:
+					// Validation checks need to moved from here to the model?
+					if (this.cmbUserType.SelectedItem == null)
+					{
+						errorProvider.SetError(cmbUserType, "No User Type selected!");
+						this.labelValidationError.Visible = true;
+						this.labelValidationError.Text = "No User Type selected!";
+						return;
+					}
 					baInfo.Params.Add("username", this.cmbUserType.SelectedItem.ToString());
 					baInfo.Params.Add("password", this.txtPassword.Text);
 					baInfo.Params.Add("view", this);

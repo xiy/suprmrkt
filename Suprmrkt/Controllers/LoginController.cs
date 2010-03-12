@@ -68,6 +68,10 @@ namespace Suprmrkt.Controllers
 						Main mainForm = new Main();
 						mainForm.Show();
 					}
+					else if (checkPassword == string.Empty)
+					{
+
+					}
 					break;
 				default:
 					break;

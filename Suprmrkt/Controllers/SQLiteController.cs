@@ -5,6 +5,8 @@ using System.Diagnostics;
 using System.IO;
 using Suprmrkt.Controllers;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using Suprmrkt.Models;
 
 namespace Suprmrkt.Controllers
 {
@@ -48,6 +50,20 @@ namespace Suprmrkt.Controllers
 				return _sqlConnection; 
 			}
 			set { _sqlConnection = value; }
+		}
+
+		public SQLiteResult Query(string command)
+		{
+			SQLiteCommand sqlCmd = new SQLiteCommand(command);
+			SQLiteResult sqlResult;
+			sqlCmd.Connection = this._sqlConnection;
+			using (SQLiteDataReader reader = sqlCmd.ExecuteReader())
+			{
+				sqlResult = new SQLiteResult();
+				sqlResult.Analyse(reader);
+				reader.Close();
+			}
+			return sqlResult;
 		}
 
 		/// <summary>
@@ -94,6 +110,60 @@ namespace Suprmrkt.Controllers
 				default:
 					Debug.WriteLine("DB: Undertermined");
 					break;
+			}
+		}
+	}
+
+	/// <summary>
+	/// Represents the result of a query against an SQLite Database
+	/// in an easy to read manner, by parsing the SQLiteDataReader that
+	/// is returned from an ExecuteReader call.
+	/// </summary>
+	public class SQLiteResult
+	{
+		private Dictionary<string, object> _rows;
+
+		/// <summary>
+		/// A Dictionary containing the returned rows of a query.
+		/// Keys are Column names, Values are column values.
+		/// </summary>
+		public Dictionary<string, object> Rows
+		{
+			get
+			{
+				if (this._rows == null)
+					this._rows = new Dictionary<string, object>();
+				return _rows;
+			}
+			set { _rows = value; }
+		}
+
+		/// <summary>
+		/// A boolean that determines whether the result returned any rows
+		/// or not.
+		/// </summary>
+		public bool HasRows
+		{
+			get { return this.Rows.Count > 0; }
+		}
+
+		/// <summary>
+		/// Analyses the SQLiteDataReader passed to it, filling the
+		/// Rows collection using the column name and it's respective value
+		/// for each row returned.
+		/// </summary>
+		/// <param name="reader">The SQLiteDataReader object containing the results of a query.</param>
+		public void Analyse(SQLiteDataReader reader)
+		{
+			while (reader.Read())
+			{
+				if (reader.HasRows)
+				{
+					for (int i = 0; i < reader.FieldCount; i++)
+					{
+						this.Rows.Add(reader.GetName(i), reader.GetValue(i));
+					}
+				}
 			}
 		}
 	}

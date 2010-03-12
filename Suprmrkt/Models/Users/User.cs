@@ -32,14 +32,11 @@ namespace Suprmrkt.Models.Users
 
 		public string GetPasswordForUser(UserType user)
 		{
-			SQLiteCommand sqlCmd = new SQLiteCommand("SELECT password FROM users WHERE (username = '" + user.ToString() + "')");
-			sqlCmd.Connection = SQLiteController.Instance.SqlConnection;
-			using (SQLiteDataReader sqlReader = sqlCmd.ExecuteReader())
+			SQLiteResult sqlResult = SQLiteController.Instance.Query(
+				"SELECT password FROM Users WHERE (username = '" + user.ToString() + "')");
+			if (sqlResult.HasRows)
 			{
-				sqlReader.Read();
-				string password = sqlReader.GetString(0);
-				sqlReader.Close();
-				return password;
+
 			}
 		}
 	}
