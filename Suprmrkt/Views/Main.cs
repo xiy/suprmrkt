@@ -36,7 +36,7 @@ namespace Suprmrkt.Views
 
 		public void InitialiseController()
 		{
-
+			this.FormClosed += new FormClosedEventHandler(MainController.Instance.ButtonClickHandler);
 		}
 
 		public MainController Controller

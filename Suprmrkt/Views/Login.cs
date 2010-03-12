@@ -36,13 +36,13 @@ namespace Suprmrkt.Views
 			this.Controller.RegisterView(this);
 
 			// Hook Events
-			this.btnLogin.Click += new EventHandler(ActionHandlerRedirect);
-			this.btnQuit.Click += new EventHandler(ActionHandlerRedirect);
+			this.btnLogin.Click += new EventHandler(ButtonActionHandlerRedirect);
+			this.btnQuit.Click += new EventHandler(ButtonActionHandlerRedirect);
 			this.btnLogin.Tag = LoginActions.Login;
 			this.btnQuit.Tag = LoginActions.Quit;
 		}
 
-		void ActionHandlerRedirect(object sender, EventArgs e)
+		void ButtonActionHandlerRedirect(object sender, EventArgs e)
 		{
 			ButtonActionEventArgs baInfo = new ButtonActionEventArgs();
 			baInfo.Button = (Button)sender;
@@ -50,7 +50,7 @@ namespace Suprmrkt.Views
 			switch ((LoginActions)baInfo.Button.Tag)
 			{
 				case LoginActions.Login:
-					// Validation checks need to moved from here to the model?
+					// Validation checks need to moved from here to the model or controller?
 					if (this.cmbUserType.SelectedItem == null)
 					{
 						errorProvider.SetError(cmbUserType, "No User Type selected!");
@@ -58,10 +58,20 @@ namespace Suprmrkt.Views
 						this.labelValidationError.Text = "No User Type selected!";
 						return;
 					}
-					baInfo.Params.Add("username", this.cmbUserType.SelectedItem.ToString());
-					baInfo.Params.Add("password", this.txtPassword.Text);
-					baInfo.Params.Add("view", this);
-					baInfo.TypeOfButton = ButtonActionEventArgs.ButtonType.Button;
+					else if (this.txtPassword.Text == string.Empty)
+					{
+						errorProvider.SetError(txtPassword, "No password entered!");
+						this.labelValidationError.Visible = true;
+						this.labelValidationError.Text = "No password entered!";
+						return;
+					}
+					else
+					{
+						baInfo.Params.Add("username", this.cmbUserType.SelectedItem.ToString());
+						baInfo.Params.Add("password", this.txtPassword.Text);
+						baInfo.Params.Add("view", this);
+						baInfo.TypeOfButton = ButtonActionEventArgs.ButtonType.Button;
+					}
 					break;
 				case LoginActions.Quit:
 					Application.Exit();

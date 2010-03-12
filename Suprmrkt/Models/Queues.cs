@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Suprmrkt.Controllers;
+using System.Data.SQLite;
+using System.Data;
 
 namespace Suprmrkt.Models
 {
@@ -16,11 +19,18 @@ namespace Suprmrkt.Models
         public int Customers { get; set; }
         public int Items { get; set; }
 
-		public Staff StaffMember { get; set; }
-
         // entry time and everything have to be set!
-        public Queues()
+        public Queues(StaffType type)
         {
+			SQLiteResult result = SQLiteController.Instance.Query("SELECT * FROM staff WHERE (type = '" + type.ToString() + "')");
+			this.Speed = (int)result.Rows[0]["speed"];
+			this.MaxSpeed = (int)result.Rows[0]["speedUp"];
+        }
+
+        public enum StaffType
+        {
+            Experienced,
+            Trainee
         }
     }
 }

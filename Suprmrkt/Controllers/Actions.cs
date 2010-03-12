@@ -10,4 +10,10 @@ namespace Suprmrkt.Controllers
 		Login,
 		Quit
 	}
+
+	public enum MainActions
+	{
+		Logout,
+		Quit
+	}
 }
