@@ -56,7 +56,7 @@ namespace Suprmrkt.Controllers
 		{
 			SQLiteCommand sqlCmd = new SQLiteCommand(command);
 			SQLiteResult sqlResult;
-			sqlCmd.Connection = this._sqlConnection;
+			sqlCmd.Connection = this.SqlConnection;
 			using (SQLiteDataReader reader = sqlCmd.ExecuteReader())
 			{
 				sqlResult = new SQLiteResult();
@@ -121,18 +121,18 @@ namespace Suprmrkt.Controllers
 	/// </summary>
 	public class SQLiteResult
 	{
-		private Dictionary<string, object> _rows;
+		private Dictionary<int, Dictionary<string, object>> _rows;
 
 		/// <summary>
 		/// A Dictionary containing the returned rows of a query.
 		/// Keys are Column names, Values are column values.
 		/// </summary>
-		public Dictionary<string, object> Rows
+		public Dictionary<int, Dictionary<string, object>> Rows
 		{
 			get
 			{
 				if (this._rows == null)
-					this._rows = new Dictionary<string, object>();
+					this._rows = new Dictionary<int, Dictionary<string, object>>();
 				return _rows;
 			}
 			set { _rows = value; }
@@ -155,15 +155,19 @@ namespace Suprmrkt.Controllers
 		/// <param name="reader">The SQLiteDataReader object containing the results of a query.</param>
 		public void Analyse(SQLiteDataReader reader)
 		{
+			int currentRow = 0;
 			while (reader.Read())
 			{
 				if (reader.HasRows)
 				{
+					Dictionary<string, object> columns = new Dictionary<string, object>();
 					for (int i = 0; i < reader.FieldCount; i++)
 					{
-						this.Rows.Add(reader.GetName(i), reader.GetValue(i));
+						columns.Add(reader.GetName(i), reader.GetValue(i));
 					}
+					this.Rows.Add(currentRow, columns);
 				}
+				currentRow++;
 			}
 		}
 	}

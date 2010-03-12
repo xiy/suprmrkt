@@ -33,11 +33,12 @@ namespace Suprmrkt.Models.Users
 		public string GetPasswordForUser(UserType user)
 		{
 			SQLiteResult sqlResult = SQLiteController.Instance.Query(
-				"SELECT password FROM Users WHERE (username = '" + user.ToString() + "')");
+				"SELECT password FROM Users WHERE (username = '" + user.ToString().ToLower() + "')");
 			if (sqlResult.HasRows)
 			{
-
+				return sqlResult.Rows[0]["password"].ToString();
 			}
+			else { return string.Empty; }
 		}
 	}
 
