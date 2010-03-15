@@ -55,7 +55,7 @@ namespace Pyramid.Garnet.Controls.Tabs
         private ContextMenuStrip menu = null;
         private GarnetTabStripMenuGlyph menuGlyph = null;
         private GarnetTabStripCloseButton closeButton = null;
-        private GarnetTabStripItemCollection items;
+        private GarnetTabStripItemCollection tabs;
         private StringFormat sFormat = null;
         private List<GarnetTabStripCloseButton> tabCloseButtonCollection;
         private CloseStyle tabCloseStyle = CloseStyle.OnTab;
@@ -128,9 +128,9 @@ namespace Pyramid.Garnet.Controls.Tabs
         public void AddTab(GarnetTabStripItem tabItem, bool autoSelect)
         {
             tabItem.Dock = DockStyle.Fill;
-            Items.Add(tabItem);
+            Tabs.Add(tabItem);
 
-            if ((autoSelect && tabItem.Visible) || (tabItem.Visible && Items.DrawnCount < 1 ))
+            if ((autoSelect && tabItem.Visible) || (tabItem.Visible && Tabs.DrawnCount < 1 ))
             {
                 SelectedItem = tabItem;
                 SelectItem(tabItem);
@@ -143,40 +143,78 @@ namespace Pyramid.Garnet.Controls.Tabs
         /// <param name="tabItem">The <see cref="GarnetTabStripItem"/> to remove.</param>
         public void RemoveTab(GarnetTabStripItem tabItem)
         {
-            int tabIndex = Items.IndexOf(tabItem);
+            int tabIndex = Tabs.IndexOf(tabItem);
 
             if (tabIndex >= 0)
             {
                 UnSelectItem(tabItem);
-                Items.Remove(tabItem);
+                Tabs.Remove(tabItem);
             }
 
-            if (Items.Count > 0)
+            if (Tabs.Count > 0)
             {
                 if (RightToLeft == RightToLeft.No)
                 {
-                    if (Items[tabIndex - 1] != null)
+                    if (Tabs[tabIndex - 1] != null)
                     {
-                        SelectedItem = Items[tabIndex - 1];
+                        SelectedItem = Tabs[tabIndex - 1];
                     }
                     else
                     {
-                        SelectedItem = Items.FirstVisible;
+                        SelectedItem = Tabs.FirstVisible;
                     }
                 }
                 else
                 {
-                    if (Items[tabIndex + 1] != null)
+                    if (Tabs[tabIndex + 1] != null)
                     {
-                        SelectedItem = Items[tabIndex + 1];
+                        SelectedItem = Tabs[tabIndex + 1];
                     }
                     else
                     {
-                        SelectedItem = Items.LastVisible;
+                        SelectedItem = Tabs.LastVisible;
                     }
                 }
             }
         }
+
+		public void SelectNextTab()
+		{
+			if (this.Tabs.Count > 0 && !IsLastTab)
+			{
+				this.SelectedItem = this.Tabs[Tabs.IndexOf(this.SelectedItem) + 1];
+			}
+		}
+
+		public void SelectPreviousTab()
+		{
+			if (this.Tabs.Count > 0 && tabs.IndexOf(selectedItem) != tabs.Count)
+			{
+
+				this.selectedItem = this.tabs[tabs.IndexOf(this.selectedItem) - 1];
+			}
+		}
+
+		public bool IsLastTab
+		{
+			get
+			{
+				if (tabs.IndexOf(selectedItem) < this.tabs.Count || 
+					tabs.IndexOf(selectedItem) > this.tabs.Count)
+					return false;
+				return true;
+			}
+		}
+
+		public bool IsFirstTab
+		{
+			get
+			{
+				if (tabs.IndexOf(selectedItem) > 1)
+					return false;
+				return true;
+			}
+		}
 
         /// <summary>
         /// Get a <see cref="GarnetTabStripItem"/> at the provided System.Drawing.Point.
@@ -188,9 +226,9 @@ namespace Pyramid.Garnet.Controls.Tabs
             GarnetTabStripItem item = null;
             bool found = false;
             
-            for (int i = 0; i < Items.Count; i++)
+            for (int i = 0; i < Tabs.Count; i++)
             {
-                GarnetTabStripItem current = Items[i];
+                GarnetTabStripItem current = Tabs[i];
                 
                 if (current.StripRect.Contains(pt) && current.Visible && current.IsDrawn)
                 {
@@ -267,9 +305,9 @@ namespace Pyramid.Garnet.Controls.Tabs
 
         internal void UnDrawAll()
         {
-            for (int i = 0; i < Items.Count; i++)
+            for (int i = 0; i < Tabs.Count; i++)
             {
-                Items[i].IsDrawn = false;
+                Tabs[i].IsDrawn = false;
             }
         }
 
@@ -349,9 +387,9 @@ namespace Pyramid.Garnet.Controls.Tabs
             menu.RightToLeft = RightToLeft;
             menu.Items.Clear();
 
-            for (int i = 0; i < Items.Count; i++)
+            for (int i = 0; i < Tabs.Count; i++)
             {
-                GarnetTabStripItem item = Items[i];
+                GarnetTabStripItem item = Tabs[i];
                 if (!item.Visible)
                     continue;
 
@@ -401,9 +439,9 @@ namespace Pyramid.Garnet.Controls.Tabs
 
             #region Draw Pages
 
-            for (int i = 0; i < Items.Count; i++)
+            for (int i = 0; i < Tabs.Count; i++)
             {
-                GarnetTabStripItem currentTab = Items[i];
+                GarnetTabStripItem currentTab = Tabs[i];
                 if (!currentTab.Visible && !DesignMode)
                     continue;
 
@@ -422,7 +460,7 @@ namespace Pyramid.Garnet.Controls.Tabs
 
             if (RightToLeft == RightToLeft.No)
             {
-                if (Items.DrawnCount == 0 || Items.VisibleCount == 0)
+                if (Tabs.DrawnCount == 0 || Tabs.VisibleCount == 0)
                 {
                     e.Graphics.DrawLine(underlinePen, new Point(0, DEF_HEADER_HEIGHT),
                                          new Point(ClientRectangle.Width, DEF_HEADER_HEIGHT));
@@ -437,7 +475,7 @@ namespace Pyramid.Garnet.Controls.Tabs
             }
             else
             {
-                if (Items.DrawnCount == 0 || Items.VisibleCount == 0)
+                if (Tabs.DrawnCount == 0 || Tabs.VisibleCount == 0)
                 {
                     e.Graphics.DrawLine(underlinePen, new Point(0, DEF_HEADER_HEIGHT),
                                         new Point(ClientRectangle.Width, DEF_HEADER_HEIGHT));
@@ -455,7 +493,7 @@ namespace Pyramid.Garnet.Controls.Tabs
 
             #region Draw Menu and Close Glyphs
 
-            if (AlwaysShowMenuGlyph || Items.DrawnCount > Items.VisibleCount)
+            if (AlwaysShowMenuGlyph || Tabs.DrawnCount > Tabs.VisibleCount)
                 menuGlyph.DrawGlyph(e.Graphics);
 
             //if (AlwaysShowClose || (SelectedItem != null && SelectedItem.CanClose))
@@ -591,7 +629,7 @@ namespace Pyramid.Garnet.Controls.Tabs
             closeButton.IsMouseOver = false;
             Invalidate(closeButton.Bounds);
 
-            foreach (GarnetTabStripItem item in this.Items)
+            foreach (GarnetTabStripItem item in this.Tabs)
             {
                 item.CloseButton.IsMouseOver = false;
                 Invalidate(item.CloseButton.Bounds);
@@ -631,12 +669,12 @@ namespace Pyramid.Garnet.Controls.Tabs
 
         private void SetDefaultSelected()
         {
-            if (selectedItem == null && Items.Count > 0)
-                SelectedItem = Items[0];
+            if (selectedItem == null && Tabs.Count > 0)
+                SelectedItem = Tabs[0];
 
-            for (int i = 0; i < Items.Count; i++)
+            for (int i = 0; i < Tabs.Count; i++)
             {
-                GarnetTabStripItem itm = Items[i];
+                GarnetTabStripItem itm = Tabs[i];
                 itm.Dock = DockStyle.Fill;
             }
         }
@@ -680,7 +718,7 @@ namespace Pyramid.Garnet.Controls.Tabs
 
         private void OnDrawTabPage(Graphics g, GarnetTabStripItem currentItem)
         {
-            bool isFirstTab = Items.IndexOf(currentItem) == 0;
+            bool isFirstTab = Tabs.IndexOf(currentItem) == 0;
             Font currentFont = Font;
 
             if (currentItem == SelectedItem)
@@ -978,8 +1016,8 @@ namespace Pyramid.Garnet.Controls.Tabs
             tabCloseButtonCollection = new List<GarnetTabStripCloseButton>();
             TabCloseStyle = CloseStyle.None;
 
-            items = new GarnetTabStripItemCollection();
-            items.CollectionChanged += new CollectionChangeEventHandler(OnCollectionChanged);
+            tabs = new GarnetTabStripItemCollection();
+            tabs.CollectionChanged += new CollectionChangeEventHandler(OnCollectionChanged);
             base.Size = new Size(PreferredWidth, PreferredHeight);
 
             menu = new ContextMenuStrip();
@@ -1035,9 +1073,9 @@ namespace Pyramid.Garnet.Controls.Tabs
                 if (selectedItem == value)
                     return;
 
-                if (value == null && Items.Count > 0)
+                if (value == null && Tabs.Count > 0)
                 {
-                    GarnetTabStripItem itm = Items[0];
+                    GarnetTabStripItem itm = Tabs[0];
                     if (itm.Visible)
                     {
                         selectedItem = itm;
@@ -1050,7 +1088,7 @@ namespace Pyramid.Garnet.Controls.Tabs
                     selectedItem = value;
                 }
 
-                foreach (GarnetTabStripItem itm in Items)
+                foreach (GarnetTabStripItem itm in Tabs)
                 {
                     if (itm == selectedItem)
                     {
@@ -1070,7 +1108,7 @@ namespace Pyramid.Garnet.Controls.Tabs
 
                 if (!selectedItem.IsDrawn)
                 {
-                    Items.MoveTo(0, selectedItem);
+                    Tabs.MoveTo(0, selectedItem);
                     Invalidate();
                 }
 
@@ -1108,9 +1146,9 @@ namespace Pyramid.Garnet.Controls.Tabs
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public GarnetTabStripItemCollection Items
+        public GarnetTabStripItemCollection Tabs
         {
-            get { return items; }
+            get { return tabs; }
         }
 
         [DefaultValue(typeof (Size), "350,200")]
@@ -1176,7 +1214,7 @@ namespace Pyramid.Garnet.Controls.Tabs
 
         public bool ShouldSerializeItems()
         {
-            return items.Count > 0;
+            return tabs.Count > 0;
         }
 
         public new void ResetFont()
@@ -1210,11 +1248,11 @@ namespace Pyramid.Garnet.Controls.Tabs
         {
             if (disposing)
             {
-                items.CollectionChanged -= new CollectionChangeEventHandler(OnCollectionChanged);
+                tabs.CollectionChanged -= new CollectionChangeEventHandler(OnCollectionChanged);
                 menu.ItemClicked        -= new ToolStripItemClickedEventHandler(OnMenuItemClicked);
                 menu.VisibleChanged     -= new EventHandler(OnMenuVisibleChanged);
 
-                foreach (GarnetTabStripItem item in items)
+                foreach (GarnetTabStripItem item in tabs)
                 {
                     if (item != null && !item.IsDisposed)
                         item.Dispose();

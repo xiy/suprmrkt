@@ -56,7 +56,7 @@ namespace Pyramid.Garnet.Controls.Tabs.Design
             if (e.Component is GarnetTabStripItem)
             {
                 GarnetTabStripItem itm = e.Component as GarnetTabStripItem;
-                if (Control.Items.Contains(itm))
+                if (Control.Tabs.Contains(itm))
                 {
                     changeService.OnComponentChanging(Control, null);
                     Control.RemoveTab(itm);
@@ -67,9 +67,9 @@ namespace Pyramid.Garnet.Controls.Tabs.Design
 
             if (e.Component is GarnetTabStrip)
             {
-                for (int i = Control.Items.Count - 1; i >= 0; i--)
+                for (int i = Control.Tabs.Count - 1; i >= 0; i--)
                 {
-                    GarnetTabStripItem itm = Control.Items[i];
+                    GarnetTabStripItem itm = Control.Tabs[i];
                     changeService.OnComponentChanging(Control, null);
                     Control.RemoveTab(itm);
                     host.DestroyComponent(itm);
@@ -85,7 +85,7 @@ namespace Pyramid.Garnet.Controls.Tabs.Design
             GarnetTabStripItem itm = (GarnetTabStripItem)host.CreateComponent(typeof(GarnetTabStripItem));
             changeService.OnComponentChanging(Control, null);
             Control.AddTab(itm);
-            int indx = Control.Items.IndexOf(itm) + 1;
+            int indx = Control.Tabs.IndexOf(itm) + 1;
             itm.Title = "Untitled " + indx.ToString();
             Control.SelectItem(itm);
             changeService.OnComponentChanged(Control, null, null, null);
@@ -97,9 +97,9 @@ namespace Pyramid.Garnet.Controls.Tabs.Design
             IDesignerHost host = (IDesignerHost)GetService(typeof(IDesignerHost));
             DesignerTransaction transaction = host.CreateTransaction("Remove Button");
             changeService.OnComponentChanging(Control, null);
-            GarnetTabStripItem itm = Control.Items[Control.Items.Count - 1];
+            GarnetTabStripItem itm = Control.Tabs[Control.Tabs.Count - 1];
             Control.UnSelectItem(itm);
-            Control.Items.Remove(itm);
+            Control.Tabs.Remove(itm);
             changeService.OnComponentChanged(Control, null, null, null);
             transaction.Commit();
         }
@@ -163,7 +163,7 @@ namespace Pyramid.Garnet.Controls.Tabs.Design
         {
             get
             {
-                return Control.Items;
+                return Control.Tabs;
             }
         }
 

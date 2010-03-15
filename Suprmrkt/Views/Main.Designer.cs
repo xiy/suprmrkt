@@ -28,8 +28,21 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.tlpCommandLinkPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.label1 = new System.Windows.Forms.Label();
+			this.txtSimTitle = new System.Windows.Forms.TextBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.dtpSimDate = new System.Windows.Forms.DateTimePicker();
+			this.button5 = new System.Windows.Forms.Button();
+			this.button7 = new System.Windows.Forms.Button();
+			this.comboBox2 = new System.Windows.Forms.ComboBox();
+			this.cmdlLogout = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlNewSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlViewResults = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlLoadSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.tabstripMainTabs = new Pyramid.Garnet.Controls.Tabs.GarnetTabStrip();
 			this.tabCustomers = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.button15 = new System.Windows.Forms.Button();
 			this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
 			this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
 			this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
@@ -94,18 +107,7 @@
 			this.tabSummaryRunSim = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.cmdlRunSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.label16 = new System.Windows.Forms.Label();
-			this.cmdlNewSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.cmdlLoadSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.cmdlLogout = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.tlpCommandLinkPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.cmdlViewResults = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.label1 = new System.Windows.Forms.Label();
-			this.txtSimTitle = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.dtpSimDate = new System.Windows.Forms.DateTimePicker();
-			this.button5 = new System.Windows.Forms.Button();
-			this.button7 = new System.Windows.Forms.Button();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
+			this.tlpCommandLinkPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.tabstripMainTabs)).BeginInit();
 			this.tabstripMainTabs.SuspendLayout();
 			this.tabCustomers.SuspendLayout();
@@ -115,8 +117,144 @@
 			this.tabPricing.SuspendLayout();
 			this.tabPromotion.SuspendLayout();
 			this.tabSummaryRunSim.SuspendLayout();
-			this.tlpCommandLinkPanel.SuspendLayout();
 			this.SuspendLayout();
+			// 
+			// tlpCommandLinkPanel
+			// 
+			this.tlpCommandLinkPanel.AutoSize = true;
+			this.tlpCommandLinkPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.tlpCommandLinkPanel.ColumnCount = 4;
+			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.2834F));
+			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.7166F));
+			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
+			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 234F));
+			this.tlpCommandLinkPanel.Controls.Add(this.cmdlLogout, 3, 0);
+			this.tlpCommandLinkPanel.Controls.Add(this.cmdlNewSimulation, 0, 0);
+			this.tlpCommandLinkPanel.Controls.Add(this.cmdlViewResults, 2, 0);
+			this.tlpCommandLinkPanel.Controls.Add(this.cmdlLoadSimulation, 1, 0);
+			this.tlpCommandLinkPanel.Dock = System.Windows.Forms.DockStyle.Top;
+			this.tlpCommandLinkPanel.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
+			this.tlpCommandLinkPanel.Location = new System.Drawing.Point(0, 0);
+			this.tlpCommandLinkPanel.Name = "tlpCommandLinkPanel";
+			this.tlpCommandLinkPanel.RowCount = 1;
+			this.tlpCommandLinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tlpCommandLinkPanel.Size = new System.Drawing.Size(941, 68);
+			this.tlpCommandLinkPanel.TabIndex = 2;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(12, 83);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(99, 17);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Simulation Title:";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// txtSimTitle
+			// 
+			this.txtSimTitle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtSimTitle.Location = new System.Drawing.Point(117, 80);
+			this.txtSimTitle.Name = "txtSimTitle";
+			this.txtSimTitle.Size = new System.Drawing.Size(226, 25);
+			this.txtSimTitle.TabIndex = 2;
+			// 
+			// label2
+			// 
+			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(595, 83);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(102, 17);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "Simulation Date:";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// dtpSimDate
+			// 
+			this.dtpSimDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.dtpSimDate.Location = new System.Drawing.Point(703, 81);
+			this.dtpSimDate.Name = "dtpSimDate";
+			this.dtpSimDate.Size = new System.Drawing.Size(226, 23);
+			this.dtpSimDate.TabIndex = 4;
+			// 
+			// button5
+			// 
+			this.button5.Location = new System.Drawing.Point(671, 134);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(75, 23);
+			this.button5.TabIndex = 17;
+			this.button5.Text = "Delete";
+			this.button5.UseVisualStyleBackColor = true;
+			// 
+			// button7
+			// 
+			this.button7.Location = new System.Drawing.Point(590, 134);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(75, 23);
+			this.button7.TabIndex = 16;
+			this.button7.Text = "New";
+			this.button7.UseVisualStyleBackColor = true;
+			// 
+			// comboBox2
+			// 
+			this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.comboBox2.FormattingEnabled = true;
+			this.comboBox2.Location = new System.Drawing.Point(374, 132);
+			this.comboBox2.Name = "comboBox2";
+			this.comboBox2.Size = new System.Drawing.Size(200, 25);
+			this.comboBox2.TabIndex = 15;
+			// 
+			// cmdlLogout
+			// 
+			this.cmdlLogout.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlLogout.Location = new System.Drawing.Point(709, 3);
+			this.cmdlLogout.Name = "cmdlLogout";
+			this.cmdlLogout.Note = "Log out of the Simulator";
+			this.cmdlLogout.Size = new System.Drawing.Size(228, 62);
+			this.cmdlLogout.TabIndex = 4;
+			this.cmdlLogout.Text = "Log out";
+			this.cmdlLogout.UseVisualStyleBackColor = true;
+			this.cmdlLogout.Click += new System.EventHandler(this.cmdlLogout_Click);
+			// 
+			// cmdlNewSimulation
+			// 
+			this.cmdlNewSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlNewSimulation.Location = new System.Drawing.Point(3, 3);
+			this.cmdlNewSimulation.Name = "cmdlNewSimulation";
+			this.cmdlNewSimulation.Note = "Create a new simulation";
+			this.cmdlNewSimulation.Size = new System.Drawing.Size(193, 62);
+			this.cmdlNewSimulation.TabIndex = 5;
+			this.cmdlNewSimulation.Text = "New Simulation";
+			this.cmdlNewSimulation.UseVisualStyleBackColor = true;
+			this.cmdlNewSimulation.Click += new System.EventHandler(this.cmdlNewSimulation_Click);
+			// 
+			// cmdlViewResults
+			// 
+			this.cmdlViewResults.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlViewResults.Location = new System.Drawing.Point(496, 3);
+			this.cmdlViewResults.Name = "cmdlViewResults";
+			this.cmdlViewResults.Note = "View previous simulations";
+			this.cmdlViewResults.Size = new System.Drawing.Size(207, 62);
+			this.cmdlViewResults.TabIndex = 3;
+			this.cmdlViewResults.Text = "View Results";
+			this.cmdlViewResults.UseVisualStyleBackColor = true;
+			this.cmdlViewResults.Click += new System.EventHandler(this.cmdlViewResults_Click);
+			// 
+			// cmdlLoadSimulation
+			// 
+			this.cmdlLoadSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlLoadSimulation.Location = new System.Drawing.Point(202, 3);
+			this.cmdlLoadSimulation.Name = "cmdlLoadSimulation";
+			this.cmdlLoadSimulation.Note = "Load parameters from a previous simulation";
+			this.cmdlLoadSimulation.Size = new System.Drawing.Size(288, 62);
+			this.cmdlLoadSimulation.TabIndex = 6;
+			this.cmdlLoadSimulation.Text = "Load Simulation";
+			this.cmdlLoadSimulation.UseVisualStyleBackColor = true;
+			this.cmdlLoadSimulation.Click += new System.EventHandler(this.cmdlLoadSimulation_Click);
 			// 
 			// tabstripMainTabs
 			// 
@@ -124,7 +262,7 @@
 						| System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
 			this.tabstripMainTabs.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tabstripMainTabs.Items.AddRange(new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem[] {
+			this.tabstripMainTabs.Tabs.AddRange(new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem[] {
             this.tabCustomers,
             this.tabCheckouts,
             this.tabStaff,
@@ -134,7 +272,7 @@
             this.tabSummaryRunSim});
 			this.tabstripMainTabs.Location = new System.Drawing.Point(0, 110);
 			this.tabstripMainTabs.Name = "tabstripMainTabs";
-			this.tabstripMainTabs.SelectedItem = this.tabSummaryRunSim;
+			this.tabstripMainTabs.SelectedItem = this.tabCustomers;
 			this.tabstripMainTabs.Size = new System.Drawing.Size(941, 508);
 			this.tabstripMainTabs.TabActiveUnderlineColor = System.Drawing.Color.Empty;
 			this.tabstripMainTabs.TabIndex = 1;
@@ -142,6 +280,7 @@
 			// 
 			// tabCustomers
 			// 
+			this.tabCustomers.Controls.Add(this.button15);
 			this.tabCustomers.Controls.Add(this.maskedTextBox2);
 			this.tabCustomers.Controls.Add(this.maskedTextBox6);
 			this.tabCustomers.Controls.Add(this.maskedTextBox5);
@@ -162,9 +301,21 @@
 			this.tabCustomers.Controls.Add(this.label3);
 			this.tabCustomers.IsDrawn = true;
 			this.tabCustomers.Name = "tabCustomers";
+			this.tabCustomers.Selected = true;
 			this.tabCustomers.Size = new System.Drawing.Size(939, 484);
 			this.tabCustomers.TabIndex = 1;
 			this.tabCustomers.Title = "Customers";
+			// 
+			// button15
+			// 
+			this.button15.Location = new System.Drawing.Point(315, 288);
+			this.button15.Name = "button15";
+			this.button15.Size = new System.Drawing.Size(119, 23);
+			this.button15.TabIndex = 4;
+			this.button15.Text = "Save and Next Tab";
+			this.button15.UseMnemonic = false;
+			this.button15.UseVisualStyleBackColor = true;
+			this.button15.Click += new System.EventHandler(this.button15_Click);
 			// 
 			// maskedTextBox2
 			// 
@@ -821,7 +972,6 @@
 			this.tabSummaryRunSim.Controls.Add(this.label16);
 			this.tabSummaryRunSim.IsDrawn = true;
 			this.tabSummaryRunSim.Name = "tabSummaryRunSim";
-			this.tabSummaryRunSim.Selected = true;
 			this.tabSummaryRunSim.Size = new System.Drawing.Size(939, 484);
 			this.tabSummaryRunSim.TabIndex = 7;
 			this.tabSummaryRunSim.Title = "Summary / Run Simulation";
@@ -850,143 +1000,6 @@
 			this.label16.TabIndex = 2;
 			this.label16.Text = "Simulation Summary";
 			// 
-			// cmdlNewSimulation
-			// 
-			this.cmdlNewSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlNewSimulation.Location = new System.Drawing.Point(3, 3);
-			this.cmdlNewSimulation.Name = "cmdlNewSimulation";
-			this.cmdlNewSimulation.Note = "Create a new simulation";
-			this.cmdlNewSimulation.Size = new System.Drawing.Size(193, 62);
-			this.cmdlNewSimulation.TabIndex = 5;
-			this.cmdlNewSimulation.Text = "New Simulation";
-			this.cmdlNewSimulation.UseVisualStyleBackColor = true;
-			this.cmdlNewSimulation.Click += new System.EventHandler(this.cmdlNewSimulation_Click);
-			// 
-			// cmdlLoadSimulation
-			// 
-			this.cmdlLoadSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlLoadSimulation.Location = new System.Drawing.Point(202, 3);
-			this.cmdlLoadSimulation.Name = "cmdlLoadSimulation";
-			this.cmdlLoadSimulation.Note = "Load parameters from a previous simulation";
-			this.cmdlLoadSimulation.Size = new System.Drawing.Size(289, 62);
-			this.cmdlLoadSimulation.TabIndex = 6;
-			this.cmdlLoadSimulation.Text = "Load Simulation";
-			this.cmdlLoadSimulation.UseVisualStyleBackColor = true;
-			this.cmdlLoadSimulation.Click += new System.EventHandler(this.cmdlLoadSimulation_Click);
-			// 
-			// cmdlLogout
-			// 
-			this.cmdlLogout.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlLogout.Location = new System.Drawing.Point(710, 3);
-			this.cmdlLogout.Name = "cmdlLogout";
-			this.cmdlLogout.Note = "Log out of the Simulator";
-			this.cmdlLogout.Size = new System.Drawing.Size(228, 62);
-			this.cmdlLogout.TabIndex = 4;
-			this.cmdlLogout.Text = "Log out";
-			this.cmdlLogout.UseVisualStyleBackColor = true;
-			this.cmdlLogout.Click += new System.EventHandler(this.cmdlLogout_Click);
-			// 
-			// tlpCommandLinkPanel
-			// 
-			this.tlpCommandLinkPanel.AutoSize = true;
-			this.tlpCommandLinkPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-			this.tlpCommandLinkPanel.ColumnCount = 4;
-			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.2834F));
-			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.7166F));
-			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
-			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
-			this.tlpCommandLinkPanel.Controls.Add(this.cmdlLogout, 3, 0);
-			this.tlpCommandLinkPanel.Controls.Add(this.cmdlNewSimulation, 0, 0);
-			this.tlpCommandLinkPanel.Controls.Add(this.cmdlViewResults, 2, 0);
-			this.tlpCommandLinkPanel.Controls.Add(this.cmdlLoadSimulation, 1, 0);
-			this.tlpCommandLinkPanel.Dock = System.Windows.Forms.DockStyle.Top;
-			this.tlpCommandLinkPanel.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
-			this.tlpCommandLinkPanel.Location = new System.Drawing.Point(0, 0);
-			this.tlpCommandLinkPanel.Name = "tlpCommandLinkPanel";
-			this.tlpCommandLinkPanel.RowCount = 1;
-			this.tlpCommandLinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tlpCommandLinkPanel.Size = new System.Drawing.Size(941, 68);
-			this.tlpCommandLinkPanel.TabIndex = 2;
-			// 
-			// cmdlViewResults
-			// 
-			this.cmdlViewResults.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlViewResults.Location = new System.Drawing.Point(497, 3);
-			this.cmdlViewResults.Name = "cmdlViewResults";
-			this.cmdlViewResults.Note = "View previous simulations";
-			this.cmdlViewResults.Size = new System.Drawing.Size(207, 62);
-			this.cmdlViewResults.TabIndex = 3;
-			this.cmdlViewResults.Text = "View Results";
-			this.cmdlViewResults.UseVisualStyleBackColor = true;
-			this.cmdlViewResults.Click += new System.EventHandler(this.cmdlViewResults_Click);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(12, 83);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(99, 17);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Simulation Title:";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// txtSimTitle
-			// 
-			this.txtSimTitle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSimTitle.Location = new System.Drawing.Point(117, 80);
-			this.txtSimTitle.Name = "txtSimTitle";
-			this.txtSimTitle.Size = new System.Drawing.Size(226, 25);
-			this.txtSimTitle.TabIndex = 2;
-			// 
-			// label2
-			// 
-			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(595, 83);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(102, 17);
-			this.label2.TabIndex = 0;
-			this.label2.Text = "Simulation Date:";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// dtpSimDate
-			// 
-			this.dtpSimDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.dtpSimDate.Location = new System.Drawing.Point(703, 81);
-			this.dtpSimDate.Name = "dtpSimDate";
-			this.dtpSimDate.Size = new System.Drawing.Size(226, 23);
-			this.dtpSimDate.TabIndex = 4;
-			// 
-			// button5
-			// 
-			this.button5.Location = new System.Drawing.Point(671, 134);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(75, 23);
-			this.button5.TabIndex = 17;
-			this.button5.Text = "Delete";
-			this.button5.UseVisualStyleBackColor = true;
-			// 
-			// button7
-			// 
-			this.button7.Location = new System.Drawing.Point(590, 134);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(75, 23);
-			this.button7.TabIndex = 16;
-			this.button7.Text = "New";
-			this.button7.UseVisualStyleBackColor = true;
-			// 
-			// comboBox2
-			// 
-			this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(374, 132);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(200, 25);
-			this.comboBox2.TabIndex = 15;
-			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1005,6 +1018,7 @@
 			this.Name = "Main";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "GRPSIX Buyrite Supermarket Simulator";
+			this.tlpCommandLinkPanel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.tabstripMainTabs)).EndInit();
 			this.tabstripMainTabs.ResumeLayout(false);
 			this.tabCustomers.ResumeLayout(false);
@@ -1021,7 +1035,6 @@
 			this.tabPromotion.PerformLayout();
 			this.tabSummaryRunSim.ResumeLayout(false);
 			this.tabSummaryRunSim.PerformLayout();
-			this.tlpCommandLinkPanel.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -1107,6 +1120,7 @@
 		private System.Windows.Forms.Label label28;
 		private System.Windows.Forms.Button button14;
 		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlRunSimulation;
+		private System.Windows.Forms.Button button15;
 
 	}
 }

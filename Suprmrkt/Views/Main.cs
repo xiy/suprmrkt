@@ -15,7 +15,7 @@ namespace Suprmrkt.Views
 		{
 			InitializeComponent();
 			InitialiseController();
-			DisableAllControls(true);
+			//DisableAllControls(true);
 		}
 
 		/// <summary>
@@ -24,7 +24,7 @@ namespace Suprmrkt.Views
 		/// <param name="disable"></param>
 		private void DisableAllControls(bool disable)
 		{
-			foreach (GarnetTabStripItem tab in this.tabstripMainTabs.Items)
+			foreach (GarnetTabStripItem tab in this.tabstripMainTabs.Tabs)
 			{
 				tab.Enabled = disable;
 			}
@@ -113,6 +113,8 @@ namespace Suprmrkt.Views
 
 		#endregion
 
+		// ** placeholder handlers **
+
 		private void cmdlNewSimulation_Click(object sender, EventArgs e)
 		{
 			this.txtSimTitle.Clear();
@@ -146,6 +148,11 @@ namespace Suprmrkt.Views
 			t.IsBackground = true;
 			t.Start();
 			cmdlRunSimulation.Note = "Running Simulation..";
+		}
+
+		private void button15_Click(object sender, EventArgs e)
+		{
+			this.tabstripMainTabs.SelectNextTab();
 		}
 
 	}
