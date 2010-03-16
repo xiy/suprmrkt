@@ -13,3 +13,6 @@ _ReSharper.*
 *.exe
 *.pdb
 bin2010
+TestResults
+TestResults/*
+*.trx

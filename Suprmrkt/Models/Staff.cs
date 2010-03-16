@@ -14,5 +14,12 @@ namespace Suprmrkt.Models
 		}
 		public int MaxSpeed { get; set; }
 		public int Speed { get; set; }
+		public StaffExperience Experience { get; set; }
+	}
+
+	public enum StaffExperience 
+	{
+		Experienced,
+		Trainee
 	}
 }

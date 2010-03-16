@@ -29,6 +29,10 @@
 		private void InitializeComponent()
 		{
 			this.tlpCommandLinkPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.cmdlLogout = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlNewSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlViewResults = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlLoadSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtSimTitle = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
@@ -36,10 +40,6 @@
 			this.button5 = new System.Windows.Forms.Button();
 			this.button7 = new System.Windows.Forms.Button();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.cmdlLogout = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.cmdlNewSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.cmdlViewResults = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.cmdlLoadSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.tabstripMainTabs = new Pyramid.Garnet.Controls.Tabs.GarnetTabStrip();
 			this.tabCustomers = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.button15 = new System.Windows.Forms.Button();
@@ -141,6 +141,54 @@
 			this.tlpCommandLinkPanel.Size = new System.Drawing.Size(941, 68);
 			this.tlpCommandLinkPanel.TabIndex = 2;
 			// 
+			// cmdlLogout
+			// 
+			this.cmdlLogout.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlLogout.Location = new System.Drawing.Point(709, 3);
+			this.cmdlLogout.Name = "cmdlLogout";
+			this.cmdlLogout.Note = "Log out of the Simulator";
+			this.cmdlLogout.Size = new System.Drawing.Size(228, 62);
+			this.cmdlLogout.TabIndex = 4;
+			this.cmdlLogout.Text = "Log out";
+			this.cmdlLogout.UseVisualStyleBackColor = true;
+			this.cmdlLogout.Click += new System.EventHandler(this.cmdlLogout_Click);
+			// 
+			// cmdlNewSimulation
+			// 
+			this.cmdlNewSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlNewSimulation.Location = new System.Drawing.Point(3, 3);
+			this.cmdlNewSimulation.Name = "cmdlNewSimulation";
+			this.cmdlNewSimulation.Note = "Create a new simulation";
+			this.cmdlNewSimulation.Size = new System.Drawing.Size(193, 62);
+			this.cmdlNewSimulation.TabIndex = 5;
+			this.cmdlNewSimulation.Text = "New Simulation";
+			this.cmdlNewSimulation.UseVisualStyleBackColor = true;
+			this.cmdlNewSimulation.Click += new System.EventHandler(this.cmdlNewSimulation_Click);
+			// 
+			// cmdlViewResults
+			// 
+			this.cmdlViewResults.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlViewResults.Location = new System.Drawing.Point(496, 3);
+			this.cmdlViewResults.Name = "cmdlViewResults";
+			this.cmdlViewResults.Note = "View previous simulations";
+			this.cmdlViewResults.Size = new System.Drawing.Size(207, 62);
+			this.cmdlViewResults.TabIndex = 3;
+			this.cmdlViewResults.Text = "View Results";
+			this.cmdlViewResults.UseVisualStyleBackColor = true;
+			this.cmdlViewResults.Click += new System.EventHandler(this.cmdlViewResults_Click);
+			// 
+			// cmdlLoadSimulation
+			// 
+			this.cmdlLoadSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlLoadSimulation.Location = new System.Drawing.Point(202, 3);
+			this.cmdlLoadSimulation.Name = "cmdlLoadSimulation";
+			this.cmdlLoadSimulation.Note = "Load parameters from a previous simulation";
+			this.cmdlLoadSimulation.Size = new System.Drawing.Size(288, 62);
+			this.cmdlLoadSimulation.TabIndex = 6;
+			this.cmdlLoadSimulation.Text = "Load Simulation";
+			this.cmdlLoadSimulation.UseVisualStyleBackColor = true;
+			this.cmdlLoadSimulation.Click += new System.EventHandler(this.cmdlLoadSimulation_Click);
+			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
@@ -208,60 +256,18 @@
 			this.comboBox2.Size = new System.Drawing.Size(200, 25);
 			this.comboBox2.TabIndex = 15;
 			// 
-			// cmdlLogout
-			// 
-			this.cmdlLogout.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlLogout.Location = new System.Drawing.Point(709, 3);
-			this.cmdlLogout.Name = "cmdlLogout";
-			this.cmdlLogout.Note = "Log out of the Simulator";
-			this.cmdlLogout.Size = new System.Drawing.Size(228, 62);
-			this.cmdlLogout.TabIndex = 4;
-			this.cmdlLogout.Text = "Log out";
-			this.cmdlLogout.UseVisualStyleBackColor = true;
-			this.cmdlLogout.Click += new System.EventHandler(this.cmdlLogout_Click);
-			// 
-			// cmdlNewSimulation
-			// 
-			this.cmdlNewSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlNewSimulation.Location = new System.Drawing.Point(3, 3);
-			this.cmdlNewSimulation.Name = "cmdlNewSimulation";
-			this.cmdlNewSimulation.Note = "Create a new simulation";
-			this.cmdlNewSimulation.Size = new System.Drawing.Size(193, 62);
-			this.cmdlNewSimulation.TabIndex = 5;
-			this.cmdlNewSimulation.Text = "New Simulation";
-			this.cmdlNewSimulation.UseVisualStyleBackColor = true;
-			this.cmdlNewSimulation.Click += new System.EventHandler(this.cmdlNewSimulation_Click);
-			// 
-			// cmdlViewResults
-			// 
-			this.cmdlViewResults.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlViewResults.Location = new System.Drawing.Point(496, 3);
-			this.cmdlViewResults.Name = "cmdlViewResults";
-			this.cmdlViewResults.Note = "View previous simulations";
-			this.cmdlViewResults.Size = new System.Drawing.Size(207, 62);
-			this.cmdlViewResults.TabIndex = 3;
-			this.cmdlViewResults.Text = "View Results";
-			this.cmdlViewResults.UseVisualStyleBackColor = true;
-			this.cmdlViewResults.Click += new System.EventHandler(this.cmdlViewResults_Click);
-			// 
-			// cmdlLoadSimulation
-			// 
-			this.cmdlLoadSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlLoadSimulation.Location = new System.Drawing.Point(202, 3);
-			this.cmdlLoadSimulation.Name = "cmdlLoadSimulation";
-			this.cmdlLoadSimulation.Note = "Load parameters from a previous simulation";
-			this.cmdlLoadSimulation.Size = new System.Drawing.Size(288, 62);
-			this.cmdlLoadSimulation.TabIndex = 6;
-			this.cmdlLoadSimulation.Text = "Load Simulation";
-			this.cmdlLoadSimulation.UseVisualStyleBackColor = true;
-			this.cmdlLoadSimulation.Click += new System.EventHandler(this.cmdlLoadSimulation_Click);
-			// 
 			// tabstripMainTabs
 			// 
 			this.tabstripMainTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
 						| System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
 			this.tabstripMainTabs.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tabstripMainTabs.Location = new System.Drawing.Point(0, 110);
+			this.tabstripMainTabs.Name = "tabstripMainTabs";
+			this.tabstripMainTabs.SelectedItem = this.tabCustomers;
+			this.tabstripMainTabs.Size = new System.Drawing.Size(941, 508);
+			this.tabstripMainTabs.TabActiveUnderlineColor = System.Drawing.Color.Empty;
+			this.tabstripMainTabs.TabIndex = 1;
 			this.tabstripMainTabs.Tabs.AddRange(new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem[] {
             this.tabCustomers,
             this.tabCheckouts,
@@ -270,12 +276,6 @@
             this.tabPricing,
             this.tabPromotion,
             this.tabSummaryRunSim});
-			this.tabstripMainTabs.Location = new System.Drawing.Point(0, 110);
-			this.tabstripMainTabs.Name = "tabstripMainTabs";
-			this.tabstripMainTabs.SelectedItem = this.tabCustomers;
-			this.tabstripMainTabs.Size = new System.Drawing.Size(941, 508);
-			this.tabstripMainTabs.TabActiveUnderlineColor = System.Drawing.Color.Empty;
-			this.tabstripMainTabs.TabIndex = 1;
 			this.tabstripMainTabs.Text = "garnetTabStrip1";
 			// 
 			// tabCustomers
@@ -312,8 +312,7 @@
 			this.button15.Name = "button15";
 			this.button15.Size = new System.Drawing.Size(119, 23);
 			this.button15.TabIndex = 4;
-			this.button15.Text = "Save and Next Tab";
-			this.button15.UseMnemonic = false;
+			this.button15.Text = "Save and &Proceed";
 			this.button15.UseVisualStyleBackColor = true;
 			this.button15.Click += new System.EventHandler(this.button15_Click);
 			// 
@@ -321,7 +320,7 @@
 			// 
 			this.maskedTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.maskedTextBox2.Location = new System.Drawing.Point(308, 111);
-			this.maskedTextBox2.Mask = "00000";
+			this.maskedTextBox2.Mask = "000";
 			this.maskedTextBox2.Name = "maskedTextBox2";
 			this.maskedTextBox2.PromptChar = '-';
 			this.maskedTextBox2.Size = new System.Drawing.Size(39, 25);
@@ -381,7 +380,7 @@
 			// 
 			this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.maskedTextBox1.Location = new System.Drawing.Point(234, 111);
-			this.maskedTextBox1.Mask = "00000";
+			this.maskedTextBox1.Mask = "000";
 			this.maskedTextBox1.Name = "maskedTextBox1";
 			this.maskedTextBox1.PromptChar = '-';
 			this.maskedTextBox1.Size = new System.Drawing.Size(39, 25);

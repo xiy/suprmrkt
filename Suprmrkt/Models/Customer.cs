@@ -31,18 +31,6 @@ namespace Suprmrkt.Models
 		#endregion
 
         Random r = new Random();
-
-		public Customer(CustomerType type)
-        {
-			SQLiteResult result = SQLiteController.Instance.Query("SELECT * FROM customers WHERE (type = '" + type.ToString() + "')");
-			if (result.HasRows)
-			{
-				this.Items = r.Next(Convert.ToInt32(result.Rows[0]["minItems"]), Convert.ToInt32(result.Rows[0]["maxItems"]));
-				this.Concentration = Convert.ToInt32(result.Rows[0]["concentration"]);
-				this.Dawdling = Convert.ToInt32(result.Rows[0]["dawdling"]);
-				this.Patience = Convert.ToInt32(result.Rows[0]["patience"]);
-			}
-        }
 		
 		#region Properties
 		public int QueueNumber { get; set; }
@@ -81,6 +69,20 @@ namespace Suprmrkt.Models
 				types.Add(result.Rows[i]["Type"].ToString());
 			}
 			return types.ToArray();
+		}
+
+		internal Customer GetCustomerByType(CustomerType type)
+		{
+			Customer customer;
+			SQLiteResult result = SQLiteController.Instance.Query("SELECT * FROM customers WHERE (type = '" + type.ToString() + "')");
+			if (result.HasRows)
+			{
+				customer = new Customer();
+				customer.Items = r.Next(Convert.ToInt32(result.Rows[0]["minItems"]), Convert.ToInt32(result.Rows[0]["maxItems"]));
+				customer.Concentration = Convert.ToInt32(result.Rows[0]["concentration"]);
+				customer.Dawdling = Convert.ToInt32(result.Rows[0]["dawdling"]);
+				customer.Patience = Convert.ToInt32(result.Rows[0]["patience"]);
+			}
 		}
 	}
 }

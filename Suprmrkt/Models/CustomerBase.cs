@@ -15,9 +15,6 @@ namespace Suprmrkt.Models
         public CustomerBase(int desiredItems, int concentration, int dawdle, double patience,
 							int promoResponse, int nextItemSearchTime)
         {
-			// Default base parameters are for the most common
-			// customer type, which I guess would be Family?
-
 			// Override in the derived class.
 			this.DesiredItems = desiredItems;
 			this.Concentration = concentration;

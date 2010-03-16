@@ -1,4 +1,4 @@
-﻿using System;
+﻿  using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,13 +25,13 @@ namespace Suprmrkt.Models
 		/// <summary>
 		/// A List that contains all of the current Queues.
 		/// </summary>
-		private List<Queues> _queues = new List<Queues>();
-		private List<Queues> Queues
+		private List<Checkout> _queues = new List<Checkout>();
+		private List<Checkout> Queues
 		{
 			get
 			{
 				if (_queues == null)
-					_queues = new List<Queues>();
+					_queues = new List<Checkout>();
 				return _queues;
 			}
 			set { _queues = value; }
@@ -51,7 +51,7 @@ namespace Suprmrkt.Models
 		private static int forTheMinute;
 		private static int staffCounter = 0;
 		private static int staffNumber = 0;
-		private Suprmrkt.Models.Queues.StaffType staffType;
+		private Suprmrkt.Models.Checkout.StaffType staffType;
         private Suprmrkt.Models.Customer.CustomerType custType;
         private Dictionary<Suprmrkt.Models.Customer.CustomerType, int> CTypeDict;
 		private Dictionary<int, Dictionary<Suprmrkt.Models.Customer.CustomerType, int>> CustDict;
@@ -76,10 +76,10 @@ namespace Suprmrkt.Models
 				for (int r = 0; r < staffNumber; r++)
 				{
 					result = SQLiteController.Instance.Query("SELECT Type FROM staff");
-                    staffType = (Queues.StaffType)Enum.Parse(typeof(Queues.StaffType), (string)result.Rows[0]["Type"]);
+                    staffType = (Checkout.StaffType)Enum.Parse(typeof(Checkout.StaffType), (string)result.Rows[0]["Type"]);
 
 					// staffType is the type we feed the Queue constructor with
-					Queues.Add(new Queues(staffType));
+					Queues.Add(new Checkout(staffType));
 				}
 			}
 		}
