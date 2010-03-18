@@ -75,7 +75,6 @@ namespace Suprmrkt.Tests
 			string actual;
 			actual = User.Instance.GetPasswordForUser(user);
 			Assert.AreEqual(expected, actual);
-			Assert.Inconclusive("Verify the correctness of this test method.");
 		}
 	}
 }

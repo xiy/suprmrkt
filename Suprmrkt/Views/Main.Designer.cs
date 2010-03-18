@@ -28,27 +28,39 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.tlpCommandLinkPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.cmdlLogout = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.cmdlNewSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.cmdlViewResults = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.cmdlLoadSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
-			this.label1 = new System.Windows.Forms.Label();
-			this.txtSimTitle = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.dtpSimDate = new System.Windows.Forms.DateTimePicker();
-			this.button5 = new System.Windows.Forms.Button();
-			this.button7 = new System.Windows.Forms.Button();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.tabstripMainTabs = new Pyramid.Garnet.Controls.Tabs.GarnetTabStrip();
 			this.tabCustomers = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.button15 = new System.Windows.Forms.Button();
-			this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-			this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-			this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-			this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-			this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-			this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.hour12 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label36 = new System.Windows.Forms.Label();
+			this.hour8 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label37 = new System.Windows.Forms.Label();
+			this.hour4 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label38 = new System.Windows.Forms.Label();
+			this.hour11 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label39 = new System.Windows.Forms.Label();
+			this.hour7 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label40 = new System.Windows.Forms.Label();
+			this.hour3 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label41 = new System.Windows.Forms.Label();
+			this.hour10 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label33 = new System.Windows.Forms.Label();
+			this.hour6 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label34 = new System.Windows.Forms.Label();
+			this.hour2 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label35 = new System.Windows.Forms.Label();
+			this.hour9 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label32 = new System.Windows.Forms.Label();
+			this.hour5 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label31 = new System.Windows.Forms.Label();
+			this.hour1 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label30 = new System.Windows.Forms.Label();
+			this.label29 = new System.Windows.Forms.Label();
+			this.patience = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.dawdling = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.concentration = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.maxItems = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.minItems = new Pyramid.Garnet.Controls.Aero.TextBox();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
@@ -62,62 +74,893 @@
 			this.label10 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.tabCheckouts = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.label24 = new System.Windows.Forms.Label();
+			this.textBox22 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.textBox21 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.working = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.button6 = new System.Windows.Forms.Button();
+			this.maxSpeed = new Pyramid.Garnet.Controls.Aero.TextBox();
 			this.button4 = new System.Windows.Forms.Button();
-			this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-			this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
+			this.normSpeed = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.button8 = new System.Windows.Forms.Button();
+			this.label15 = new System.Windows.Forms.Label();
+			this.label19 = new System.Windows.Forms.Label();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.label20 = new System.Windows.Forms.Label();
+			this.label12 = new System.Windows.Forms.Label();
+			this.label14 = new System.Windows.Forms.Label();
 			this.label18 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
-			this.tabStaff = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.button8 = new System.Windows.Forms.Button();
-			this.button9 = new System.Windows.Forms.Button();
-			this.cmbStaffTypes = new System.Windows.Forms.ComboBox();
-			this.label21 = new System.Windows.Forms.Label();
-			this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
-			this.label12 = new System.Windows.Forms.Label();
-			this.maskedTextBox11 = new System.Windows.Forms.MaskedTextBox();
-			this.label20 = new System.Windows.Forms.Label();
-			this.button6 = new System.Windows.Forms.Button();
-			this.label19 = new System.Windows.Forms.Label();
 			this.tabActivity = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-			this.button10 = new System.Windows.Forms.Button();
-			this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
-			this.cmbActivityCustomerTypes = new System.Windows.Forms.ComboBox();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label23 = new System.Windows.Forms.Label();
-			this.label24 = new System.Windows.Forms.Label();
-			this.label22 = new System.Windows.Forms.Label();
-			this.tabPricing = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
+			this.button9 = new System.Windows.Forms.Button();
+			this.textBox25 = new Pyramid.Garnet.Controls.Aero.TextBox();
 			this.button11 = new System.Windows.Forms.Button();
-			this.cmbPricingCustomerTypes = new System.Windows.Forms.ComboBox();
-			this.label26 = new System.Windows.Forms.Label();
+			this.label23 = new System.Windows.Forms.Label();
+			this.comboBox3 = new System.Windows.Forms.ComboBox();
 			this.label25 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.tabPromotion = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
-			this.button12 = new System.Windows.Forms.Button();
-			this.button13 = new System.Windows.Forms.Button();
-			this.cmbPromotionTypes = new System.Windows.Forms.ComboBox();
-			this.label27 = new System.Windows.Forms.Label();
-			this.maskedTextBox13 = new System.Windows.Forms.MaskedTextBox();
-			this.label28 = new System.Windows.Forms.Label();
-			this.button14 = new System.Windows.Forms.Button();
-			this.label15 = new System.Windows.Forms.Label();
+			this.label22 = new System.Windows.Forms.Label();
+			this.textBox23 = new Pyramid.Garnet.Controls.Aero.TextBox();
+			this.label21 = new System.Windows.Forms.Label();
+			this.button10 = new System.Windows.Forms.Button();
+			this.label13 = new System.Windows.Forms.Label();
 			this.tabSummaryRunSim = new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem();
 			this.cmdlRunSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
 			this.label16 = new System.Windows.Forms.Label();
-			this.tlpCommandLinkPanel.SuspendLayout();
+			this.cmdlNewSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlLoadSimulation = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.cmdlLogout = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.tlpCommandLinkPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.cmdlViewResults = new Pyramid.Garnet.Controls.Aero.CommandLink();
+			this.label1 = new System.Windows.Forms.Label();
+			this.txtSimTitle = new System.Windows.Forms.TextBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.dtpSimDate = new System.Windows.Forms.DateTimePicker();
+			this.button5 = new System.Windows.Forms.Button();
+			this.button7 = new System.Windows.Forms.Button();
+			this.comboBox2 = new System.Windows.Forms.ComboBox();
+			this.promoResponse = new Pyramid.Garnet.Controls.Aero.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.tabstripMainTabs)).BeginInit();
 			this.tabstripMainTabs.SuspendLayout();
 			this.tabCustomers.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.tabCheckouts.SuspendLayout();
-			this.tabStaff.SuspendLayout();
 			this.tabActivity.SuspendLayout();
-			this.tabPricing.SuspendLayout();
-			this.tabPromotion.SuspendLayout();
 			this.tabSummaryRunSim.SuspendLayout();
+			this.tlpCommandLinkPanel.SuspendLayout();
 			this.SuspendLayout();
+			// 
+			// tabstripMainTabs
+			// 
+			this.tabstripMainTabs.AlwaysShowClose = false;
+			this.tabstripMainTabs.AlwaysShowMenuGlyph = false;
+			this.tabstripMainTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+						| System.Windows.Forms.AnchorStyles.Left)
+						| System.Windows.Forms.AnchorStyles.Right)));
+			this.tabstripMainTabs.DrawCross = false;
+			this.tabstripMainTabs.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tabstripMainTabs.Location = new System.Drawing.Point(0, 110);
+			this.tabstripMainTabs.Name = "tabstripMainTabs";
+			this.tabstripMainTabs.SelectedItem = this.tabCheckouts;
+			this.tabstripMainTabs.Size = new System.Drawing.Size(941, 508);
+			this.tabstripMainTabs.TabActiveUnderlineColor = System.Drawing.Color.Empty;
+			this.tabstripMainTabs.TabIndex = 1;
+			this.tabstripMainTabs.Tabs.AddRange(new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem[] {
+            this.tabCustomers,
+            this.tabCheckouts,
+            this.tabActivity,
+            this.tabSummaryRunSim});
+			this.tabstripMainTabs.Text = "garnetTabStrip1";
+			// 
+			// tabCustomers
+			// 
+			this.tabCustomers.Controls.Add(this.panel1);
+			this.tabCustomers.Controls.Add(this.promoResponse);
+			this.tabCustomers.Controls.Add(this.patience);
+			this.tabCustomers.Controls.Add(this.dawdling);
+			this.tabCustomers.Controls.Add(this.concentration);
+			this.tabCustomers.Controls.Add(this.maxItems);
+			this.tabCustomers.Controls.Add(this.minItems);
+			this.tabCustomers.Controls.Add(this.button2);
+			this.tabCustomers.Controls.Add(this.button3);
+			this.tabCustomers.Controls.Add(this.button1);
+			this.tabCustomers.Controls.Add(this.label9);
+			this.tabCustomers.Controls.Add(this.label8);
+			this.tabCustomers.Controls.Add(this.cmbCustomersCustomerTypes);
+			this.tabCustomers.Controls.Add(this.label7);
+			this.tabCustomers.Controls.Add(this.label5);
+			this.tabCustomers.Controls.Add(this.label6);
+			this.tabCustomers.Controls.Add(this.label4);
+			this.tabCustomers.Controls.Add(this.label10);
+			this.tabCustomers.Controls.Add(this.label3);
+			this.tabCustomers.IsDrawn = true;
+			this.tabCustomers.Name = "tabCustomers";
+			this.tabCustomers.Size = new System.Drawing.Size(939, 484);
+			this.tabCustomers.TabIndex = 1;
+			this.tabCustomers.Title = "Customers Data";
+			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.hour12);
+			this.panel1.Controls.Add(this.label36);
+			this.panel1.Controls.Add(this.hour8);
+			this.panel1.Controls.Add(this.label37);
+			this.panel1.Controls.Add(this.hour4);
+			this.panel1.Controls.Add(this.label38);
+			this.panel1.Controls.Add(this.hour11);
+			this.panel1.Controls.Add(this.label39);
+			this.panel1.Controls.Add(this.hour7);
+			this.panel1.Controls.Add(this.label40);
+			this.panel1.Controls.Add(this.hour3);
+			this.panel1.Controls.Add(this.label41);
+			this.panel1.Controls.Add(this.hour10);
+			this.panel1.Controls.Add(this.label33);
+			this.panel1.Controls.Add(this.hour6);
+			this.panel1.Controls.Add(this.label34);
+			this.panel1.Controls.Add(this.hour2);
+			this.panel1.Controls.Add(this.label35);
+			this.panel1.Controls.Add(this.hour9);
+			this.panel1.Controls.Add(this.label32);
+			this.panel1.Controls.Add(this.hour5);
+			this.panel1.Controls.Add(this.label31);
+			this.panel1.Controls.Add(this.hour1);
+			this.panel1.Controls.Add(this.label30);
+			this.panel1.Controls.Add(this.label29);
+			this.panel1.Location = new System.Drawing.Point(80, 208);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(575, 192);
+			this.panel1.TabIndex = 9;
+			// 
+			// hour12
+			// 
+			this.hour12.Location = new System.Drawing.Point(472, 150);
+			this.hour12.Name = "hour12";
+			this.hour12.Size = new System.Drawing.Size(40, 23);
+			this.hour12.TabIndex = 26;
+			// 
+			// label36
+			// 
+			this.label36.AutoSize = true;
+			this.label36.Location = new System.Drawing.Point(416, 153);
+			this.label36.Name = "label36";
+			this.label36.Size = new System.Drawing.Size(60, 15);
+			this.label36.TabIndex = 25;
+			this.label36.Text = "12th Hour";
+			// 
+			// hour8
+			// 
+			this.hour8.Location = new System.Drawing.Point(472, 93);
+			this.hour8.Name = "hour8";
+			this.hour8.Size = new System.Drawing.Size(40, 23);
+			this.hour8.TabIndex = 24;
+			// 
+			// label37
+			// 
+			this.label37.AutoSize = true;
+			this.label37.Location = new System.Drawing.Point(416, 96);
+			this.label37.Name = "label37";
+			this.label37.Size = new System.Drawing.Size(54, 15);
+			this.label37.TabIndex = 23;
+			this.label37.Text = "8th Hour";
+			// 
+			// hour4
+			// 
+			this.hour4.Location = new System.Drawing.Point(476, 41);
+			this.hour4.Name = "hour4";
+			this.hour4.Size = new System.Drawing.Size(40, 23);
+			this.hour4.TabIndex = 22;
+			// 
+			// label38
+			// 
+			this.label38.AutoSize = true;
+			this.label38.Location = new System.Drawing.Point(416, 44);
+			this.label38.Name = "label38";
+			this.label38.Size = new System.Drawing.Size(54, 15);
+			this.label38.TabIndex = 21;
+			this.label38.Text = "4th Hour";
+			// 
+			// hour11
+			// 
+			this.hour11.Location = new System.Drawing.Point(343, 150);
+			this.hour11.Name = "hour11";
+			this.hour11.Size = new System.Drawing.Size(40, 23);
+			this.hour11.TabIndex = 20;
+			// 
+			// label39
+			// 
+			this.label39.AutoSize = true;
+			this.label39.Location = new System.Drawing.Point(280, 153);
+			this.label39.Name = "label39";
+			this.label39.Size = new System.Drawing.Size(60, 15);
+			this.label39.TabIndex = 19;
+			this.label39.Text = "11th Hour";
+			// 
+			// hour7
+			// 
+			this.hour7.Location = new System.Drawing.Point(343, 93);
+			this.hour7.Name = "hour7";
+			this.hour7.Size = new System.Drawing.Size(40, 23);
+			this.hour7.TabIndex = 18;
+			// 
+			// label40
+			// 
+			this.label40.AutoSize = true;
+			this.label40.Location = new System.Drawing.Point(280, 96);
+			this.label40.Name = "label40";
+			this.label40.Size = new System.Drawing.Size(54, 15);
+			this.label40.TabIndex = 17;
+			this.label40.Text = "7th Hour";
+			// 
+			// hour3
+			// 
+			this.hour3.Location = new System.Drawing.Point(343, 38);
+			this.hour3.Name = "hour3";
+			this.hour3.Size = new System.Drawing.Size(40, 23);
+			this.hour3.TabIndex = 16;
+			// 
+			// label41
+			// 
+			this.label41.AutoSize = true;
+			this.label41.Location = new System.Drawing.Point(280, 44);
+			this.label41.Name = "label41";
+			this.label41.Size = new System.Drawing.Size(54, 15);
+			this.label41.TabIndex = 15;
+			this.label41.Text = "3rd Hour";
+			// 
+			// hour10
+			// 
+			this.hour10.Location = new System.Drawing.Point(206, 150);
+			this.hour10.Name = "hour10";
+			this.hour10.Size = new System.Drawing.Size(40, 23);
+			this.hour10.TabIndex = 14;
+			// 
+			// label33
+			// 
+			this.label33.AutoSize = true;
+			this.label33.Location = new System.Drawing.Point(143, 153);
+			this.label33.Name = "label33";
+			this.label33.Size = new System.Drawing.Size(60, 15);
+			this.label33.TabIndex = 13;
+			this.label33.Text = "10th Hour";
+			// 
+			// hour6
+			// 
+			this.hour6.Location = new System.Drawing.Point(206, 93);
+			this.hour6.Name = "hour6";
+			this.hour6.Size = new System.Drawing.Size(40, 23);
+			this.hour6.TabIndex = 12;
+			// 
+			// label34
+			// 
+			this.label34.AutoSize = true;
+			this.label34.Location = new System.Drawing.Point(143, 96);
+			this.label34.Name = "label34";
+			this.label34.Size = new System.Drawing.Size(54, 15);
+			this.label34.TabIndex = 11;
+			this.label34.Text = "6th Hour";
+			// 
+			// hour2
+			// 
+			this.hour2.Location = new System.Drawing.Point(206, 42);
+			this.hour2.Name = "hour2";
+			this.hour2.Size = new System.Drawing.Size(40, 23);
+			this.hour2.TabIndex = 10;
+			// 
+			// label35
+			// 
+			this.label35.AutoSize = true;
+			this.label35.Location = new System.Drawing.Point(143, 44);
+			this.label35.Name = "label35";
+			this.label35.Size = new System.Drawing.Size(57, 15);
+			this.label35.TabIndex = 9;
+			this.label35.Text = "2nd Hour";
+			// 
+			// hour9
+			// 
+			this.hour9.Location = new System.Drawing.Point(63, 150);
+			this.hour9.Name = "hour9";
+			this.hour9.Size = new System.Drawing.Size(40, 23);
+			this.hour9.TabIndex = 8;
+			// 
+			// label32
+			// 
+			this.label32.AutoSize = true;
+			this.label32.Location = new System.Drawing.Point(7, 153);
+			this.label32.Name = "label32";
+			this.label32.Size = new System.Drawing.Size(54, 15);
+			this.label32.TabIndex = 7;
+			this.label32.Text = "9th Hour";
+			// 
+			// hour5
+			// 
+			this.hour5.Location = new System.Drawing.Point(63, 93);
+			this.hour5.Name = "hour5";
+			this.hour5.Size = new System.Drawing.Size(40, 23);
+			this.hour5.TabIndex = 6;
+			// 
+			// label31
+			// 
+			this.label31.AutoSize = true;
+			this.label31.Location = new System.Drawing.Point(7, 96);
+			this.label31.Name = "label31";
+			this.label31.Size = new System.Drawing.Size(54, 15);
+			this.label31.TabIndex = 5;
+			this.label31.Text = "5th Hour";
+			// 
+			// hour1
+			// 
+			this.hour1.Location = new System.Drawing.Point(63, 42);
+			this.hour1.Name = "hour1";
+			this.hour1.Size = new System.Drawing.Size(40, 23);
+			this.hour1.TabIndex = 4;
+			// 
+			// label30
+			// 
+			this.label30.AutoSize = true;
+			this.label30.Location = new System.Drawing.Point(7, 44);
+			this.label30.Name = "label30";
+			this.label30.Size = new System.Drawing.Size(52, 15);
+			this.label30.TabIndex = 1;
+			this.label30.Text = "1st Hour";
+			// 
+			// label29
+			// 
+			this.label29.AutoSize = true;
+			this.label29.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label29.Location = new System.Drawing.Point(7, 9);
+			this.label29.Name = "label29";
+			this.label29.Size = new System.Drawing.Size(456, 15);
+			this.label29.TabIndex = 0;
+			this.label29.Text = "Choose the number of customers (of this type) to enter the store for every hour:";
+			// 
+			// patience
+			// 
+			this.patience.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.patience.Location = new System.Drawing.Point(373, 155);
+			this.patience.Name = "patience";
+			this.patience.Size = new System.Drawing.Size(62, 23);
+			this.patience.TabIndex = 7;
+			// 
+			// dawdling
+			// 
+			this.dawdling.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dawdling.Location = new System.Drawing.Point(593, 116);
+			this.dawdling.Name = "dawdling";
+			this.dawdling.Size = new System.Drawing.Size(62, 23);
+			this.dawdling.TabIndex = 6;
+			// 
+			// concentration
+			// 
+			this.concentration.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.concentration.Location = new System.Drawing.Point(373, 120);
+			this.concentration.Name = "concentration";
+			this.concentration.Size = new System.Drawing.Size(62, 23);
+			this.concentration.TabIndex = 5;
+			// 
+			// maxItems
+			// 
+			this.maxItems.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maxItems.Location = new System.Drawing.Point(185, 158);
+			this.maxItems.Name = "maxItems";
+			this.maxItems.Size = new System.Drawing.Size(62, 23);
+			this.maxItems.TabIndex = 4;
+			// 
+			// minItems
+			// 
+			this.minItems.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.minItems.Location = new System.Drawing.Point(185, 119);
+			this.minItems.Name = "minItems";
+			this.minItems.Size = new System.Drawing.Size(62, 23);
+			this.minItems.TabIndex = 3;
+			this.minItems.TextChanged += new System.EventHandler(this.MinItems_TextChanged);
+			// 
+			// button2
+			// 
+			this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button2.Location = new System.Drawing.Point(523, 72);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(103, 23);
+			this.button2.TabIndex = 2;
+			this.button2.Text = "Delete this Type";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
+			// button3
+			// 
+			this.button3.Location = new System.Drawing.Point(580, 415);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(75, 23);
+			this.button3.TabIndex = 2;
+			this.button3.Text = "Save";
+			this.button3.UseVisualStyleBackColor = true;
+			// 
+			// button1
+			// 
+			this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.Location = new System.Drawing.Point(401, 72);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(115, 23);
+			this.button1.TabIndex = 2;
+			this.button1.Text = "Create New Type";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label9.Location = new System.Drawing.Point(462, 158);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(118, 15);
+			this.label9.TabIndex = 0;
+			this.label9.Text = "Response to Promos:";
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.Location = new System.Drawing.Point(305, 158);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(55, 15);
+			this.label8.TabIndex = 0;
+			this.label8.Text = "Patience:";
+			// 
+			// cmbCustomersCustomerTypes
+			// 
+			this.cmbCustomersCustomerTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbCustomersCustomerTypes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbCustomersCustomerTypes.FormattingEnabled = true;
+			this.cmbCustomersCustomerTypes.Location = new System.Drawing.Point(185, 72);
+			this.cmbCustomersCustomerTypes.Name = "cmbCustomersCustomerTypes";
+			this.cmbCustomersCustomerTypes.Size = new System.Drawing.Size(200, 23);
+			this.cmbCustomersCustomerTypes.TabIndex = 1;
+			this.cmbCustomersCustomerTypes.SelectedIndexChanged += new System.EventHandler(this.cmbCustomersCustomerTypes_SelectedIndexChanged);
+			this.cmbCustomersCustomerTypes.Click += new System.EventHandler(this.cmbCustomersCustomerTypes_Click);
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.Location = new System.Drawing.Point(520, 120);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(60, 15);
+			this.label7.TabIndex = 0;
+			this.label7.Text = "Dawdling:";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(76, 162);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(96, 15);
+			this.label5.TabIndex = 0;
+			this.label5.Text = "Maximum Items:";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(274, 124);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(86, 15);
+			this.label6.TabIndex = 0;
+			this.label6.Text = "Concentration:";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(80, 123);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(95, 15);
+			this.label4.TabIndex = 0;
+			this.label4.Text = "Minimum Items:";
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.Location = new System.Drawing.Point(55, 30);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(121, 15);
+			this.label10.TabIndex = 0;
+			this.label10.Text = "Customer Parameters";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(80, 74);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(91, 15);
+			this.label3.TabIndex = 0;
+			this.label3.Text = "Customer Type:";
+			// 
+			// tabCheckouts
+			// 
+			this.tabCheckouts.Controls.Add(this.label24);
+			this.tabCheckouts.Controls.Add(this.textBox22);
+			this.tabCheckouts.Controls.Add(this.textBox21);
+			this.tabCheckouts.Controls.Add(this.working);
+			this.tabCheckouts.Controls.Add(this.button6);
+			this.tabCheckouts.Controls.Add(this.maxSpeed);
+			this.tabCheckouts.Controls.Add(this.button4);
+			this.tabCheckouts.Controls.Add(this.normSpeed);
+			this.tabCheckouts.Controls.Add(this.button8);
+			this.tabCheckouts.Controls.Add(this.label15);
+			this.tabCheckouts.Controls.Add(this.label19);
+			this.tabCheckouts.Controls.Add(this.comboBox1);
+			this.tabCheckouts.Controls.Add(this.label20);
+			this.tabCheckouts.Controls.Add(this.label12);
+			this.tabCheckouts.Controls.Add(this.label14);
+			this.tabCheckouts.Controls.Add(this.label18);
+			this.tabCheckouts.Controls.Add(this.label17);
+			this.tabCheckouts.Controls.Add(this.label11);
+			this.tabCheckouts.IsDrawn = true;
+			this.tabCheckouts.Name = "tabCheckouts";
+			this.tabCheckouts.Selected = true;
+			this.tabCheckouts.Size = new System.Drawing.Size(939, 484);
+			this.tabCheckouts.TabIndex = 2;
+			this.tabCheckouts.Title = "Staff & Checkouts";
+			// 
+			// label24
+			// 
+			this.label24.AutoSize = true;
+			this.label24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label24.ForeColor = System.Drawing.SystemColors.Desktop;
+			this.label24.Location = new System.Drawing.Point(83, 143);
+			this.label24.Name = "label24";
+			this.label24.Size = new System.Drawing.Size(408, 15);
+			this.label24.TabIndex = 16;
+			this.label24.Text = "(speed is the time (seconds) it takes the staff member to checkout one item)";
+			// 
+			// textBox22
+			// 
+			this.textBox22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textBox22.Location = new System.Drawing.Point(229, 267);
+			this.textBox22.Name = "textBox22";
+			this.textBox22.Size = new System.Drawing.Size(47, 23);
+			this.textBox22.TabIndex = 15;
+			// 
+			// textBox21
+			// 
+			this.textBox21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textBox21.Location = new System.Drawing.Point(229, 231);
+			this.textBox21.Name = "textBox21";
+			this.textBox21.Size = new System.Drawing.Size(47, 23);
+			this.textBox21.TabIndex = 14;
+			// 
+			// working
+			// 
+			this.working.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.working.Location = new System.Drawing.Point(540, 117);
+			this.working.Name = "working";
+			this.working.Size = new System.Drawing.Size(62, 23);
+			this.working.TabIndex = 13;
+			// 
+			// button6
+			// 
+			this.button6.Location = new System.Drawing.Point(499, 74);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(103, 23);
+			this.button6.TabIndex = 11;
+			this.button6.Text = "Delete this Type";
+			this.button6.UseVisualStyleBackColor = true;
+			// 
+			// maxSpeed
+			// 
+			this.maxSpeed.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.maxSpeed.Location = new System.Drawing.Point(365, 117);
+			this.maxSpeed.Name = "maxSpeed";
+			this.maxSpeed.Size = new System.Drawing.Size(45, 23);
+			this.maxSpeed.TabIndex = 12;
+			// 
+			// button4
+			// 
+			this.button4.Location = new System.Drawing.Point(94, 352);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(75, 23);
+			this.button4.TabIndex = 9;
+			this.button4.Text = "Save";
+			this.button4.UseVisualStyleBackColor = true;
+			// 
+			// normSpeed
+			// 
+			this.normSpeed.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.normSpeed.Location = new System.Drawing.Point(188, 117);
+			this.normSpeed.Name = "normSpeed";
+			this.normSpeed.Size = new System.Drawing.Size(47, 23);
+			this.normSpeed.TabIndex = 11;
+			// 
+			// button8
+			// 
+			this.button8.Location = new System.Drawing.Point(377, 74);
+			this.button8.Name = "button8";
+			this.button8.Size = new System.Drawing.Size(115, 23);
+			this.button8.TabIndex = 12;
+			this.button8.Text = "Create New Type";
+			this.button8.UseVisualStyleBackColor = true;
+			// 
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.Location = new System.Drawing.Point(443, 119);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(91, 15);
+			this.label15.TabIndex = 8;
+			this.label15.Text = "Working Today:";
+			// 
+			// label19
+			// 
+			this.label19.AutoSize = true;
+			this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label19.Location = new System.Drawing.Point(260, 120);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(99, 15);
+			this.label19.TabIndex = 9;
+			this.label19.Text = "Maximum Speed:";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Location = new System.Drawing.Point(162, 73);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(200, 24);
+			this.comboBox1.TabIndex = 10;
+			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+			this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
+			// 
+			// label20
+			// 
+			this.label20.AutoSize = true;
+			this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label20.Location = new System.Drawing.Point(97, 120);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(85, 15);
+			this.label20.TabIndex = 10;
+			this.label20.Text = "Normal Speed:";
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label12.Location = new System.Drawing.Point(59, 32);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(102, 15);
+			this.label12.TabIndex = 8;
+			this.label12.Text = "Staff Parameters";
+			// 
+			// label14
+			// 
+			this.label14.AutoSize = true;
+			this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label14.Location = new System.Drawing.Point(84, 76);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(63, 15);
+			this.label14.TabIndex = 9;
+			this.label14.Text = "Staff Type:";
+			// 
+			// label18
+			// 
+			this.label18.AutoSize = true;
+			this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label18.Location = new System.Drawing.Point(91, 271);
+			this.label18.Name = "label18";
+			this.label18.Size = new System.Drawing.Size(110, 15);
+			this.label18.TabIndex = 8;
+			this.label18.Text = "\"Quick\" Checkouts:";
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label17.Location = new System.Drawing.Point(91, 231);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(116, 15);
+			this.label17.TabIndex = 8;
+			this.label17.Text = "Standard Checkouts:";
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.Location = new System.Drawing.Point(59, 187);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(127, 15);
+			this.label11.TabIndex = 1;
+			this.label11.Text = "Checkout Parameters";
+			// 
+			// tabActivity
+			// 
+			this.tabActivity.Controls.Add(this.button9);
+			this.tabActivity.Controls.Add(this.textBox25);
+			this.tabActivity.Controls.Add(this.button11);
+			this.tabActivity.Controls.Add(this.label23);
+			this.tabActivity.Controls.Add(this.comboBox3);
+			this.tabActivity.Controls.Add(this.label25);
+			this.tabActivity.Controls.Add(this.label22);
+			this.tabActivity.Controls.Add(this.textBox23);
+			this.tabActivity.Controls.Add(this.label21);
+			this.tabActivity.Controls.Add(this.button10);
+			this.tabActivity.Controls.Add(this.label13);
+			this.tabActivity.IsDrawn = true;
+			this.tabActivity.Name = "tabActivity";
+			this.tabActivity.Size = new System.Drawing.Size(939, 484);
+			this.tabActivity.TabIndex = 4;
+			this.tabActivity.Title = "Pricing & Promos";
+			// 
+			// button9
+			// 
+			this.button9.Location = new System.Drawing.Point(499, 179);
+			this.button9.Name = "button9";
+			this.button9.Size = new System.Drawing.Size(85, 23);
+			this.button9.TabIndex = 10;
+			this.button9.Text = "Delete";
+			this.button9.UseVisualStyleBackColor = true;
+			// 
+			// textBox25
+			// 
+			this.textBox25.Location = new System.Drawing.Point(175, 222);
+			this.textBox25.Name = "textBox25";
+			this.textBox25.Size = new System.Drawing.Size(47, 23);
+			this.textBox25.TabIndex = 30;
+			// 
+			// button11
+			// 
+			this.button11.Location = new System.Drawing.Point(399, 180);
+			this.button11.Name = "button11";
+			this.button11.Size = new System.Drawing.Size(94, 23);
+			this.button11.TabIndex = 11;
+			this.button11.Text = "Create New";
+			this.button11.UseVisualStyleBackColor = true;
+			// 
+			// label23
+			// 
+			this.label23.AutoSize = true;
+			this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label23.Location = new System.Drawing.Point(70, 224);
+			this.label23.Name = "label23";
+			this.label23.Size = new System.Drawing.Size(77, 16);
+			this.label23.TabIndex = 29;
+			this.label23.Text = "Items Price:";
+			// 
+			// comboBox3
+			// 
+			this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.comboBox3.FormattingEnabled = true;
+			this.comboBox3.Location = new System.Drawing.Point(188, 181);
+			this.comboBox3.Name = "comboBox3";
+			this.comboBox3.Size = new System.Drawing.Size(200, 24);
+			this.comboBox3.TabIndex = 9;
+			// 
+			// label25
+			// 
+			this.label25.AutoSize = true;
+			this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label25.Location = new System.Drawing.Point(55, 153);
+			this.label25.Name = "label25";
+			this.label25.Size = new System.Drawing.Size(90, 16);
+			this.label25.TabIndex = 26;
+			this.label25.Text = "Promotions:";
+			// 
+			// label22
+			// 
+			this.label22.AutoSize = true;
+			this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label22.Location = new System.Drawing.Point(70, 185);
+			this.label22.Name = "label22";
+			this.label22.Size = new System.Drawing.Size(112, 16);
+			this.label22.TabIndex = 8;
+			this.label22.Text = "Promotion Name:";
+			// 
+			// textBox23
+			// 
+			this.textBox23.Location = new System.Drawing.Point(175, 62);
+			this.textBox23.Name = "textBox23";
+			this.textBox23.Size = new System.Drawing.Size(47, 23);
+			this.textBox23.TabIndex = 23;
+			// 
+			// label21
+			// 
+			this.label21.AutoSize = true;
+			this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label21.Location = new System.Drawing.Point(70, 65);
+			this.label21.Name = "label21";
+			this.label21.Size = new System.Drawing.Size(77, 16);
+			this.label21.TabIndex = 22;
+			this.label21.Text = "Items Price:";
+			// 
+			// button10
+			// 
+			this.button10.Location = new System.Drawing.Point(853, 453);
+			this.button10.Name = "button10";
+			this.button10.Size = new System.Drawing.Size(75, 23);
+			this.button10.TabIndex = 21;
+			this.button10.Text = "Save";
+			this.button10.UseVisualStyleBackColor = true;
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.Location = new System.Drawing.Point(55, 30);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(60, 16);
+			this.label13.TabIndex = 2;
+			this.label13.Text = "Pricing:";
+			// 
+			// tabSummaryRunSim
+			// 
+			this.tabSummaryRunSim.Controls.Add(this.cmdlRunSimulation);
+			this.tabSummaryRunSim.Controls.Add(this.label16);
+			this.tabSummaryRunSim.IsDrawn = true;
+			this.tabSummaryRunSim.Name = "tabSummaryRunSim";
+			this.tabSummaryRunSim.Size = new System.Drawing.Size(939, 484);
+			this.tabSummaryRunSim.TabIndex = 7;
+			this.tabSummaryRunSim.Title = "Simulation Results";
+			// 
+			// cmdlRunSimulation
+			// 
+			this.cmdlRunSimulation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+						| System.Windows.Forms.AnchorStyles.Right)));
+			this.cmdlRunSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlRunSimulation.Location = new System.Drawing.Point(290, 358);
+			this.cmdlRunSimulation.Name = "cmdlRunSimulation";
+			this.cmdlRunSimulation.Note = "Click here to run the simulation with these parameters";
+			this.cmdlRunSimulation.Size = new System.Drawing.Size(357, 62);
+			this.cmdlRunSimulation.TabIndex = 7;
+			this.cmdlRunSimulation.Text = "Run Simulation";
+			this.cmdlRunSimulation.UseVisualStyleBackColor = true;
+			this.cmdlRunSimulation.Click += new System.EventHandler(this.cmdlRunSimulation_Click);
+			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label16.Location = new System.Drawing.Point(55, 30);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(148, 16);
+			this.label16.TabIndex = 2;
+			this.label16.Text = "Simulation Summary";
+			// 
+			// cmdlNewSimulation
+			// 
+			this.cmdlNewSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlNewSimulation.Location = new System.Drawing.Point(3, 3);
+			this.cmdlNewSimulation.Name = "cmdlNewSimulation";
+			this.cmdlNewSimulation.Note = "Create a new simulation";
+			this.cmdlNewSimulation.Size = new System.Drawing.Size(192, 62);
+			this.cmdlNewSimulation.TabIndex = 5;
+			this.cmdlNewSimulation.Text = "New Simulation";
+			this.cmdlNewSimulation.UseVisualStyleBackColor = true;
+			this.cmdlNewSimulation.Click += new System.EventHandler(this.cmdlNewSimulation_Click);
+			// 
+			// cmdlLoadSimulation
+			// 
+			this.cmdlLoadSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlLoadSimulation.Location = new System.Drawing.Point(204, 3);
+			this.cmdlLoadSimulation.Name = "cmdlLoadSimulation";
+			this.cmdlLoadSimulation.Note = "Load parameters from a previous simulation";
+			this.cmdlLoadSimulation.Size = new System.Drawing.Size(289, 62);
+			this.cmdlLoadSimulation.TabIndex = 6;
+			this.cmdlLoadSimulation.Text = "Load Simulation";
+			this.cmdlLoadSimulation.UseVisualStyleBackColor = true;
+			this.cmdlLoadSimulation.Click += new System.EventHandler(this.cmdlLoadSimulation_Click);
+			// 
+			// cmdlLogout
+			// 
+			this.cmdlLogout.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cmdlLogout.Location = new System.Drawing.Point(714, 3);
+			this.cmdlLogout.Name = "cmdlLogout";
+			this.cmdlLogout.Note = "Log out of the Simulator";
+			this.cmdlLogout.Size = new System.Drawing.Size(227, 62);
+			this.cmdlLogout.TabIndex = 4;
+			this.cmdlLogout.Text = "Log out";
+			this.cmdlLogout.UseVisualStyleBackColor = true;
+			this.cmdlLogout.Click += new System.EventHandler(this.cmdlLogout_Click);
 			// 
 			// tlpCommandLinkPanel
 			// 
@@ -127,7 +970,7 @@
 			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.2834F));
 			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.7166F));
 			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
-			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 234F));
+			this.tlpCommandLinkPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
 			this.tlpCommandLinkPanel.Controls.Add(this.cmdlLogout, 3, 0);
 			this.tlpCommandLinkPanel.Controls.Add(this.cmdlNewSimulation, 0, 0);
 			this.tlpCommandLinkPanel.Controls.Add(this.cmdlViewResults, 2, 0);
@@ -138,56 +981,20 @@
 			this.tlpCommandLinkPanel.Name = "tlpCommandLinkPanel";
 			this.tlpCommandLinkPanel.RowCount = 1;
 			this.tlpCommandLinkPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tlpCommandLinkPanel.Size = new System.Drawing.Size(941, 68);
+			this.tlpCommandLinkPanel.Size = new System.Drawing.Size(948, 68);
 			this.tlpCommandLinkPanel.TabIndex = 2;
-			// 
-			// cmdlLogout
-			// 
-			this.cmdlLogout.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlLogout.Location = new System.Drawing.Point(709, 3);
-			this.cmdlLogout.Name = "cmdlLogout";
-			this.cmdlLogout.Note = "Log out of the Simulator";
-			this.cmdlLogout.Size = new System.Drawing.Size(228, 62);
-			this.cmdlLogout.TabIndex = 4;
-			this.cmdlLogout.Text = "Log out";
-			this.cmdlLogout.UseVisualStyleBackColor = true;
-			this.cmdlLogout.Click += new System.EventHandler(this.cmdlLogout_Click);
-			// 
-			// cmdlNewSimulation
-			// 
-			this.cmdlNewSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlNewSimulation.Location = new System.Drawing.Point(3, 3);
-			this.cmdlNewSimulation.Name = "cmdlNewSimulation";
-			this.cmdlNewSimulation.Note = "Create a new simulation";
-			this.cmdlNewSimulation.Size = new System.Drawing.Size(193, 62);
-			this.cmdlNewSimulation.TabIndex = 5;
-			this.cmdlNewSimulation.Text = "New Simulation";
-			this.cmdlNewSimulation.UseVisualStyleBackColor = true;
-			this.cmdlNewSimulation.Click += new System.EventHandler(this.cmdlNewSimulation_Click);
 			// 
 			// cmdlViewResults
 			// 
 			this.cmdlViewResults.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlViewResults.Location = new System.Drawing.Point(496, 3);
+			this.cmdlViewResults.Location = new System.Drawing.Point(501, 3);
 			this.cmdlViewResults.Name = "cmdlViewResults";
 			this.cmdlViewResults.Note = "View previous simulations";
-			this.cmdlViewResults.Size = new System.Drawing.Size(207, 62);
+			this.cmdlViewResults.Size = new System.Drawing.Size(206, 62);
 			this.cmdlViewResults.TabIndex = 3;
 			this.cmdlViewResults.Text = "View Results";
 			this.cmdlViewResults.UseVisualStyleBackColor = true;
 			this.cmdlViewResults.Click += new System.EventHandler(this.cmdlViewResults_Click);
-			// 
-			// cmdlLoadSimulation
-			// 
-			this.cmdlLoadSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlLoadSimulation.Location = new System.Drawing.Point(202, 3);
-			this.cmdlLoadSimulation.Name = "cmdlLoadSimulation";
-			this.cmdlLoadSimulation.Note = "Load parameters from a previous simulation";
-			this.cmdlLoadSimulation.Size = new System.Drawing.Size(288, 62);
-			this.cmdlLoadSimulation.TabIndex = 6;
-			this.cmdlLoadSimulation.Text = "Load Simulation";
-			this.cmdlLoadSimulation.UseVisualStyleBackColor = true;
-			this.cmdlLoadSimulation.Click += new System.EventHandler(this.cmdlLoadSimulation_Click);
 			// 
 			// label1
 			// 
@@ -249,761 +1056,26 @@
 			// comboBox2
 			// 
 			this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.comboBox2.FormattingEnabled = true;
 			this.comboBox2.Location = new System.Drawing.Point(374, 132);
 			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(200, 25);
+			this.comboBox2.Size = new System.Drawing.Size(200, 24);
 			this.comboBox2.TabIndex = 15;
 			// 
-			// tabstripMainTabs
-			// 
-			this.tabstripMainTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.tabstripMainTabs.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tabstripMainTabs.Location = new System.Drawing.Point(0, 110);
-			this.tabstripMainTabs.Name = "tabstripMainTabs";
-			this.tabstripMainTabs.SelectedItem = this.tabCustomers;
-			this.tabstripMainTabs.Size = new System.Drawing.Size(941, 508);
-			this.tabstripMainTabs.TabActiveUnderlineColor = System.Drawing.Color.Empty;
-			this.tabstripMainTabs.TabIndex = 1;
-			this.tabstripMainTabs.Tabs.AddRange(new Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem[] {
-            this.tabCustomers,
-            this.tabCheckouts,
-            this.tabStaff,
-            this.tabActivity,
-            this.tabPricing,
-            this.tabPromotion,
-            this.tabSummaryRunSim});
-			this.tabstripMainTabs.Text = "garnetTabStrip1";
-			// 
-			// tabCustomers
-			// 
-			this.tabCustomers.Controls.Add(this.button15);
-			this.tabCustomers.Controls.Add(this.maskedTextBox2);
-			this.tabCustomers.Controls.Add(this.maskedTextBox6);
-			this.tabCustomers.Controls.Add(this.maskedTextBox5);
-			this.tabCustomers.Controls.Add(this.maskedTextBox4);
-			this.tabCustomers.Controls.Add(this.maskedTextBox3);
-			this.tabCustomers.Controls.Add(this.maskedTextBox1);
-			this.tabCustomers.Controls.Add(this.button2);
-			this.tabCustomers.Controls.Add(this.button3);
-			this.tabCustomers.Controls.Add(this.button1);
-			this.tabCustomers.Controls.Add(this.label9);
-			this.tabCustomers.Controls.Add(this.label8);
-			this.tabCustomers.Controls.Add(this.cmbCustomersCustomerTypes);
-			this.tabCustomers.Controls.Add(this.label7);
-			this.tabCustomers.Controls.Add(this.label5);
-			this.tabCustomers.Controls.Add(this.label6);
-			this.tabCustomers.Controls.Add(this.label4);
-			this.tabCustomers.Controls.Add(this.label10);
-			this.tabCustomers.Controls.Add(this.label3);
-			this.tabCustomers.IsDrawn = true;
-			this.tabCustomers.Name = "tabCustomers";
-			this.tabCustomers.Selected = true;
-			this.tabCustomers.Size = new System.Drawing.Size(939, 484);
-			this.tabCustomers.TabIndex = 1;
-			this.tabCustomers.Title = "Customers";
-			// 
-			// button15
-			// 
-			this.button15.Location = new System.Drawing.Point(315, 288);
-			this.button15.Name = "button15";
-			this.button15.Size = new System.Drawing.Size(119, 23);
-			this.button15.TabIndex = 4;
-			this.button15.Text = "Save and &Proceed";
-			this.button15.UseVisualStyleBackColor = true;
-			this.button15.Click += new System.EventHandler(this.button15_Click);
-			// 
-			// maskedTextBox2
-			// 
-			this.maskedTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox2.Location = new System.Drawing.Point(308, 111);
-			this.maskedTextBox2.Mask = "000";
-			this.maskedTextBox2.Name = "maskedTextBox2";
-			this.maskedTextBox2.PromptChar = '-';
-			this.maskedTextBox2.Size = new System.Drawing.Size(39, 25);
-			this.maskedTextBox2.TabIndex = 3;
-			this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox2.ValidatingType = typeof(int);
-			// 
-			// maskedTextBox6
-			// 
-			this.maskedTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox6.Location = new System.Drawing.Point(234, 241);
-			this.maskedTextBox6.Mask = "000";
-			this.maskedTextBox6.Name = "maskedTextBox6";
-			this.maskedTextBox6.PromptChar = '-';
-			this.maskedTextBox6.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox6.TabIndex = 3;
-			this.maskedTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox6.ValidatingType = typeof(int);
-			// 
-			// maskedTextBox5
-			// 
-			this.maskedTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox5.Location = new System.Drawing.Point(234, 210);
-			this.maskedTextBox5.Mask = "000";
-			this.maskedTextBox5.Name = "maskedTextBox5";
-			this.maskedTextBox5.PromptChar = '-';
-			this.maskedTextBox5.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox5.TabIndex = 3;
-			this.maskedTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox5.ValidatingType = typeof(int);
-			// 
-			// maskedTextBox4
-			// 
-			this.maskedTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox4.Location = new System.Drawing.Point(234, 179);
-			this.maskedTextBox4.Mask = "000";
-			this.maskedTextBox4.Name = "maskedTextBox4";
-			this.maskedTextBox4.PromptChar = '-';
-			this.maskedTextBox4.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox4.TabIndex = 3;
-			this.maskedTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox4.ValidatingType = typeof(int);
-			// 
-			// maskedTextBox3
-			// 
-			this.maskedTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox3.Location = new System.Drawing.Point(234, 148);
-			this.maskedTextBox3.Mask = "000";
-			this.maskedTextBox3.Name = "maskedTextBox3";
-			this.maskedTextBox3.PromptChar = '-';
-			this.maskedTextBox3.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox3.TabIndex = 3;
-			this.maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox3.ValidatingType = typeof(int);
-			// 
-			// maskedTextBox1
-			// 
-			this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox1.Location = new System.Drawing.Point(234, 111);
-			this.maskedTextBox1.Mask = "000";
-			this.maskedTextBox1.Name = "maskedTextBox1";
-			this.maskedTextBox1.PromptChar = '-';
-			this.maskedTextBox1.Size = new System.Drawing.Size(39, 25);
-			this.maskedTextBox1.TabIndex = 3;
-			this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox1.ValidatingType = typeof(int);
-			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(531, 72);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(75, 23);
-			this.button2.TabIndex = 2;
-			this.button2.Text = "Delete";
-			this.button2.UseVisualStyleBackColor = true;
-			// 
-			// button3
-			// 
-			this.button3.Location = new System.Drawing.Point(234, 288);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(75, 23);
-			this.button3.TabIndex = 2;
-			this.button3.Text = "Save";
-			this.button3.UseVisualStyleBackColor = true;
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(450, 72);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "New";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.Location = new System.Drawing.Point(55, 244);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(173, 17);
-			this.label9.TabIndex = 0;
-			this.label9.Text = "Promotion Response Factor:";
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.Location = new System.Drawing.Point(169, 213);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(59, 17);
-			this.label8.TabIndex = 0;
-			this.label8.Text = "Patience:";
-			// 
-			// cmbCustomersCustomerTypes
-			// 
-			this.cmbCustomersCustomerTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmbCustomersCustomerTypes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cmbCustomersCustomerTypes.FormattingEnabled = true;
-			this.cmbCustomersCustomerTypes.Location = new System.Drawing.Point(234, 70);
-			this.cmbCustomersCustomerTypes.Name = "cmbCustomersCustomerTypes";
-			this.cmbCustomersCustomerTypes.Size = new System.Drawing.Size(200, 25);
-			this.cmbCustomersCustomerTypes.TabIndex = 1;
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.Location = new System.Drawing.Point(142, 182);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(86, 17);
-			this.label7.TabIndex = 0;
-			this.label7.Text = "Dawdle Time:";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(279, 114);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(23, 17);
-			this.label5.TabIndex = 0;
-			this.label5.Text = "To";
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(136, 151);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(92, 17);
-			this.label6.TabIndex = 0;
-			this.label6.Text = "Concentration:";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(84, 112);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(144, 17);
-			this.label4.TabIndex = 0;
-			this.label4.Text = "Number of Items From:";
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.Location = new System.Drawing.Point(55, 30);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(140, 17);
-			this.label10.TabIndex = 0;
-			this.label10.Text = "Customer Parameters";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(80, 74);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(148, 17);
-			this.label3.TabIndex = 0;
-			this.label3.Text = "Select a Customer Type:";
-			// 
-			// tabCheckouts
-			// 
-			this.tabCheckouts.Controls.Add(this.button4);
-			this.tabCheckouts.Controls.Add(this.maskedTextBox8);
-			this.tabCheckouts.Controls.Add(this.maskedTextBox7);
-			this.tabCheckouts.Controls.Add(this.label18);
-			this.tabCheckouts.Controls.Add(this.label17);
-			this.tabCheckouts.Controls.Add(this.label11);
-			this.tabCheckouts.IsDrawn = true;
-			this.tabCheckouts.Name = "tabCheckouts";
-			this.tabCheckouts.Size = new System.Drawing.Size(939, 484);
-			this.tabCheckouts.TabIndex = 2;
-			this.tabCheckouts.Title = "Checkouts";
-			// 
-			// button4
-			// 
-			this.button4.Location = new System.Drawing.Point(285, 142);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(75, 23);
-			this.button4.TabIndex = 9;
-			this.button4.Text = "Save";
-			this.button4.UseVisualStyleBackColor = true;
-			// 
-			// maskedTextBox8
-			// 
-			this.maskedTextBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox8.Location = new System.Drawing.Point(285, 102);
-			this.maskedTextBox8.Mask = "000";
-			this.maskedTextBox8.Name = "maskedTextBox8";
-			this.maskedTextBox8.PromptChar = '-';
-			this.maskedTextBox8.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox8.TabIndex = 8;
-			this.maskedTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox8.ValidatingType = typeof(int);
-			// 
-			// maskedTextBox7
-			// 
-			this.maskedTextBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox7.Location = new System.Drawing.Point(285, 71);
-			this.maskedTextBox7.Mask = "000";
-			this.maskedTextBox7.Name = "maskedTextBox7";
-			this.maskedTextBox7.PromptChar = '-';
-			this.maskedTextBox7.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox7.TabIndex = 8;
-			this.maskedTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox7.ValidatingType = typeof(int);
-			// 
-			// label18
-			// 
-			this.label18.AutoSize = true;
-			this.label18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label18.Location = new System.Drawing.Point(99, 105);
-			this.label18.Name = "label18";
-			this.label18.Size = new System.Drawing.Size(180, 17);
-			this.label18.TabIndex = 8;
-			this.label18.Text = "Number of \"quick\" checkouts:";
-			// 
-			// label17
-			// 
-			this.label17.AutoSize = true;
-			this.label17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label17.Location = new System.Drawing.Point(87, 74);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(192, 17);
-			this.label17.TabIndex = 8;
-			this.label17.Text = "Number of standard checkouts:";
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(55, 30);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(138, 17);
-			this.label11.TabIndex = 1;
-			this.label11.Text = "Checkout Parameters";
-			// 
-			// tabStaff
-			// 
-			this.tabStaff.Controls.Add(this.button8);
-			this.tabStaff.Controls.Add(this.button9);
-			this.tabStaff.Controls.Add(this.cmbStaffTypes);
-			this.tabStaff.Controls.Add(this.label21);
-			this.tabStaff.Controls.Add(this.maskedTextBox10);
-			this.tabStaff.Controls.Add(this.label12);
-			this.tabStaff.Controls.Add(this.maskedTextBox11);
-			this.tabStaff.Controls.Add(this.label20);
-			this.tabStaff.Controls.Add(this.button6);
-			this.tabStaff.Controls.Add(this.label19);
-			this.tabStaff.IsDrawn = true;
-			this.tabStaff.Name = "tabStaff";
-			this.tabStaff.Size = new System.Drawing.Size(939, 484);
-			this.tabStaff.TabIndex = 3;
-			this.tabStaff.Title = "Staff";
-			// 
-			// button8
-			// 
-			this.button8.Location = new System.Drawing.Point(498, 77);
-			this.button8.Name = "button8";
-			this.button8.Size = new System.Drawing.Size(75, 23);
-			this.button8.TabIndex = 23;
-			this.button8.Text = "Delete";
-			this.button8.UseVisualStyleBackColor = true;
-			// 
-			// button9
-			// 
-			this.button9.Location = new System.Drawing.Point(417, 77);
-			this.button9.Name = "button9";
-			this.button9.Size = new System.Drawing.Size(75, 23);
-			this.button9.TabIndex = 24;
-			this.button9.Text = "New";
-			this.button9.UseVisualStyleBackColor = true;
-			// 
-			// cmbStaffTypes
-			// 
-			this.cmbStaffTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmbStaffTypes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cmbStaffTypes.FormattingEnabled = true;
-			this.cmbStaffTypes.Location = new System.Drawing.Point(201, 75);
-			this.cmbStaffTypes.Name = "cmbStaffTypes";
-			this.cmbStaffTypes.Size = new System.Drawing.Size(200, 25);
-			this.cmbStaffTypes.TabIndex = 22;
-			// 
-			// label21
-			// 
-			this.label21.AutoSize = true;
-			this.label21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label21.Location = new System.Drawing.Point(77, 79);
-			this.label21.Name = "label21";
-			this.label21.Size = new System.Drawing.Size(118, 17);
-			this.label21.TabIndex = 21;
-			this.label21.Text = "Select a Staff Type:";
-			// 
-			// maskedTextBox10
-			// 
-			this.maskedTextBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox10.Location = new System.Drawing.Point(201, 147);
-			this.maskedTextBox10.Mask = "000";
-			this.maskedTextBox10.Name = "maskedTextBox10";
-			this.maskedTextBox10.PromptChar = '-';
-			this.maskedTextBox10.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox10.TabIndex = 20;
-			this.maskedTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox10.ValidatingType = typeof(int);
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.Location = new System.Drawing.Point(55, 30);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(110, 17);
-			this.label12.TabIndex = 2;
-			this.label12.Text = "Staff Parameters";
-			// 
-			// maskedTextBox11
-			// 
-			this.maskedTextBox11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox11.Location = new System.Drawing.Point(201, 116);
-			this.maskedTextBox11.Mask = "000";
-			this.maskedTextBox11.Name = "maskedTextBox11";
-			this.maskedTextBox11.PromptChar = '-';
-			this.maskedTextBox11.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox11.TabIndex = 19;
-			this.maskedTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox11.ValidatingType = typeof(int);
-			// 
-			// label20
-			// 
-			this.label20.AutoSize = true;
-			this.label20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label20.Location = new System.Drawing.Point(147, 119);
-			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(48, 17);
-			this.label20.TabIndex = 9;
-			this.label20.Text = "Speed:";
-			// 
-			// button6
-			// 
-			this.button6.Location = new System.Drawing.Point(201, 194);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(75, 23);
-			this.button6.TabIndex = 18;
-			this.button6.Text = "Save";
-			this.button6.UseVisualStyleBackColor = true;
-			// 
-			// label19
-			// 
-			this.label19.AutoSize = true;
-			this.label19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label19.Location = new System.Drawing.Point(88, 150);
-			this.label19.Name = "label19";
-			this.label19.Size = new System.Drawing.Size(107, 17);
-			this.label19.TabIndex = 10;
-			this.label19.Text = "Speed up Factor:";
-			// 
-			// tabActivity
-			// 
-			this.tabActivity.Controls.Add(this.dateTimePicker1);
-			this.tabActivity.Controls.Add(this.button10);
-			this.tabActivity.Controls.Add(this.maskedTextBox9);
-			this.tabActivity.Controls.Add(this.cmbActivityCustomerTypes);
-			this.tabActivity.Controls.Add(this.label13);
-			this.tabActivity.Controls.Add(this.label23);
-			this.tabActivity.Controls.Add(this.label24);
-			this.tabActivity.Controls.Add(this.label22);
-			this.tabActivity.IsDrawn = true;
-			this.tabActivity.Name = "tabActivity";
-			this.tabActivity.Size = new System.Drawing.Size(939, 484);
-			this.tabActivity.TabIndex = 4;
-			this.tabActivity.Title = "Activity";
-			// 
-			// dateTimePicker1
-			// 
-			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-			this.dateTimePicker1.Location = new System.Drawing.Point(353, 80);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.ShowUpDown = true;
-			this.dateTimePicker1.Size = new System.Drawing.Size(161, 23);
-			this.dateTimePicker1.TabIndex = 22;
-			// 
-			// button10
-			// 
-			this.button10.Location = new System.Drawing.Point(353, 186);
-			this.button10.Name = "button10";
-			this.button10.Size = new System.Drawing.Size(75, 23);
-			this.button10.TabIndex = 21;
-			this.button10.Text = "Save";
-			this.button10.UseVisualStyleBackColor = true;
-			// 
-			// maskedTextBox9
-			// 
-			this.maskedTextBox9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox9.Location = new System.Drawing.Point(353, 141);
-			this.maskedTextBox9.Mask = "00000";
-			this.maskedTextBox9.Name = "maskedTextBox9";
-			this.maskedTextBox9.PromptChar = '-';
-			this.maskedTextBox9.Size = new System.Drawing.Size(161, 25);
-			this.maskedTextBox9.TabIndex = 20;
-			this.maskedTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox9.ValidatingType = typeof(int);
-			// 
-			// cmbActivityCustomerTypes
-			// 
-			this.cmbActivityCustomerTypes.FormattingEnabled = true;
-			this.cmbActivityCustomerTypes.Location = new System.Drawing.Point(353, 112);
-			this.cmbActivityCustomerTypes.Name = "cmbActivityCustomerTypes";
-			this.cmbActivityCustomerTypes.Size = new System.Drawing.Size(161, 23);
-			this.cmbActivityCustomerTypes.TabIndex = 3;
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(55, 30);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(164, 17);
-			this.label13.TabIndex = 2;
-			this.label13.Text = "Daily Activity Parameters";
-			// 
-			// label23
-			// 
-			this.label23.AutoSize = true;
-			this.label23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label23.Location = new System.Drawing.Point(209, 84);
-			this.label23.Name = "label23";
-			this.label23.Size = new System.Drawing.Size(138, 17);
-			this.label23.TabIndex = 0;
-			this.label23.Text = "Please select the hour:";
-			this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// label24
-			// 
-			this.label24.AutoSize = true;
-			this.label24.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label24.Location = new System.Drawing.Point(55, 144);
-			this.label24.Name = "label24";
-			this.label24.Size = new System.Drawing.Size(292, 17);
-			this.label24.TabIndex = 0;
-			this.label24.Text = "Number of Customers entering the supermarket:";
-			this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// label22
-			// 
-			this.label22.AutoSize = true;
-			this.label22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label22.Location = new System.Drawing.Point(148, 113);
-			this.label22.Name = "label22";
-			this.label22.Size = new System.Drawing.Size(199, 17);
-			this.label22.TabIndex = 0;
-			this.label22.Text = "Please select the Customer Type:";
-			this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// tabPricing
-			// 
-			this.tabPricing.Controls.Add(this.button11);
-			this.tabPricing.Controls.Add(this.cmbPricingCustomerTypes);
-			this.tabPricing.Controls.Add(this.label26);
-			this.tabPricing.Controls.Add(this.label25);
-			this.tabPricing.Controls.Add(this.label14);
-			this.tabPricing.Controls.Add(this.textBox1);
-			this.tabPricing.IsDrawn = true;
-			this.tabPricing.Name = "tabPricing";
-			this.tabPricing.Size = new System.Drawing.Size(939, 484);
-			this.tabPricing.TabIndex = 5;
-			this.tabPricing.Title = "Pricing";
-			// 
-			// button11
-			// 
-			this.button11.Location = new System.Drawing.Point(267, 154);
-			this.button11.Name = "button11";
-			this.button11.Size = new System.Drawing.Size(75, 23);
-			this.button11.TabIndex = 22;
-			this.button11.Text = "Save";
-			this.button11.UseVisualStyleBackColor = true;
-			// 
-			// cmbPricingCustomerTypes
-			// 
-			this.cmbPricingCustomerTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmbPricingCustomerTypes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cmbPricingCustomerTypes.FormattingEnabled = true;
-			this.cmbPricingCustomerTypes.Location = new System.Drawing.Point(267, 67);
-			this.cmbPricingCustomerTypes.Name = "cmbPricingCustomerTypes";
-			this.cmbPricingCustomerTypes.Size = new System.Drawing.Size(200, 25);
-			this.cmbPricingCustomerTypes.TabIndex = 4;
-			// 
-			// label26
-			// 
-			this.label26.AutoSize = true;
-			this.label26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label26.Location = new System.Drawing.Point(113, 113);
-			this.label26.Name = "label26";
-			this.label26.Size = new System.Drawing.Size(145, 17);
-			this.label26.TabIndex = 3;
-			this.label26.Text = "Average price per item:";
-			// 
-			// label25
-			// 
-			this.label25.AutoSize = true;
-			this.label25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label25.Location = new System.Drawing.Point(113, 71);
-			this.label25.Name = "label25";
-			this.label25.Size = new System.Drawing.Size(148, 17);
-			this.label25.TabIndex = 3;
-			this.label25.Text = "Select a Customer Type:";
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.Location = new System.Drawing.Point(55, 30);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(156, 17);
-			this.label14.TabIndex = 2;
-			this.label14.Text = "Item Pricing Parameters";
-			// 
-			// textBox1
-			// 
-			this.textBox1.Enabled = false;
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.Location = new System.Drawing.Point(267, 110);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(200, 25);
-			this.textBox1.TabIndex = 2;
-			// 
-			// tabPromotion
-			// 
-			this.tabPromotion.Controls.Add(this.button12);
-			this.tabPromotion.Controls.Add(this.button13);
-			this.tabPromotion.Controls.Add(this.cmbPromotionTypes);
-			this.tabPromotion.Controls.Add(this.label27);
-			this.tabPromotion.Controls.Add(this.maskedTextBox13);
-			this.tabPromotion.Controls.Add(this.label28);
-			this.tabPromotion.Controls.Add(this.button14);
-			this.tabPromotion.Controls.Add(this.label15);
-			this.tabPromotion.IsDrawn = true;
-			this.tabPromotion.Name = "tabPromotion";
-			this.tabPromotion.Size = new System.Drawing.Size(939, 484);
-			this.tabPromotion.TabIndex = 6;
-			this.tabPromotion.Title = "Promotion";
-			// 
-			// button12
-			// 
-			this.button12.Location = new System.Drawing.Point(534, 74);
-			this.button12.Name = "button12";
-			this.button12.Size = new System.Drawing.Size(75, 23);
-			this.button12.TabIndex = 32;
-			this.button12.Text = "Delete";
-			this.button12.UseVisualStyleBackColor = true;
-			// 
-			// button13
-			// 
-			this.button13.Location = new System.Drawing.Point(453, 74);
-			this.button13.Name = "button13";
-			this.button13.Size = new System.Drawing.Size(75, 23);
-			this.button13.TabIndex = 33;
-			this.button13.Text = "New";
-			this.button13.UseVisualStyleBackColor = true;
-			// 
-			// cmbPromotionTypes
-			// 
-			this.cmbPromotionTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmbPromotionTypes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cmbPromotionTypes.FormattingEnabled = true;
-			this.cmbPromotionTypes.Location = new System.Drawing.Point(237, 72);
-			this.cmbPromotionTypes.Name = "cmbPromotionTypes";
-			this.cmbPromotionTypes.Size = new System.Drawing.Size(200, 25);
-			this.cmbPromotionTypes.TabIndex = 31;
-			// 
-			// label27
-			// 
-			this.label27.AutoSize = true;
-			this.label27.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label27.Location = new System.Drawing.Point(110, 76);
-			this.label27.Name = "label27";
-			this.label27.Size = new System.Drawing.Size(121, 17);
-			this.label27.TabIndex = 30;
-			this.label27.Text = "Select a Promotion:";
-			// 
-			// maskedTextBox13
-			// 
-			this.maskedTextBox13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.maskedTextBox13.Location = new System.Drawing.Point(237, 113);
-			this.maskedTextBox13.Mask = "000";
-			this.maskedTextBox13.Name = "maskedTextBox13";
-			this.maskedTextBox13.PromptChar = '-';
-			this.maskedTextBox13.Size = new System.Drawing.Size(113, 25);
-			this.maskedTextBox13.TabIndex = 28;
-			this.maskedTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.maskedTextBox13.ValidatingType = typeof(int);
-			// 
-			// label28
-			// 
-			this.label28.AutoSize = true;
-			this.label28.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label28.Location = new System.Drawing.Point(139, 116);
-			this.label28.Name = "label28";
-			this.label28.Size = new System.Drawing.Size(92, 17);
-			this.label28.TabIndex = 25;
-			this.label28.Text = "Price per item:";
-			// 
-			// button14
-			// 
-			this.button14.Location = new System.Drawing.Point(237, 157);
-			this.button14.Name = "button14";
-			this.button14.Size = new System.Drawing.Size(75, 23);
-			this.button14.TabIndex = 27;
-			this.button14.Text = "Save";
-			this.button14.UseVisualStyleBackColor = true;
-			// 
-			// label15
-			// 
-			this.label15.AutoSize = true;
-			this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(55, 30);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(147, 17);
-			this.label15.TabIndex = 2;
-			this.label15.Text = "Promotion Parameters";
-			// 
-			// tabSummaryRunSim
-			// 
-			this.tabSummaryRunSim.Controls.Add(this.cmdlRunSimulation);
-			this.tabSummaryRunSim.Controls.Add(this.label16);
-			this.tabSummaryRunSim.IsDrawn = true;
-			this.tabSummaryRunSim.Name = "tabSummaryRunSim";
-			this.tabSummaryRunSim.Size = new System.Drawing.Size(939, 484);
-			this.tabSummaryRunSim.TabIndex = 7;
-			this.tabSummaryRunSim.Title = "Summary / Run Simulation";
-			// 
-			// cmdlRunSimulation
-			// 
-			this.cmdlRunSimulation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.cmdlRunSimulation.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.cmdlRunSimulation.Location = new System.Drawing.Point(290, 357);
-			this.cmdlRunSimulation.Name = "cmdlRunSimulation";
-			this.cmdlRunSimulation.Note = "Click here to run the simulation with these parameters";
-			this.cmdlRunSimulation.Size = new System.Drawing.Size(357, 62);
-			this.cmdlRunSimulation.TabIndex = 7;
-			this.cmdlRunSimulation.Text = "Run Simulation";
-			this.cmdlRunSimulation.UseVisualStyleBackColor = true;
-			this.cmdlRunSimulation.Click += new System.EventHandler(this.cmdlRunSimulation_Click);
-			// 
-			// label16
-			// 
-			this.label16.AutoSize = true;
-			this.label16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label16.Location = new System.Drawing.Point(55, 30);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(137, 17);
-			this.label16.TabIndex = 2;
-			this.label16.Text = "Simulation Summary";
+			// promoResponse
+			// 
+			this.promoResponse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.promoResponse.Location = new System.Drawing.Point(593, 155);
+			this.promoResponse.Name = "promoResponse";
+			this.promoResponse.Size = new System.Drawing.Size(62, 23);
+			this.promoResponse.TabIndex = 8;
 			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(941, 617);
+			this.ClientSize = new System.Drawing.Size(948, 621);
 			this.Controls.Add(this.dtpSimDate);
 			this.Controls.Add(this.tlpCommandLinkPanel);
 			this.Controls.Add(this.label2);
@@ -1017,23 +1089,19 @@
 			this.Name = "Main";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "GRPSIX Buyrite Supermarket Simulator";
-			this.tlpCommandLinkPanel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.tabstripMainTabs)).EndInit();
 			this.tabstripMainTabs.ResumeLayout(false);
 			this.tabCustomers.ResumeLayout(false);
 			this.tabCustomers.PerformLayout();
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.tabCheckouts.ResumeLayout(false);
 			this.tabCheckouts.PerformLayout();
-			this.tabStaff.ResumeLayout(false);
-			this.tabStaff.PerformLayout();
 			this.tabActivity.ResumeLayout(false);
 			this.tabActivity.PerformLayout();
-			this.tabPricing.ResumeLayout(false);
-			this.tabPricing.PerformLayout();
-			this.tabPromotion.ResumeLayout(false);
-			this.tabPromotion.PerformLayout();
 			this.tabSummaryRunSim.ResumeLayout(false);
 			this.tabSummaryRunSim.PerformLayout();
+			this.tlpCommandLinkPanel.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -1049,17 +1117,12 @@
 		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlViewResults;
 		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabCustomers;
 		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabCheckouts;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabActivity;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabPricing;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabPromotion;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabSummaryRunSim;
-		private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabStaff;
+        private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabActivity;
+        private Pyramid.Garnet.Controls.Tabs.GarnetTabStripItem tabSummaryRunSim;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtSimTitle;
-		private System.Windows.Forms.DateTimePicker dtpSimDate;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.DateTimePicker dtpSimDate;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.ComboBox cmbCustomersCustomerTypes;
@@ -1070,56 +1133,74 @@
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox6;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox5;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.Label label11;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label label14;
-		private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Label label16;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox8;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox7;
+        private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Label label18;
-		private System.Windows.Forms.Label label17;
-		private System.Windows.Forms.Button button8;
-		private System.Windows.Forms.Button button9;
-		private System.Windows.Forms.ComboBox cmbStaffTypes;
-		private System.Windows.Forms.Label label21;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox10;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox11;
-		private System.Windows.Forms.Label label20;
-		private System.Windows.Forms.Button button6;
-		private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label17;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.Button button7;
 		private System.Windows.Forms.ComboBox comboBox2;
-		private System.Windows.Forms.Button button10;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox9;
-		private System.Windows.Forms.ComboBox cmbActivityCustomerTypes;
-		private System.Windows.Forms.Label label23;
-		private System.Windows.Forms.Label label24;
-		private System.Windows.Forms.Label label22;
-		private System.Windows.Forms.DateTimePicker dateTimePicker1;
-		private System.Windows.Forms.Button button11;
-		private System.Windows.Forms.ComboBox cmbPricingCustomerTypes;
-		private System.Windows.Forms.Label label26;
-		private System.Windows.Forms.Label label25;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Button button12;
-		private System.Windows.Forms.Button button13;
-		private System.Windows.Forms.ComboBox cmbPromotionTypes;
-		private System.Windows.Forms.Label label27;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox13;
-		private System.Windows.Forms.Label label28;
-		private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button10;
 		private Pyramid.Garnet.Controls.Aero.CommandLink cmdlRunSimulation;
-		private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Label label29;
+        private Pyramid.Garnet.Controls.Aero.TextBox patience;
+        private Pyramid.Garnet.Controls.Aero.TextBox dawdling;
+        private Pyramid.Garnet.Controls.Aero.TextBox concentration;
+        private Pyramid.Garnet.Controls.Aero.TextBox maxItems;
+        private Pyramid.Garnet.Controls.Aero.TextBox minItems;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour12;
+        private System.Windows.Forms.Label label36;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour8;
+        private System.Windows.Forms.Label label37;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour4;
+        private System.Windows.Forms.Label label38;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour11;
+        private System.Windows.Forms.Label label39;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour7;
+        private System.Windows.Forms.Label label40;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour3;
+        private System.Windows.Forms.Label label41;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour10;
+        private System.Windows.Forms.Label label33;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour6;
+        private System.Windows.Forms.Label label34;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour2;
+        private System.Windows.Forms.Label label35;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour9;
+        private System.Windows.Forms.Label label32;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour5;
+        private System.Windows.Forms.Label label31;
+        private Pyramid.Garnet.Controls.Aero.TextBox hour1;
+        private System.Windows.Forms.Label label30;
+        private Pyramid.Garnet.Controls.Aero.TextBox textBox22;
+        private Pyramid.Garnet.Controls.Aero.TextBox textBox21;
+        private Pyramid.Garnet.Controls.Aero.TextBox working;
+        private System.Windows.Forms.Button button6;
+        private Pyramid.Garnet.Controls.Aero.TextBox maxSpeed;
+        private Pyramid.Garnet.Controls.Aero.TextBox normSpeed;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label14;
+        private Pyramid.Garnet.Controls.Aero.TextBox textBox25;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label25;
+        private Pyramid.Garnet.Controls.Aero.TextBox textBox23;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label24;
+		private Pyramid.Garnet.Controls.Aero.TextBox promoResponse;
 
 	}
 }

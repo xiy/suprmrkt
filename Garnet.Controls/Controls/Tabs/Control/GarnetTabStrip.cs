@@ -779,22 +779,22 @@ namespace Pyramid.Garnet.Controls.Tabs
             if (ts == TabStyle.Garnet)
             {
 				
-                // As we're imitating the VS08 style, we need to 
-                if (isFirstTab)
-                {
-                    tabPath.AddLine(tabRect.Left - 10, tabRect.Bottom - 1, tabRect.Left, mtop + 8);
-                }
-                else if (tabPage == SelectedItem)
-                {
-                    tabPath.AddLine(tabRect.Left - 10, tabRect.Bottom - 1, tabRect.Left + (tabRect.Height / 2) - 10, mtop + 8);
-                }
-                else
-                {
-                    tabPath.AddLine(tabRect.Left + 1, tabRect.Bottom - 1, tabRect.Left + 1, mtop + 10);
-                }
-
+				//// As we're imitating the VS08 style, we need to 
+				//if (isFirstTab)
+				//{
+				//    tabPath.AddLine(tabRect.Left - 10, tabRect.Bottom - 1, tabRect.Left, mtop + 8);
+				//}
+				//else if (tabPage == SelectedItem)
+				//{
+				//    tabPath.AddLine(tabRect.Left - 10, tabRect.Bottom - 1, tabRect.Left + (tabRect.Height / 2) - 10, mtop + 8);
+				//}
+				//else
+				//{
+				//    tabPath.AddLine(tabRect.Left + 1, tabRect.Bottom - 1, tabRect.Left + 1, mtop + 10);
+				//}
+				tabPath.AddLine(tabRect.Left - 10, tabRect.Bottom - 1, tabRect.Left, mtop + 8);
                 tabPath.AddLine(tabRect.Left + 1, tabRect.Bottom - (tabRect.Height / 2) - 3, tabRect.Left + (tabRect.Height / 2) - 4, mtop + 2);
-                tabPath.AddLine(tabRect.Left + (tabRect.Height / 2), mtop, tabRect.Right - 2, mtop); // TOP RIGHT
+                tabPath.AddLine(tabRect.Left + (tabRect.Height / 2), mtop, tabRect.Right - 3, mtop); // TOP RIGHT
                 tabPath.AddLine(tabRect.Right, mtop + 2, tabRect.Right, tabRect.Bottom - 1);
                 tabPath.CloseFigure();
             }
@@ -838,7 +838,7 @@ namespace Pyramid.Garnet.Controls.Tabs
             //////////////////////////////////////////////////////////////////////////
 
             // The PointF location of the drawn string.
-            PointF textLoc = new PointF(tabRect.Left + tabRect.Height - 12, 
+            PointF textLoc = new PointF(tabRect.Left + tabRect.Height, 
                                         currentFont.Size / 1.7f);
             //tabRect.Top + (tabRect.Height / 2) - (textSize.Height / 2) - 3
             
@@ -870,7 +870,7 @@ namespace Pyramid.Garnet.Controls.Tabs
 
             // Debug stuff
             //g.DrawRectangle(Pens.Crimson, ToRectangle(tabRect));
-			tabPage.CloseButton.DrawCrossOnTab(g, tabRect);
+			if (this.DrawCross) tabPage.CloseButton.DrawCrossOnTab(g, tabRect);
         }
 
         #endregion
@@ -1269,5 +1269,12 @@ namespace Pyramid.Garnet.Controls.Tabs
         }
 
         #endregion
-    }
+
+		public bool _drawCross = true;
+		public bool DrawCross
+		{ 
+			get { return _drawCross; }
+			set { _drawCross = value; }
+		}
+	}
 }
